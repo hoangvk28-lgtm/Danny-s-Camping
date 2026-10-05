@@ -21,19 +21,19 @@ export const homepageEditorial = {
     eyebrow: "Featured Guide",
     headline: "The Best Power Stations for Camping",
     dek: "We compare battery capacity, inverter output, ports and solar charging so you can match a power station to the gear you actually run at camp, from phones and lanterns to a CPAP or a small fridge.",
-    byline: "Danny's Camping Editors",
+    byline: "Danny Walker",
   },
   latest: [
     { slug: "best-camping-chairs", format: "Buying Guide" },
     { slug: "best-zero-gravity-chair-for-camping", format: "Buying Guide" },
-    { slug: "best-projectors-for-camping", format: "Buying Guide" },
+    { slug: "best-portable-power-stations-for-camping", format: "Buying Guide" },
   ] as HomepageArticleRef[],
   mostRead: [
     { slug: "best-quietest-portable-generator-for-camping" },
     { slug: "best-power-banks-for-camping" },
     { slug: "best-camping-chairs-with-lumbar-support" },
     { slug: "best-hammock-camping-chairs" },
-    { slug: "best-12v-car-coffee-warmers" },
+    { slug: "best-solar-generators-for-camping" },
   ] as HomepageArticleRef[],
   departments: [
     {
@@ -62,15 +62,6 @@ export const homepageEditorial = {
         { slug: "best-tripod-camping-stools" },
       ] as HomepageArticleRef[],
     },
-    {
-      id: "camp-kitchen",
-      title: "Camp Kitchen",
-      href: "/camp-kitchen",
-      topics: ["Stoves", "Coolers", "Coffee", "Cookware"],
-      articles: [
-        { slug: "best-12v-car-coffee-warmers" },
-      ] as HomepageArticleRef[],
-    },
   ],
   workspaceIdeas: {
     title: "Campsite Comfort",
@@ -79,7 +70,7 @@ export const homepageEditorial = {
       { slug: "best-zero-gravity-chair-for-camping", format: "Buying Guide" },
       { slug: "best-camping-chairs-400-lb-capacity" },
       { slug: "best-extra-wide-zero-gravity-chair" },
-      { slug: "best-projectors-for-camping" },
+      { slug: "best-hammock-camping-chairs" },
     ] as HomepageArticleRef[],
   },
   workBetter: {
@@ -98,11 +89,11 @@ export const homepageEditorial = {
 
 export const shoppingCategories = [
   { icon: "tent", label: "Tents & Shelter", note: "Tents, tarps, canopies", href: "/tents-shelter" },
-  { icon: "flame", label: "Sleep Gear", note: "Bags, pads, cots", href: "/sleep-gear" },
-  { icon: "drop", label: "Camp Kitchen", note: "Stoves, coolers, coffee", href: "/camp-kitchen" },
+  { icon: "sleep", label: "Sleep Gear", note: "Bags, pads, cots", href: "/sleep-gear" },
+  { icon: "pot", label: "Camp Kitchen", note: "Stoves, coolers, coffee", href: "/camp-kitchen" },
   { icon: "battery", label: "Camp Power", note: "Power stations, solar", href: "/camp-power" },
-  { icon: "hitch", label: "Camp Furniture", note: "Chairs, tables, hammocks", href: "/camp-furniture" },
-  { icon: "wrench", label: "Campsite Gear", note: "Lanterns, headlamps, GPS", href: "/campsite-gear" },
+  { icon: "chair", label: "Camp Furniture", note: "Chairs, tables, hammocks", href: "/camp-furniture" },
+  { icon: "lantern", label: "Campsite Gear", note: "Lanterns, headlamps, GPS", href: "/campsite-gear" },
 ] as const;
 
 export type CategoryIconName = (typeof shoppingCategories)[number]["icon"];

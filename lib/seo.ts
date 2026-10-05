@@ -9,6 +9,7 @@ const SITE_NAME = "Danny's Camping";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
   "https://www.dannycamping.com";
+export const DEFAULT_TITLE = "Danny’s Camping | Camping Gear Guides & Outdoor Advice";
 const SITE_DESCRIPTION =
   "Straight-talking camping gear guides: tents, sleep systems, camp kitchens, camp power, furniture and campsite essentials, compared on real specs.";
 const TWITTER_HANDLE = "@dannycamping";

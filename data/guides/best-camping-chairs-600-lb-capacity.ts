@@ -8,7 +8,8 @@ export const introParagraphs = [
 ];
 export const lastUpdated = "2026-10-02";
 export const readTime = "10 min";
-export const heroImage = "https://m.media-amazon.com/images/I/4105U3f+uhL._SL500_.jpg";
+export const heroImage = "/images/editorial/furniture-chairs-by-tent.webp";
+export const heroImageAlt = "Two folding camping chairs beside a tent in a redwood forest";
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;

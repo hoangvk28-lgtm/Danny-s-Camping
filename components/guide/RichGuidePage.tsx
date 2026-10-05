@@ -8,6 +8,9 @@ import { getSiloBySlug } from "@/data/silos";
 import { guideDeks } from "@/data/guide-deks";
 import { guideSectionHeadings, type GuideSectionHeadings } from "@/lib/guide-headings";
 import { SafeImage } from "@/components/editorial/SafeImage";
+import { TrustBlock } from "@/components/editorial/TrustBlock";
+import { AuthorBox } from "@/components/editorial/AuthorBox";
+import { getAuthorByName, getAuthorBySlug } from "@/data/authors";
 import { GuideQuickPicks } from "@/components/guide/editorial/GuideQuickPicks";
 import { GuideProductPick } from "@/components/guide/editorial/GuideProductPick";
 import { GuideJumpTo, GuideTocSidebar, type TocItem } from "@/components/guide/editorial/GuideToc";
@@ -49,6 +52,7 @@ export interface RichGuidePageProps {
   lastUpdated: string;
   readTime: string;
   heroImage: string;
+  heroImageAlt?: string;
   products: GuideProduct[];
   howWeEvaluated?: { title: string; description: string }[];
   howToChoose?: HowToChooseSection[];
@@ -98,6 +102,8 @@ export function RichGuidePage(props: RichGuidePageProps) {
     slug, guideTitle, metaDescription, mainKeyword, readTime,
     heroImage, products: rawProducts, lastUpdated,
   } = props;
+  const author = getAuthorByName(getGuideBySlug(slug)?.author ?? "") ?? getAuthorBySlug("danny-walker")!;
+  const authorHref = `/author/${author.slug}`;
   const introParagraphs = props.introParagraphs ?? [];
   const products = rawProducts.map((product) => ({
     ...product,
@@ -163,7 +169,10 @@ export function RichGuidePage(props: RichGuidePageProps) {
     description: metaDescription,
     datePublished: lastUpdated,
     dateModified: lastUpdated,
-    author: { "@type": "Organization", name: `${SITE_NAME} Editors`, url: `${SITE_URL}/about` },
+    author: author.isPerson
+      ? { "@type": "Person", name: author.name, jobTitle: author.role, url: `${SITE_URL}${authorHref}` }
+      : { "@type": "Organization", name: SITE_NAME, url: `${SITE_URL}/about` },
+    ...(heroImage?.startsWith("/") ? { image: `${SITE_URL}${heroImage}` } : {}),
     publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
     mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
     about: [{ "@type": "Thing", name: breadcrumbTitle }],
@@ -250,21 +259,22 @@ export function RichGuidePage(props: RichGuidePageProps) {
           <h1 className="mt-3 text-[2.125rem] leading-[1.1] sm:text-[2.75rem] lg:text-[3rem]">{editorialHeadline}</h1>
           <p className="mt-3 text-[1.125rem] leading-relaxed sm:text-[1.25rem]">{dek}</p>
           <div className="mt-4 text-sm leading-relaxed text-ink-secondary">
-            <p>By <span className="font-medium text-ink">{SITE_NAME} Editors</span></p>
+            <p>By <Link prefetch={false} href={authorHref} className="font-medium !text-ink hover:!text-brand">{author.name}</Link></p>
+            <p>{author.role}</p>
             <p>
               <time dateTime={lastUpdated}>Updated {formatDate(lastUpdated)}</time>
               <span aria-hidden> · </span>
               {readTime} read
               <span aria-hidden> · </span>
-              {products.length} products evaluated
+              {products.length} products compared
             </p>
           </div>
         </header>
 
         {/* Skip the hero when it would just repeat a product shot shown below. */}
         {heroImage && !products.some((p) => p.imageUrl === heroImage) && (
-          <figure className="relative mt-6 aspect-[16/9] max-h-[440px] w-full overflow-hidden bg-surface sm:aspect-[21/9]">
-            <SafeImage src={heroImage} alt={breadcrumbTitle} fill priority sizes="(max-width: 1120px) 100vw, 1060px" className="object-contain p-4" unoptimized />
+          <figure className="relative mt-6 aspect-[16/9] w-full overflow-hidden bg-surface">
+            <SafeImage src={heroImage} alt={props.heroImageAlt || `${breadcrumbTitle} at a campsite`} fill priority sizes="(max-width: 1120px) 100vw, 1060px" className="object-cover" />
           </figure>
         )}
 
@@ -299,9 +309,11 @@ export function RichGuidePage(props: RichGuidePageProps) {
 
             <section aria-labelledby="quick-picks" className="mt-12">
               <h2 id="quick-picks" className={sectionTitle}>The Practical Shortlist</h2>
-              <p className="mt-2 mb-5">A road-tested-thinking look at {products.length} options, organized around the job each one suits best.</p>
+              <p className="mt-2 mb-5">A practical look at {products.length} options, organized around the job each one suits best.</p>
               <GuideQuickPicks products={products} />
             </section>
+
+            <TrustBlock />
 
             <section aria-labelledby="our-picks" className="mt-14">
               <h2 id="our-picks" className={`${sectionTitle} border-b border-ink pb-3`}>Why Each Pick Made the Cut</h2>
@@ -477,6 +489,8 @@ export function RichGuidePage(props: RichGuidePageProps) {
                 </ul>
               </section>
             )}
+
+            <AuthorBox author={author} />
           </div>
 
           <aside className="hidden lg:block">

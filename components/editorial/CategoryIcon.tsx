@@ -42,6 +42,27 @@ const paths: Record<string, React.ReactNode> = {
       <path d="M16 5 4 26h24L16 5zM16 5v21M12 26l4-8 4 8M2 26h28" />
     </>
   ),
+  sleep: (
+    <>
+      <path d="M4 22c0-4 3-7 7-7h14a3 3 0 0 1 3 3v4H4z" />
+      <path d="M4 22v4M28 22v4M9 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zM15 15V11h9a2 2 0 0 1 2 2v2" />
+    </>
+  ),
+  pot: (
+    <>
+      <path d="M6 13h20v7a6 6 0 0 1-6 6h-8a6 6 0 0 1-6-6v-7zM3 13h26M12 9c0-2 1-3 2-4M18 9c0-2 1-3 2-4" />
+    </>
+  ),
+  chair: (
+    <>
+      <path d="M9 6h14l-2 12H11L9 6zM8 18h16M10 18l-3 9M22 18l3 9M12 18l8 9M20 18l-8 9" />
+    </>
+  ),
+  lantern: (
+    <>
+      <path d="M12 4h8M16 4V2M11 8h10l1 3v12l-1 3H11l-1-3V11l1-3zM13 26v3h6v-3M16 13c1.5 2 1.5 4 0 6-1.5-2-1.5-4 0-6z" />
+    </>
+  ),
 };
 
 

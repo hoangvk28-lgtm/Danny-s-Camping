@@ -9,7 +9,8 @@ export const introParagraphs = [
 ];
 export const lastUpdated = "2026-08-31";
 export const readTime = "11 min";
-export const heroImage = "https://m.media-amazon.com/images/I/31wBQEenhlL._SL500_.jpg";
+export const heroImage = "/images/editorial/gear-lit-tent-night.webp";
+export const heroImageAlt = "Tent lit from inside in the middle of a forest at night";
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;

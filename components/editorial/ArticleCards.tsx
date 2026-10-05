@@ -60,7 +60,7 @@ export function ArticleCardCompact({ article }: { article: ArticleView }) {
     <article className="group relative flex flex-col gap-3 py-5 sm:flex-row-reverse sm:items-start sm:gap-5 sm:py-4">
       <EditorialImage
         src={article.image}
-        alt=""
+        alt={article.imageAlt}
         aspect="aspect-[3/2] sm:aspect-[4/3]"
         className="w-full shrink-0 sm:w-32"
         sizes="(max-width: 640px) 100vw, 128px"

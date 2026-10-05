@@ -8,7 +8,8 @@ export const mainKeyword = "best quiet generators for camping";
 export const categorySlug = "portable-generators";
 export const lastUpdated = "September 22, 2026";
 export const readTime = "23 min";
-export const heroImage = "/guides/best-quiet-generators-for-camping.png";
+export const heroImage = "/images/editorial/power-station-campsite.webp";
+export const heroImageAlt = "Jeep camp with a tent, solar panels and a portable power station at a pine forest campsite";
 export const introParagraphs = [
   "A quiet camping generator should be judged by more than a low dBA claim. Weight, runtime at partial load, CO shutdown, inverter output, campsite etiquette and the loads you actually run all matter.",
   "This guide uses current product pages, published specifications and product images for real generator picks. The recommendations separate ultralight tent-camping power from RV-ready inverter generators so you can avoid buying either too little or far too much generator."

@@ -82,6 +82,7 @@ export interface GuideDataModule {
   lastUpdated: string;
   readTime: string;
   heroImage: string;
+  heroImageAlt?: string;
   products: GuideProduct[];
   howWeEvaluated?: { title: string; description: string }[];
   howToChoose?: HowToChooseSection[];

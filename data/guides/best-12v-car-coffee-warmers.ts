@@ -9,7 +9,8 @@ export const introParagraphs = [
 ];
 export const lastUpdated = "2026-08-31";
 export const readTime = "11 min";
-export const heroImage = "https://m.media-amazon.com/images/I/41ZaybQrcTL._SL500_.jpg";
+export const heroImage = "/images/editorial/kitchen-camp-stove-coffee.webp";
+export const heroImageAlt = "Single-burner camp stove brewing coffee on a riverside rock";
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;

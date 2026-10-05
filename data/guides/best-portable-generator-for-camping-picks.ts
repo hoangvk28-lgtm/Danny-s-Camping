@@ -8,7 +8,8 @@ export const mainKeyword = "portable generator for camping";
 export const categorySlug = "portable-generators";
 export const lastUpdated = "September 24, 2026";
 export const readTime = "22 min";
-export const heroImage = "/guides/best-portable-generators-for-home-backup.png";
+export const heroImage = "/images/editorial/power-station-campsite.webp";
+export const heroImageAlt = "Jeep camp with a tent, solar panels and a portable power station at a pine forest campsite";
 export const introParagraphs = [
   "Best Portable Generator for Camping should be chosen around the job the product needs to do, not only the biggest number in a product title. This guide compares current product listings, published specifications, product images, and feature details so the shortlist is grounded in real available products.",
   "The recommendations focus on compatibility, safety, output or capacity, connection style, portability, setup burden, and long-term ownership. Use it as a buying shortlist, then verify the final manual, local code requirements, and fit with the rest of the backup-power system before purchase."

@@ -8,7 +8,8 @@ export const mainKeyword = "best solar generators for camping";
 export const categorySlug = "solar-power-stations";
 export const lastUpdated = "September 24, 2026";
 export const readTime = "24 min";
-export const heroImage = "/guides/best-solar-generators-for-camping.png";
+export const heroImage = "/images/editorial/power-station-campsite.webp";
+export const heroImageAlt = "Jeep camp with a tent, solar panels and a portable power station at a pine forest campsite";
 
 export const introParagraphs = [
   "A camping solar generator is a battery, inverter, ports, charging system, and panel plan. A product can have enough watt-hours but still be wrong if the panel is too small, the solar input is limited, or the kit is too heavy for the campsite.",

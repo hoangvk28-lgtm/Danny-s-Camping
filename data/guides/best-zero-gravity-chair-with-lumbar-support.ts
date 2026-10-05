@@ -8,7 +8,8 @@ export const introParagraphs = [
 ];
 export const lastUpdated = "2026-10-02";
 export const readTime = "10 min";
-export const heroImage = "https://m.media-amazon.com/images/I/51imnE8ajJL._SL500_.jpg";
+export const heroImage = "/images/editorial/furniture-chairs-campfire-night.webp";
+export const heroImageAlt = "Two people in folding chairs around a campfire in autumn woods";
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;

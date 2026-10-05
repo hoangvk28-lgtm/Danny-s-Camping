@@ -9,7 +9,8 @@ export const introParagraphs = [
 ];
 export const lastUpdated = "2026-08-19";
 export const readTime = "10 min";
-export const heroImage = "https://m.media-amazon.com/images/I/41-Ey75o-WL._SL500_.jpg";
+export const heroImage = "/images/editorial/power-station-campsite.webp";
+export const heroImageAlt = "Jeep camp with a tent, solar panels and a portable power station at a pine forest campsite";
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;

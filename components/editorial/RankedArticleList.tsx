@@ -16,7 +16,7 @@ export function RankedArticleList({ id, title, articles }: { id: string; title: 
             <span aria-hidden className="w-6 shrink-0 text-center font-[family-name:var(--font-display)] text-2xl text-ink-secondary">
               {i + 1}
             </span>
-            <EditorialImage src={a.image} alt="" aspect="aspect-[4/3]" className="w-24 shrink-0" sizes="96px" />
+            <EditorialImage src={a.image} alt={a.imageAlt} aspect="aspect-[4/3]" className="w-24 shrink-0" sizes="96px" />
             <div className="min-w-0">
               <h3 className="text-[1.0625rem] leading-snug">
                 <Link

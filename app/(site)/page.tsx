@@ -21,7 +21,7 @@ export const revalidate = 86400;
 const OG_IMAGE = publicAsset("images/brand/og.jpg");
 
 export const metadata: Metadata = buildMetadata({
-  title: "Danny's Camping | Camping Gear Buying Guides",
+  title: "Danny’s Camping | Camping Gear Guides & Outdoor Advice",
   description:
     "Straight-talking camping gear guides: tents, sleep gear, camp kitchen, power, furniture and campsite essentials, compared on real specs.",
   path: "/",
@@ -64,6 +64,18 @@ export default async function HomePage() {
   return (
     <>
       <Wrap>
+        {/* 0 — Brand intro (homepage H1 is brand-level, not a single article keyword) */}
+        <section aria-labelledby="site-intro" className="border-b border-border pb-6 pt-6 sm:pt-8">
+          <p className="eyebrow">Danny’s Camping</p>
+          <h1 id="site-intro" className="mt-2 max-w-[22ch] text-[2.25rem] leading-[1.08] sm:text-5xl lg:text-[3.25rem]">
+            Practical Camping Gear Advice for Better Trips
+          </h1>
+          <p className="mt-4 max-w-[62ch] text-[1.0625rem] leading-relaxed sm:text-lg">
+            Danny’s Camping is a camping-focused publication run by Danny Walker. We help you choose tents, sleep systems, camp
+            kitchens, power and campsite gear on practical criteria and real trade-offs, not hype.
+          </p>
+        </section>
+
         {/* 1 — Featured story */}
         {featuredGuide && (
           <FeaturedStory

@@ -25,7 +25,7 @@ export function GuideQuickPicks({ products }: { products: GuideProduct[] }) {
       <ol className="divide-y divide-border border-y border-border lg:hidden">
         {products.map((p) => (
           <li key={p.id} className="flex gap-4 py-5">
-            <Thumb src={p.imageUrl} alt="" size="h-20 w-20" />
+            <Thumb src={p.imageUrl} alt={p.name} size="h-20 w-20" />
             <div className="min-w-0 flex-1">
               <p className="eyebrow">{p.badge}</p>
               <p className="mt-1 font-[family-name:var(--font-display)] text-[1.125rem] font-semibold leading-snug text-ink">
@@ -68,7 +68,7 @@ export function GuideQuickPicks({ products }: { products: GuideProduct[] }) {
               <tr key={p.id} className="align-top">
                 <th scope="row" className="py-4 pr-4 font-normal">
                   <a href={`#${p.id}`} className="group flex items-start gap-4 focus-ring">
-                    <Thumb src={p.imageUrl} alt="" size="h-16 w-16" />
+                    <Thumb src={p.imageUrl} alt={p.name} size="h-16 w-16" />
                     <span className="min-w-0">
                       <span className="eyebrow block">{p.badge}</span>
                       <span className="mt-1 block font-[family-name:var(--font-display)] text-[1.0625rem] font-semibold leading-snug text-ink group-hover:text-brand">

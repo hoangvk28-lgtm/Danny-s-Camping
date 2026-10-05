@@ -35,11 +35,11 @@ export function FeaturedStory(p: FeaturedStoryProps) {
 
       <div className="flex flex-col justify-center lg:py-6">
         <p className="eyebrow">{p.eyebrow}</p>
-        <h1 id="featured-story" className="mt-3 text-[2.25rem] leading-[1.08] sm:text-5xl lg:text-[3.25rem]">
+        <h2 id="featured-story" className="mt-3 text-[2rem] leading-[1.1] sm:text-[2.5rem] lg:text-[2.75rem]">
           <Link prefetch={false} href={p.href} className="text-ink transition-colors hover:text-brand focus-ring">
             {p.headline}
           </Link>
-        </h1>
+        </h2>
         <p className="mt-4 text-[1.0625rem] leading-relaxed sm:text-lg">{p.dek}</p>
         <div className="mt-6 flex flex-col gap-5 border-t border-border pt-5 sm:flex-row sm:items-center sm:justify-between">
           <ArticleMetadata author={p.byline} date={p.updated} datePrefix="Updated" readTime={p.readTime} />

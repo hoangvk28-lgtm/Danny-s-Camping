@@ -122,6 +122,25 @@ export default function HowWeReviewPage() {
         </p>
       </div>
 
+      {/* Five review pillars */}
+      <section className="mb-12" aria-labelledby="pillars">
+        <h2 id="pillars" className="text-2xl font-bold text-ink mb-4 tracking-tight">The Five Pillars Behind Every Guide</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {[
+            { title: "Context First", body: "We start from the trip, not the product: how many people, what season, car camping or backpacking, and what you need to power or carry." },
+            { title: "Real Trade-offs", body: "Every pick gives something up, whether that is weight, setup time, capacity or price. We name the trade-off instead of hiding it behind a “best overall” label." },
+            { title: "Verified Specs", body: "Capacities, temperature ratings, weights and dimensions come from manufacturer documentation and listings, and we flag numbers that do not add up." },
+            { title: "Practical Campsite Fit", body: "We ask whether gear packs into a real vehicle, sets up on uneven ground, and runs from the power you actually have at camp." },
+            { title: "Independent Recommendations", body: "Commission rates never decide what we recommend or how we rank it, and no brand pays for placement." },
+          ].map((p) => (
+            <div key={p.title} className="border border-border bg-surface p-5">
+              <h3 className="text-lg font-semibold text-ink">{p.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-secondary">{p.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Research process */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-ink mb-4 tracking-tight">Our Research Process</h2>

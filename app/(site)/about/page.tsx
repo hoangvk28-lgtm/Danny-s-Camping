@@ -33,6 +33,11 @@ export default function AboutPage() {
       <p className="mt-4 text-[1.125rem] leading-relaxed">
         {SITE_NAME} publishes buying guides for the tools and gear that keep a campsite comfortable, from tents and sleep gear to camp kitchens and power stations. Our aim is simple: help you choose the right thing the first time.
       </p>
+      <p className="mt-4 text-base leading-relaxed">
+        Danny’s Camping continues the spirit of the original Danny’s Camping Guide, with practical gear advice, buying guides, and camping
+        know-how. The site is run by <Link prefetch={false} href="/author/danny-walker">Danny Walker</Link>, founder and lead editor. At Danny’s Camping, we focus on
+        gear that makes sense at a real campsite, and we pay close attention to weight, setup, comfort, power needs, and storage, not just headline specs.
+      </p>
 
       <h2 className="mt-12 border-b border-ink pb-3 text-[1.75rem]">How we work</h2>
       <ol className="mt-4 divide-y divide-border">

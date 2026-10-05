@@ -50,7 +50,7 @@ export default async function AuthorPage({ params }: Props) {
         jobTitle: author.role,
         description: author.bio,
         url: `${SITE_URL}/author/${slug}`,
-        ...(author.avatarUrl ? { image: author.avatarUrl } : {}),
+        ...(author.avatarUrl ? { image: `${SITE_URL}${author.avatarUrl}` } : {}),
         sameAs: author.social.filter((s) => s.url).map((s) => s.url),
         knowsAbout: author.expertise,
         worksFor: { "@type": "Organization", name: "Danny’s Camping", url: SITE_URL },
@@ -152,7 +152,7 @@ export default async function AuthorPage({ params }: Props) {
 
         {/* ── About / Long Bio ─────────────────────────────────────────── */}
         <section className="mb-10">
-          <h2 className="text-xl font-bold text-ink mb-4">About This Team</h2>
+          <h2 className="text-xl font-bold text-ink mb-4">{author.isPerson ? `About ${author.name.split(" ")[0]}` : "About This Team"}</h2>
           <div className="prose prose-sm max-w-none text-ink-secondary leading-relaxed space-y-4">
             {author.longBio.split("\n\n").map((para, i) => (
               <p key={i}>{para}</p>
