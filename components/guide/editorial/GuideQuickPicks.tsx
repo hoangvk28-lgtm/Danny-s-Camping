@@ -7,8 +7,8 @@ const priceLinkClass =
 
 function Thumb({ src, alt, size }: { src: string; alt: string; size: string }) {
   return (
-    <div className={`relative shrink-0 overflow-hidden bg-surface ${size}`}>
-      {src && <SafeImage src={src} alt={alt} fill sizes="96px" className="object-contain p-1.5" unoptimized />}
+    <div className={`relative shrink-0 overflow-hidden rounded bg-[var(--color-product-tile)] ${size}`}>
+      {src && <SafeImage src={src} alt={alt} fill sizes="96px" className="object-contain p-1.5 mix-blend-multiply" unoptimized />}
     </div>
   );
 }

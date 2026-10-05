@@ -277,10 +277,10 @@ export function GuideProductPick({ product: p, products, total }: { product: Gui
             target="_blank"
             rel={AMAZON_REL}
             aria-label={`${p.name} on Amazon (opens in a new tab)`}
-            className="group relative block aspect-square overflow-hidden bg-surface focus-ring md:sticky md:top-28"
+            className="group relative block aspect-square overflow-hidden rounded-md bg-[var(--color-product-tile)] focus-ring md:sticky md:top-28"
           >
             {p.imageUrl && (
-              <SafeImage src={p.imageUrl} alt={p.name} fill sizes="(max-width: 768px) 100vw, 320px" className="object-contain p-6 transition-transform duration-300 group-hover:scale-[1.02]" unoptimized />
+              <SafeImage src={p.imageUrl} alt={p.name} fill sizes="(max-width: 768px) 100vw, 320px" className="object-contain p-8 mix-blend-multiply transition-transform duration-300 group-hover:scale-[1.03]" unoptimized />
             )}
           </a>
         </div>
