@@ -1,0 +1,15 @@
+# Danny's Camping
+
+> Straight-talking camping gear buying guides for US car campers, families, backpackers and overlanders, compared on published specs, fit and trade-offs. Site: https://www.dannycamping.com
+
+## Sections
+- Tents & Shelter: https://www.dannycamping.com/tents-shelter — tents, tarps, canopies and screen rooms
+- Sleep Gear: https://www.dannycamping.com/sleep-gear — sleeping bags, pads, cots and camp pillows
+- Camp Kitchen: https://www.dannycamping.com/camp-kitchen — stoves, cookware, coolers and coffee gear
+- Camp Power: https://www.dannycamping.com/camp-power — power stations, generators, solar and power banks
+- Camp Furniture: https://www.dannycamping.com/camp-furniture — chairs, tables, stools and hammocks
+- Campsite Gear: https://www.dannycamping.com/campsite-gear — lanterns, headlamps, GPS and campsite essentials
+
+## Policies
+- How we review: https://www.dannycamping.com/how-we-review
+- Affiliate disclosure: https://www.dannycamping.com/affiliate-disclosure (Amazon Associates; commissions never decide rankings)
