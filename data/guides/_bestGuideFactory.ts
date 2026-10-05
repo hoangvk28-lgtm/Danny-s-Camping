@@ -12,6 +12,8 @@ export interface BestGuideProduct {
   specList: { label: string; value: string }[];
   description: string;
   bestFor: string;
+  take?: string;
+  catch?: string;
   pros: string[];
   cons: string[];
 }

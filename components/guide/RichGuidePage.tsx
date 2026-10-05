@@ -29,6 +29,10 @@ export interface GuideProduct {
   bestFor: string;
   /** Optional; rendered as "Skip if" only when a guide's data provides it. */
   skipIf?: string | string[];
+  /** Optional short editorial verdict ("Danny’s Take"); derived from the description when absent. */
+  take?: string;
+  /** Optional meaningful trade-off ("The Catch"); derived from the review when absent. */
+  catch?: string;
   /** Optional one-sentence reason the pick is in the guide (Quick Picks). */
   summary?: string;
 }

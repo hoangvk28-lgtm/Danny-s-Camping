@@ -13,7 +13,7 @@ export const heroImageAlt = "Two people in folding chairs around a campfire in a
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -42,7 +42,9 @@ export const products: GuideProduct[] = [
       "Higher price than the quilted picks",
       "Recline feel is a matter of taste"
     ],
-    "bestFor": "Long sits and changing positions"
+    "bestFor": "Long sits and changing positions",
+    "take": "Best for campers who sit for hours and shift positions. The flexible recline follows your back without locking, and the 27.6 inch backrest supports the lower spine.",
+    "catch": "Costs more than the quilted picks, and the recline feel comes down to taste.",
   },
   {
     "id": "best-camping-chairs-with-lumbar-support-2",
@@ -69,7 +71,9 @@ export const products: GuideProduct[] = [
       "Capacity is not given in these product details",
       "No recline feature"
     ],
-    "bestFor": "Campers who lean on the arms"
+    "bestFor": "Campers who lean on the arms",
+    "take": "Best for campers who lean on the armrests. The padded arms, lumbar support and 38 by 7 by 7 inch packed size make it easy to carry.",
+    "catch": "No capacity is given in the product details, and it has no recline.",
   },
   {
     "id": "best-camping-chairs-with-lumbar-support-3",
@@ -96,7 +100,9 @@ export const products: GuideProduct[] = [
       "Capacity is not stated in these product details",
       "Moving parts add wear points"
     ],
-    "bestFor": "Adjustable back at moderate price"
+    "bestFor": "Adjustable back at moderate price",
+    "take": "Best for campers who want to change the backrest angle at a moderate price. It has a movable back, padded seat and two accessory bags.",
+    "catch": "The moving back adds wear points, and no capacity is stated.",
   },
   {
     "id": "best-camping-chairs-with-lumbar-support-4",
@@ -123,7 +129,9 @@ export const products: GuideProduct[] = [
       "Sits at a higher price than the quilted chair",
       "Wider frame takes more space"
     ],
-    "bestFor": "Cooler and lumbar together"
+    "bestFor": "Cooler and lumbar together",
+    "take": "Best for campers who want lumbar support and a built-in cooler together. The in-arm zippered insulated cooler and non-drooping armrests set it apart.",
+    "catch": "Higher price than the quilted chair, and the wide frame takes more space.",
   },
   {
     "id": "best-camping-chairs-with-lumbar-support-5",
@@ -150,7 +158,9 @@ export const products: GuideProduct[] = [
       "Rated only 350 pounds",
       "No cooler on the armrest"
     ],
-    "bestFor": "Lighter sitters on a budget"
+    "bestFor": "Lighter sitters on a budget",
+    "take": "Best for lighter sitters on a budget who still want a fixed lumbar support. It is the lowest priced pick here, with quilted padding and a 22 mm steel frame.",
+    "catch": "Rated only 350 lb and has no cooler on the armrest.",
   }
 ];
 

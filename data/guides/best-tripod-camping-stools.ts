@@ -13,7 +13,7 @@ export const heroImageAlt = "Two folding camping chairs beside a tent in a redwo
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -43,7 +43,9 @@ export const products: GuideProduct[] = [
       "Costs far more than basic tripod stools",
       "Sitting height varies by model, so pick carefully"
     ],
-    "bestFor": "Hunters, photographers, and anglers"
+    "bestFor": "Hunters, photographers, and anglers",
+    "take": "Best for hunters, photographers and anglers who want adjustable height. Telescopic aluminum legs set 18 to 30 inches.",
+    "catch": "Costs far more than basic tripod stools, and sitting height varies by model.",
   },
   {
     "id": "best-tripod-camping-stools-2",
@@ -71,7 +73,9 @@ export const products: GuideProduct[] = [
       "Seat is fixed and cannot adjust in height",
       "Fabric seat is basic for long sessions"
     ],
-    "bestFor": "Couples and older campers"
+    "bestFor": "Couples and older campers",
+    "take": "Best for couples and older campers who want an easier seat height. The 18.5 inch seat is 2.07 lb each in a 2 pack.",
+    "catch": "The seat height is fixed, and the fabric seat is basic for long sits.",
   },
   {
     "id": "best-tripod-camping-stools-3",
@@ -99,7 +103,9 @@ export const products: GuideProduct[] = [
       "Weight rating is not highlighted in the listing",
       "Lower seat is harder to stand up from"
     ],
-    "bestFor": "Budget two-stool setups"
+    "bestFor": "Budget two-stool setups",
+    "take": "Best for budget two-stool setups. 1.8 lb each with rubber anti-slip feet and a built-in shoulder strap.",
+    "catch": "The listing does not highlight a weight rating, and the lower seat is harder to stand up from.",
   },
   {
     "id": "best-tripod-camping-stools-4",
@@ -127,7 +133,9 @@ export const products: GuideProduct[] = [
       "Sold as a single stool, not a pair",
       "Capacity number is not stated in the listing"
     ],
-    "bestFor": "Hunting and fishing trips"
+    "bestFor": "Hunting and fishing trips",
+    "take": "Best for hunting and fishing trips. The powder-coated steel frame and 600D polyester seat weigh about 2 lb.",
+    "catch": "Sold as a single stool, and no capacity number is stated.",
   },
   {
     "id": "best-tripod-camping-stools-5",
@@ -155,7 +163,9 @@ export const products: GuideProduct[] = [
       "Capacity is lower than heavier-duty stools",
       "Fabric details are sparse in the listing"
     ],
-    "bestFor": "Lighter campers wanting a clear rating"
+    "bestFor": "Lighter campers wanting a clear rating",
+    "take": "Best for lighter campers who want a clear rating. 225 lb capacity, 1.7 lb and a steel frame at the lowest price.",
+    "catch": "Capacity is lower than heavier-duty stools, and fabric details are sparse.",
   }
 ];
 

@@ -13,7 +13,7 @@ export const heroImageAlt = "Two folding camping chairs beside a tent in a redwo
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -43,7 +43,9 @@ export const products: GuideProduct[] = [
       "Highest price because two chairs come in the box",
       "Large frame takes up trunk room"
     ],
-    "bestFor": "Couples and larger campers"
+    "bestFor": "Couples and larger campers",
+    "take": "Best for couples and larger campers who want deep cotton padding in a pair. Rated 500 lb per chair, with 2.5 lb of cotton fill.",
+    "catch": "Highest price here since two chairs are included, and the large frame needs trunk room.",
   },
   {
     "id": "best-padded-camping-chairs-2",
@@ -71,7 +73,9 @@ export const products: GuideProduct[] = [
       "Folded length is around 43 inches",
       "Rating is lower than the 500 lb Overmont"
     ],
-    "bestFor": "Campers who want storage"
+    "bestFor": "Campers who want storage",
+    "take": "Best for campers who want built-in storage. The armrest cooler bag and multiple pockets keep drinks and small gear within reach.",
+    "catch": "Folds to around 43 inches long, and the 450 lb rating trails the Overmont.",
   },
   {
     "id": "best-padded-camping-chairs-3",
@@ -99,7 +103,9 @@ export const products: GuideProduct[] = [
       "The listing does not state a weight rating",
       "Padded chair is bulkier than a mesh one"
     ],
-    "bestFor": "Sturdy frame seekers"
+    "bestFor": "Sturdy frame seekers",
+    "take": "Best for campers who care most about frame strength. The X-shaped steel frame is paired with 2.5 lb cotton padding and a backpack-style carry bag.",
+    "catch": "The listing gives no weight rating, and padded chairs pack bulkier than mesh ones.",
   },
   {
     "id": "best-padded-camping-chairs-4",
@@ -127,7 +133,9 @@ export const products: GuideProduct[] = [
       "400 lb rating is below the oversized pairs",
       "Less seat width than the XL chairs"
     ],
-    "bestFor": "Back support and lighter carry"
+    "bestFor": "Back support and lighter carry",
+    "take": "Best for campers who want lumbar support without a heavy carry. Each chair weighs 11 lb, has adjustable armrests and is rated 400 lb.",
+    "catch": "The 400 lb rating is below the oversized pairs and the seat is narrower than the XL chairs.",
   },
   {
     "id": "best-padded-camping-chairs-5",
@@ -155,7 +163,9 @@ export const products: GuideProduct[] = [
       "Sold as a single chair",
       "Very wide frame is bulky to transport"
     ],
-    "bestFor": "Broader builds"
+    "bestFor": "Broader builds",
+    "take": "Best for broader builds. The 38.6 by 23.1 inch seat and 22 mm X-frame tubes give the most seat room of the five.",
+    "catch": "Sold as a single chair, and the very wide frame is bulky to transport.",
   }
 ];
 

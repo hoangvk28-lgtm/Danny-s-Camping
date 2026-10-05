@@ -14,7 +14,7 @@ export const heroImageAlt = "Tent lit from inside in the middle of a forest at n
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -32,7 +32,9 @@ export const products: GuideProduct[] = [
     specs: ["Projector with wi-fi and bluetooth is equipped", "Built-in streaming media app", "Native 1080p resolution presents you with clear"],
     pros: ["Projector with wi-fi and bluetooth is equipped", "Built-in streaming media app", "Native 1080p resolution presents you with clear", "Is an amazing projector for iphone"],
     cons: ["Real battery life often runs shorter than advertised", "Brightness claims on tiny units tend to run high"],
-    bestFor: "buyers who want the strongest all-around pick in this comparison and would rather not keep shopping around",
+    bestFor: "campers wanting an easy phone-friendly movie night",
+    take: "Best for campers who want a simple movie night from a phone or streaming stick. Native 1080p, built-in apps, HDMI, USB and audio ports, and electric focus.",
+    catch: "Brightness claims on small projectors run high, so treat it as a dusk and dark projector.",
   },
   {
     id: "best-projectors-for-camping-2",
@@ -48,7 +50,9 @@ export const products: GuideProduct[] = [
     specs: ["P2p direct connection & no WiFi required", "Akiyo upgraded mini projector supports 5g/2.4g dual-screen", "Akiyo 2025 updated mini WiFi projector supports"],
     pros: ["P2p direct connection & no WiFi required", "Akiyo upgraded mini projector supports 5g/2.4g dual-screen", "Akiyo 2025 updated mini WiFi projector supports", "Akiyo 2025 upgrade projector features a 360°"],
     cons: ["Brightness claims on tiny units tend to run high", "Real battery life often runs shorter than advertised"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "campers without campground Wi-Fi who mirror from a phone",
+    take: "Best for campers without Wi-Fi at camp. P2P direct connection lets iOS and Android phones mirror without a router.",
+    catch: "Brightness claims on tiny units tend to run high.",
   },
   {
     id: "best-projectors-for-camping-3",
@@ -64,7 +68,9 @@ export const products: GuideProduct[] = [
     specs: ["For the best viewing experience, we recommend", "Enhanced clarity and brightness", "Versatile and portable design"],
     pros: ["For the best viewing experience, we recommend", "Enhanced clarity and brightness", "Versatile and portable design", "Built-in multiple apps"],
     cons: ["Real battery life often runs shorter than advertised", "Brightness claims on tiny units tend to run high"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "campers wanting a brighter picture for casual watching",
+    take: "Best for campers who want more light for casual viewing. 200 ANSI, a 2000:1 contrast ratio and Wi-Fi 6, with a 5.2 ft throw for an 80 inch picture.",
+    catch: "Real battery life often runs shorter than advertised.",
   },
   {
     id: "best-projectors-for-camping-4",
@@ -80,7 +86,9 @@ export const products: GuideProduct[] = [
     specs: ["Mini projector with WiFi and bluetooth", "Portable bluetooth projector", "180° adjustable stand, this 1080p projector allows"],
     pros: ["Mini projector with WiFi and bluetooth", "Portable bluetooth projector", "180° adjustable stand, this 1080p projector allows", "Auto vertical keystone correction"],
     cons: ["Brightness claims on tiny units tend to run high", "Real battery life often runs shorter than advertised"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "campers wanting quick setup and Bluetooth speaker pairing",
+    take: "Best for campers who want Bluetooth speaker pairing and quick setup. Dual-band Wi-Fi, auto vertical keystone and a 180 degree stand.",
+    catch: "Brightness claims on tiny units tend to run high.",
   },
   {
     id: "best-projectors-for-camping-5",
@@ -96,7 +104,9 @@ export const products: GuideProduct[] = [
     specs: ["High-definition resolution", "Eye-protective technology", "Screen mirroring"],
     pros: ["High-definition resolution", "Eye-protective technology", "Screen mirroring", "Two -way bluetooth"],
     cons: ["Real battery life often runs shorter than advertised", "Brightness claims on tiny units tend to run high"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "backpackers wanting a light, low-cost projector",
+    take: "Best for campers who want an easy-to-pack projector. At 0.7 kg it is light, with screen mirroring and two-way Bluetooth.",
+    catch: "Brightness claims run high on tiny units, so use it after dark.",
   },
   {
     id: "best-projectors-for-camping-6",
@@ -112,7 +122,9 @@ export const products: GuideProduct[] = [
     specs: ["150 ANSI native 1080p resolution: the mini", "Portable video mobile home cinema", "Auto keystone correction technology"],
     pros: ["150 ANSI native 1080p resolution: the mini", "Portable video mobile home cinema", "Auto keystone correction technology", "30,000-hour lifespan quiet and durable: portable projector"],
     cons: ["Brightness claims on tiny units tend to run high", "Real battery life often runs shorter than advertised"],
-    bestFor: "buyers who want a genuinely capable pick without paying for headroom you won't use",
+    bestFor: "budget campers wanting a large image on a tent wall or sheet",
+    take: "Best for budget buyers who want a bigger image. Auto keystone and a 26 to 120 inch image from 1 to 5 m cover tent walls and sheets.",
+    catch: "Brightness claims on tiny units tend to run high, and the listing says 720P support.",
   },
   {
     id: "best-projectors-for-camping-7",
@@ -128,7 +140,9 @@ export const products: GuideProduct[] = [
     specs: ["Roku account and internet connection are required", "America's #1 tv streaming platform, all top apps", "A simple and fast home screen"],
     pros: ["Roku account and internet connection are required", "America's #1 tv streaming platform, all top apps", "A simple and fast home screen", "1080p full HD resolution: enjoy your favorite"],
     cons: ["Real battery life often runs shorter than advertised", "Brightness claims on tiny units tend to run high"],
-    bestFor: "buyers who are willing to spend the most in this comparison for the fuller feature set that comes with it",
+    bestFor: "campers with a hotspot who want built-in Roku",
+    take: "Best for campers who want streaming apps without a phone. The built-in Roku interface gives a simple home screen and 1080p.",
+    catch: "Needs a Roku account and internet to activate, which many campsites lack.",
   },
   {
     id: "best-projectors-for-camping-8",
@@ -144,7 +158,9 @@ export const products: GuideProduct[] = [
     specs: ["Built-in WiFi & bluetooth projector with apps", "Supports 4K video playback via USB drive", "Activate the dynamic starry sky mode"],
     pros: ["Built-in WiFi & bluetooth projector with apps", "Supports 4K video playback via USB drive", "Activate the dynamic starry sky mode", "Auto keystone, dual focus & big screen projection"],
     cons: ["Brightness claims on tiny units tend to run high", "Real battery life often runs shorter than advertised"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "campers playing downloaded movies from a USB drive",
+    take: "Best for campers who like to play files from a USB drive. It supports 4K playback by USB and has dual-band Wi-Fi, auto keystone and a starry sky mode.",
+    catch: "Brightness claims on tiny units tend to run high.",
   }
 ];
 

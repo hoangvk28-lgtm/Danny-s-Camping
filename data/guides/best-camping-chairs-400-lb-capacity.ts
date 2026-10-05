@@ -13,7 +13,7 @@ export const heroImageAlt = "Two people in folding chairs around a campfire in a
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -42,7 +42,9 @@ export const products: GuideProduct[] = [
       "Bulky to carry compared with standard chairs",
       "Pair costs more than a single chair"
     ],
-    "bestFor": "Larger couples wanting padded comfort"
+    "bestFor": "Larger couples wanting padded comfort",
+    "take": "Best for larger couples who want padded comfort for two. You get a pair rated for 500 lb with lumbar support and a cooler bag, usually for less than two single chairs.",
+    "catch": "Bulky to carry compared with standard chairs, so it suits car camping, not hiking.",
   },
   {
     "id": "best-camping-chairs-400-lb-capacity-2",
@@ -69,7 +71,9 @@ export const products: GuideProduct[] = [
       "Heavy at nearly 17 pounds",
       "Hard armrests lack padding"
     ],
-    "bestFor": "Tall campers wanting a headrest"
+    "bestFor": "Tall campers wanting a headrest",
+    "take": "Best for tall campers who want a headrest and a sturdy 500 lb frame. The 42.5 inch chair height gives more head and shoulder support than the others here.",
+    "catch": "Nearly 17 lb, with armrests that are hard rather than padded.",
   },
   {
     "id": "best-camping-chairs-400-lb-capacity-3",
@@ -96,7 +100,9 @@ export const products: GuideProduct[] = [
       "Sold as a single chair",
       "Seat is narrower than the XL pairs"
     ],
-    "bestFor": "Solo campers wanting padding"
+    "bestFor": "Solo campers wanting padding",
+    "take": "Best for solo campers who want a padded high-back chair with a real 450 lb rating. It folds to about 40 by 7 by 7 inches at 11 lb, lighter than the Timber Ridge.",
+    "catch": "Sold as a single chair, with a seat narrower than the XL pairs.",
   },
   {
     "id": "best-camping-chairs-400-lb-capacity-4",
@@ -123,7 +129,9 @@ export const products: GuideProduct[] = [
       "No cooler pouch listed",
       "Fewer reinforcement details on the frame"
     ],
-    "bestFor": "Budget buyers needing 450 lbs"
+    "bestFor": "Budget buyers needing 450 lbs",
+    "take": "Best for budget buyers who still need a padded 450 lb chair. It is the lowest priced padded option here, at roughly 12 lb with side pockets and a storage bag.",
+    "catch": "No cooler pouch, and fewer frame reinforcement details than pricier picks.",
   },
   {
     "id": "best-camping-chairs-400-lb-capacity-5",
@@ -150,7 +158,9 @@ export const products: GuideProduct[] = [
       "Fewest extras of the five",
       "Lowest capacity in the group"
     ],
-    "bestFor": "Occasional lawn and beach use"
+    "bestFor": "Occasional lawn and beach use",
+    "take": "Best for occasional campers who need to clear the 400 lb line without paying for extras. The steel frame folds open with no assembly.",
+    "catch": "Basic: no cooler pockets, and the lowest capacity of the five.",
   }
 ];
 

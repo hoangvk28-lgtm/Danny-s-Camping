@@ -13,7 +13,7 @@ export const heroImageAlt = "Two people in folding chairs around a campfire in a
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -42,7 +42,9 @@ export const products: GuideProduct[] = [
       "Heavier to carry than the ultralight sets",
       "Bulky for backpacking trips"
     ],
-    "bestFor": "Couples wanting padded comfort and capacity"
+    "bestFor": "Couples wanting padded comfort and capacity",
+    "take": "Best for couples who want padded comfort and real capacity. Each chair is rated 450 lb with cushioned arms and its own carry bag.",
+    "catch": "Heavier than ultralight sets and too bulky for backpacking trips.",
   },
   {
     "id": "best-camping-chairs-2",
@@ -69,7 +71,9 @@ export const products: GuideProduct[] = [
       "250 lb rating limits larger sitters",
       "Padding is thinner than oversized chairs"
     ],
-    "bestFor": "Families who want two light chairs"
+    "bestFor": "Families who want two light chairs",
+    "take": "Best for families who want two light chairs with a cooler and lumbar support. Each weighs about 5 lb and the pair costs less than the Overmont set.",
+    "catch": "The 250 lb rating limits larger sitters and the padding is thinner.",
   },
   {
     "id": "best-camping-chairs-3",
@@ -96,7 +100,9 @@ export const products: GuideProduct[] = [
       "Sold as a single chair, not a pair",
       "Capacity is not stated in the listing product details"
     ],
-    "bestFor": "Solo campers at the firepit"
+    "bestFor": "Solo campers at the firepit",
+    "take": "Best for solo campers at the firepit who want a familiar cushioned chair. It has a built-in 4 can cooler, a mesh cup holder and side pockets.",
+    "catch": "Single chair only, and no capacity is stated in the listing.",
   },
   {
     "id": "best-camping-chairs-4",
@@ -123,7 +129,9 @@ export const products: GuideProduct[] = [
       "No cooler or large storage pockets",
       "250 lb rating is limited for bigger sitters"
     ],
-    "bestFor": "Walk in sites and festivals"
+    "bestFor": "Walk in sites and festivals",
+    "take": "Best for hikers, festival-goers and walk-in sites. At 3.6 lb per chair with individual carry bags, it is the lightest and cheapest per chair here.",
+    "catch": "Rated 250 lb, with no cooler or large storage pockets.",
   },
   {
     "id": "best-camping-chairs-5",
@@ -150,7 +158,9 @@ export const products: GuideProduct[] = [
       "Single chair, so duplicates add cost",
       "Less padding than the oversized options"
     ],
-    "bestFor": "Guest chairs on a tight budget"
+    "bestFor": "Guest chairs on a tight budget",
+    "take": "Best for budget campers who need an extra guest chair. It has a cooler pouch, cup holder and shoulder-strap carry bag at the lowest single-chair price.",
+    "catch": "Single chair, so extras add up, and padding is thinner than the oversized picks.",
   }
 ];
 

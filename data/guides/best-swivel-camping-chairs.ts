@@ -13,7 +13,7 @@ export const heroImageAlt = "Two folding camping chairs beside a tent in a redwo
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -43,7 +43,9 @@ export const products: GuideProduct[] = [
       "Swivel is 180 degrees, not full 360",
       "Small seat suits lighter loads"
     ],
-    "bestFor": "Backpackers"
+    "bestFor": "backpackers wanting a swivel chair that folds small",
+    "take": "Best for backpackers who want a swivel that returns to center. 180 degree swivel, 5 lb, folds to 14.5 inches, with adjustable height.",
+    "catch": "Swivel is 180 degrees, not full 360, and the small seat suits lighter loads.",
   },
   {
     "id": "best-swivel-camping-chairs-2",
@@ -71,7 +73,9 @@ export const products: GuideProduct[] = [
       "Compact seat sits low and small",
       "Weight rating is not stated"
     ],
-    "bestFor": "Hikers"
+    "bestFor": "hikers wanting the lightest swivel chair",
+    "take": "Best for hikers counting ounces. 3.5 lb with a 360 degree swivel and aluminum frame.",
+    "catch": "The seat sits low and small, and the weight rating is not stated.",
   },
   {
     "id": "best-swivel-camping-chairs-3",
@@ -99,7 +103,9 @@ export const products: GuideProduct[] = [
       "Slightly heavier than the Feelnais",
       "The listing does not state a capacity"
     ],
-    "bestFor": "Quick stops"
+    "bestFor": "quick stops and day trips",
+    "take": "Best for quick stops. 360 degree swivel at 3.8 lb, folding to 15.16 inches.",
+    "catch": "Slightly heavier than the Feelnais, and the listing gives no capacity.",
   },
   {
     "id": "best-swivel-camping-chairs-4",
@@ -127,7 +133,9 @@ export const products: GuideProduct[] = [
       "Heavier than the aluminum swivel chairs",
       "Not suited to long hikes"
     ],
-    "bestFor": "Car camping"
+    "bestFor": "car campers wanting a swivel chair with a cup holder",
+    "take": "Best for car campers who want a cup holder and carry bag. 360 degree rotation on an iron pipe frame.",
+    "catch": "Heavier than aluminum swivel chairs and not suited to long hikes.",
   },
   {
     "id": "best-swivel-camping-chairs-5",
@@ -155,7 +163,9 @@ export const products: GuideProduct[] = [
       "Iron frame adds weight",
       "Fewer adjustments than the TCEK"
     ],
-    "bestFor": "Budget camping"
+    "bestFor": "budget campers wanting a swivel chair with a high back",
+    "take": "Best for budget campers who want a high back and pillow. 360 degree swivel base that folds to 17 by 7.5 by 6.7 inches.",
+    "catch": "The iron frame adds weight, and it has fewer adjustments than the TCEK.",
   }
 ];
 

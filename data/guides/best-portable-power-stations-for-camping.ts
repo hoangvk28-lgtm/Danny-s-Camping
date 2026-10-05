@@ -14,7 +14,7 @@ export const heroImageAlt = "Jeep camp with a tent, solar panels and a portable 
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -32,7 +32,9 @@ export const products: GuideProduct[] = [
     specs: ["292Wh, 300W (600W surge), 7.5 lbs","11+ year life, 4000+ cycles","6 devices, USB-C PD 100W"],
     pros: ["7.5 lbs is documented 17% lighter than the industry average","11+ year service life is genuinely long for this capacity","USB-C PD 100W charges devices without a separate adapter"],
     cons: ["300W rated output limits higher-draw appliances","No included solar panel for the documented charge times"],
-    bestFor: "buyers prioritizing 292wh, 300w (600w surge), 7.5 lbs",
+    bestFor: "campers wanting a light all-rounder for phones, laptops and lights",
+    take: "Best for most campers who want a light, capable all-rounder. 292Wh and 300W at 7.5 lb with USB-C 100W PD cover phones, laptops and lights.",
+    catch: "300W limits higher-draw appliances, and no solar panel is included.",
   },
   {
     id: "best-portable-power-stations-for-camping-2",
@@ -48,7 +50,9 @@ export const products: GuideProduct[] = [
     specs: ["1070Wh, 1500W AC, 3000W surge","1hr fast charge via app","23.8 lbs, foldable handle"],
     pros: ["1-hour emergency charging is a genuine app-enabled feature","70% capacity retained after 4000 cycles is documented","23.8 lbs keeps this genuinely easy to carry"],
     cons: ["Only compatible with Jackery's own solar panels","1-hour charging needs the app enabled every time"],
-    bestFor: "buyers prioritizing 1070wh, 1500w ac, 3000w surge",
+    bestFor: "campers running a fridge or small appliances",
+    take: "Best for campers who want to run a fridge or small appliances. 1,070Wh, 1,500W and 3,000W surge, with a one-hour fast charge through the app.",
+    catch: "Only works with Jackery's own solar panels, and fast charging needs the app each time.",
   },
   {
     id: "best-portable-power-stations-for-camping-3",
@@ -64,7 +68,9 @@ export const products: GuideProduct[] = [
     specs: ["Includes 60W solar panel, 20.5% efficiency","2x 300W AC outlets","Built-in BMS + auto cooling fan"],
     pros: ["Includes a genuine 60W solar panel, not sold separately","20.5% panel efficiency beats typical polycrystalline panels","Built-in SOS flashlight adds real emergency utility"],
     cons: ["Devices over 300W risk damaging the unit per the listing","Manufacturer specifically warns against full battery depletion"],
-    bestFor: "buyers prioritizing includes 60w solar panel, 20.5% efficiency",
+    bestFor: "campers wanting solar included at a low price",
+    take: "Best for campers who want solar included at a low price. The 60W panel and 300W station arrive together, with two AC outlets.",
+    catch: "Loads over 300W risk damaging it, and the maker warns against fully draining the battery.",
   },
   {
     id: "best-portable-power-stations-for-camping-4",
@@ -80,7 +86,9 @@ export const products: GuideProduct[] = [
     specs: ["288Wh, 600W (1500W Power Lifting)","9.4 lbs, 4.5W standby draw","8 charging modes, 45-min 0-80%"],
     pros: ["600W continuous is genuinely double typical entry-level output","4.5W standby draw is documented 50% lower than prior gen","9.4 lbs makes this genuinely grab-and-go for storm prep"],
     cons: ["1500W Power Lifting Mode likely has real time limits","288Wh capacity limits sustained runtime for larger devices"],
-    bestFor: "buyers prioritizing 288wh, 600w (1500w power lifting)",
+    bestFor: "campers wanting more output from a small battery",
+    take: "Best for campers who want more output from a small battery. 600W continuous with a 1,500W power-lifting mode in a 288Wh, 9.4 lb unit that charges 0-80% in about 45 minutes.",
+    catch: "288Wh limits sustained runtime, and the 1,500W mode likely has time limits.",
   },
   {
     id: "best-portable-power-stations-for-camping-5",
@@ -96,7 +104,9 @@ export const products: GuideProduct[] = [
     specs: ["296Wh, 300W AC, includes 60W solar panel","23% panel efficiency, folds compact","6.5 lbs, 8 output ports"],
     pros: ["Includes a genuine 60W panel rated at 23% efficiency","Panel folds to a compact 10.2x9.4x1.2in for storage","6.5 lbs keeps the whole kit genuinely portable"],
     cons: ["Only 1000 rated charge cycles trails LiFePO4-focused rivals","Full charge takes 3 hours even at maximum input speed"],
-    bestFor: "buyers prioritizing 296wh, 300w ac, includes 60w solar panel",
+    bestFor: "campers wanting a solar kit with many ports",
+    take: "Best for campers who want a solar kit with many ports. 296Wh, a 60W foldable panel and eight outputs in a 6.5 lb station.",
+    catch: "Rated for only 1,000 cycles, and a full charge takes about 3 hours at maximum input.",
   },
   {
     id: "best-portable-power-stations-for-camping-6",
@@ -112,7 +122,9 @@ export const products: GuideProduct[] = [
     specs: ["292Wh, 300W AC, includes 40W solar panel","11+ year life, 4000+ cycles","80% in 7.5hr with bundled panel"],
     pros: ["Bundles a genuine 40W panel, a real savings over buying separately","11+ year service life is genuinely long for this capacity","6 devices charge simultaneously across 5 port types"],
     cons: ["Station and panel ship separately per the listing","40W panel charges meaningfully slower than the 100W option"],
-    bestFor: "buyers prioritizing 292wh, 300w ac, includes 40w solar panel",
+    bestFor: "campers wanting a long-life battery with a panel bundled",
+    take: "Best for campers who want Jackery's 4,000 cycle battery with a panel bundled. The 40W panel brings it to 80% in about 7.5 hours.",
+    catch: "Station and panel ship separately, and 40W recharges slowly.",
   },
   {
     id: "best-portable-power-stations-for-camping-7",
@@ -128,7 +140,9 @@ export const products: GuideProduct[] = [
     specs: ["237Wh, includes 60W solar panel (21.5-23.5% eff.)","300W AC rated, 375W peak","3-mode LED flashlight (SOS included)"],
     pros: ["Bundled 60W panel rated 21.5-23.5% efficiency is genuinely solid","Supports both 2-prong and 3-prong AC plugs directly","Smart chip in the panel optimizes charging speed automatically"],
     cons: ["Devices over 300W risk damaging the unit per the listing","300W rated output limits higher-draw appliance use"],
-    bestFor: "buyers prioritizing 237wh, includes 60w solar panel (21.5-23.5% eff.)",
+    bestFor: "budget buyers wanting solar included",
+    take: "Best for budget buyers who want solar included. 237Wh, a 60W panel and a 3-mode flashlight with SOS cover basic camp needs.",
+    catch: "Loads over 300W risk damaging it, and 237Wh is the smallest battery in the group.",
   }
 ];
 

@@ -13,7 +13,7 @@ export const heroImageAlt = "Two people in folding chairs around a campfire in a
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -43,7 +43,9 @@ export const products: GuideProduct[] = [
       "Far heavier and pricier than folding chairs",
       "Not designed to fold or carry to campsites"
     ],
-    "bestFor": "Permanent indoor lumbar support"
+    "bestFor": "Permanent indoor lumbar support",
+    "take": "Best for a permanent indoor setup, not camping. Triple-motor adjustment with top grain leather and UL-certified parts lets you tune the lumbar curve.",
+    "catch": "Far heavier and pricier than folding chairs, and it does not fold or carry to campsites.",
   },
   {
     "id": "best-zero-gravity-chair-with-lumbar-support-2",
@@ -71,7 +73,9 @@ export const products: GuideProduct[] = [
       "No dedicated lumbar pad is described",
       "At 33 inches wide it fills a storage bay"
     ],
-    "bestFor": "Larger campers wanting thick padding"
+    "bestFor": "Larger campers wanting thick padding",
+    "take": "Best for larger campers who want thick padding. 500 lb capacity, 4 inch padding and a 4th-gen aluminum lock.",
+    "catch": "No dedicated lumbar pad is described, and at 33 inches wide it fills a storage bay.",
   },
   {
     "id": "best-zero-gravity-chair-with-lumbar-support-3",
@@ -99,7 +103,9 @@ export const products: GuideProduct[] = [
       "No lumbar-specific shaping is mentioned",
       "29 inches is narrower than the XXL chairs"
     ],
-    "bestFor": "Mid-size campers on a budget"
+    "bestFor": "Mid-size campers on a budget",
+    "take": "Best for value-minded campers. 440 lb capacity, a removable breathable cushion and dual-layer elastic ropes in a 29 inch width.",
+    "catch": "No lumbar-specific shaping is mentioned, and it is narrower than the XXL chairs.",
   },
   {
     "id": "best-zero-gravity-chair-with-lumbar-support-4",
@@ -127,7 +133,9 @@ export const products: GuideProduct[] = [
       "Heating needs a power source at camp",
       "Thinner tube wall than the Suteck frame"
     ],
-    "bestFor": "Cool-weather campers wanting warmth"
+    "bestFor": "Cool-weather campers wanting warmth",
+    "take": "Best for cool-weather campers. Built-in heating pads, a 33 inch XXL width and a third-gen aluminum lock.",
+    "catch": "Heating needs a power source at camp, and the tube wall is thinner than the Suteck frame.",
   },
   {
     "id": "best-zero-gravity-chair-with-lumbar-support-5",
@@ -155,7 +163,9 @@ export const products: GuideProduct[] = [
       "No lumbar adjustment of any kind",
       "Cup holder pillow is a basic accessory"
     ],
-    "bestFor": "Budget buyers wanting basic comfort"
+    "bestFor": "Budget buyers wanting basic comfort",
+    "take": "Best for budget buyers who want basic comfort. 440 lb capacity, a 90 to 170 degree recline and replaceable elastic cords.",
+    "catch": "No lumbar adjustment of any kind, and the cup holder pillow is a basic accessory.",
   }
 ];
 

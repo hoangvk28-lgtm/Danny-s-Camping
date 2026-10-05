@@ -82,7 +82,7 @@ for (const m of mods) {
       id: `${s}-${i + 1}`, rank: i + 1, badge: p.badge, name: p.name,
       price: "$" + Number(raw.price).toFixed(2), rating: null, reviews: null,
       imageUrl: raw.img, amazonUrl: `https://www.amazon.com/dp/${p.asin}?tag=${TAG}`,
-      description: p.d.join("\n\n"), specs: p.specs, pros: p.pros, cons: p.cons, bestFor: p.bestFor,
+      description: p.d.join("\n\n"), specs: p.specs, pros: p.pros, cons: p.cons, bestFor: p.bestFor, ...(p.take ? { take: p.take } : {}), ...(p.catch !== undefined ? { catch: p.catch } : {}),
     };
   }).filter(Boolean);
 
@@ -113,6 +113,7 @@ export const heroImage = ${JSON.stringify(heroImage)};
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
   imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  take?: string; catch?: string;
 }
 
 export const products: GuideProduct[] = ${JSON.stringify(products, null, 2)};

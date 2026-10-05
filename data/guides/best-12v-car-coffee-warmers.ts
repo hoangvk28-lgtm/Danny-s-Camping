@@ -14,7 +14,7 @@ export const heroImageAlt = "Single-burner camp stove brewing coffee on a rivers
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -32,7 +32,9 @@ export const products: GuideProduct[] = [
     specs: ["Precise temperature control for your drinking needs", "Built for the road, warmth wherever you go", "Lingyoky portable car kettle features a large lcd screen"],
     pros: ["Precise temperature control for your drinking needs", "Built for the road, warmth wherever you go", "Lingyoky portable car kettle features a large lcd screen", "12v/24v portable water boiler is built with an inner tank made of food-grade 304 stainless steel"],
     cons: ["Insulated or double-walled mugs won't heat well on any plate", "USB power runs cooler than a standard wall-outlet warmer"],
-    bestFor: "buyers who want the strongest all-around pick in this comparison and would rather not keep shopping around",
+    bestFor: "commuters wanting a temperature-controlled 12V/24V kettle",
+    take: "Best for commuters who want a real kettle with temperature control and a wide 12V to 24V range, so it works in sedans, trucks and RVs alike.",
+    catch: "Needs a lighter-socket plug and holds only 13.5 oz, so it suits one cup rather than a group.",
   },
   {
     id: "best-12v-car-coffee-warmers-2",
@@ -48,7 +50,9 @@ export const products: GuideProduct[] = [
     specs: ["Constant temperature technology - 12v travel kettle mug is only an insulated heating cup", "High quality car kettle - the heating cup’s outer", "Safe to use - the electric kettle cover"],
     pros: ["Constant temperature technology - 12v travel kettle mug is only an insulated heating cup", "High quality car kettle - the heating cup’s outer", "Safe to use - the electric kettle cover", "Universal vehicle design - the electronic heated travel mug with ergonomically design"],
     cons: ["USB power runs cooler than a standard wall-outlet warmer", "Insulated or double-walled mugs won't heat well on any plate"],
-    bestFor: "buyers who want a genuinely capable pick without paying for headroom you won't use",
+    bestFor: "budget drivers who only need warm, not boiling, water",
+    take: "Best for road trippers who just want warm water cheaply. It holds about 60C and will not boil, which is fine for tea, instant coffee and baby milk.",
+    catch: "It heats to 60C only and cannot reach a boil.",
   },
   {
     id: "best-12v-car-coffee-warmers-3",
@@ -64,7 +68,9 @@ export const products: GuideProduct[] = [
     specs: ["Fvpe car kettle features automatic 12v/24v voltage recognition for plug-and-play operation", "Travel electric kettle comes with boiling and heat preservation functions", "Compact car electric kettle is equipped with responsive touch buttons for effortless daily operation"],
     pros: ["Fvpe car kettle features automatic 12v/24v voltage recognition for plug-and-play operation", "Travel electric kettle comes with boiling and heat preservation functions", "Compact car electric kettle is equipped with responsive touch buttons for effortless daily operation", "12v electric water boiler is fitted with a backlit LED digital display"],
     cons: ["Insulated or double-walled mugs won't heat well on any plate", "USB power runs cooler than a standard wall-outlet warmer"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "drivers who want boil plus adjustable keep-warm",
+    take: "Best for drivers who want both boil and keep-warm modes. Adjustable temperature from 86F to 203F lets you do tea, coffee or formula from one 450 ml kettle.",
+    catch: "Pricier than the simple heating cups, and the 12V draw is best run with the engine on.",
   },
   {
     id: "best-12v-car-coffee-warmers-4",
@@ -80,7 +86,9 @@ export const products: GuideProduct[] = [
     specs: ["Travel tea kettle is made with a thick", "14Oz wide voltage car electric kettle", "You can quickly choose car kettle temperature from 113~131~149~167~185 to 212°f"],
     pros: ["Travel tea kettle is made with a thick", "14Oz wide voltage car electric kettle", "You can quickly choose car kettle temperature from 113~131~149~167~185 to 212°f", "Car kettle will automatically shuts off when a preset temperature point is reached"],
     cons: ["USB power runs cooler than a standard wall-outlet warmer", "Insulated or double-walled mugs won't heat well on any plate"],
-    bestFor: "buyers who are willing to spend the most in this comparison for the fuller feature set that comes with it",
+    bestFor: "drivers who want an insulated steel tumbler with a voltage display",
+    take: "Best for people who want a vacuum insulated steel tumbler with a voltage and temperature readout. The 304 stainless shell stays safer to touch than plastic cups.",
+    catch: "Highest price in this group, and it is more tumbler than quick-boil kettle.",
   },
   {
     id: "best-12v-car-coffee-warmers-5",
@@ -96,7 +104,9 @@ export const products: GuideProduct[] = [
     specs: ["12V direct connection design", "Non-boiling point heating", "350Ml"],
     pros: ["12V direct connection design", "Non-boiling point heating", "350Ml", "Multi-purpose use"],
     cons: ["Insulated or double-walled mugs won't heat well on any plate", "USB power runs cooler than a standard wall-outlet warmer"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "solo commuters wanting a plug-in cup with two size options",
+    take: "Best for solo commuters who want a plug-straight-in heating cup with two sizes. Pick 350 ml for long drives and 150 ml for a short warm-up of milk.",
+    catch: "The heating cup format is slower than a true kettle, so plan for a wait.",
   },
   {
     id: "best-12v-car-coffee-warmers-6",
@@ -112,7 +122,9 @@ export const products: GuideProduct[] = [
     specs: ["Car electric cup", "High quality", "Leak-proof and non-slip design"],
     pros: ["Car electric cup", "High quality", "Leak-proof and non-slip design", "Large capacity electric cup"],
     cons: ["USB power runs cooler than a standard wall-outlet warmer", "Insulated or double-walled mugs won't heat well on any plate"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "drivers wanting a basic heated mug at a low price",
+    take: "Best for drivers who want the simplest lighter-socket heated mug at a low price. The indicator light shows when it is working and the silicone lid seals well.",
+    catch: "Basic feature set with no temperature control or boil setting.",
   }
 ];
 

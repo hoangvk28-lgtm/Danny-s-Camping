@@ -13,7 +13,7 @@ export const heroImageAlt = "Two folding camping chairs beside a tent in a redwo
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -43,7 +43,9 @@ export const products: GuideProduct[] = [
       "Costs the most here since two chairs are included",
       "Aluminum and steel frame still needs a flat, firm spot"
     ],
-    "bestFor": "Pairs who want matching seats"
+    "bestFor": "Pairs who want matching seats",
+    "take": "Best for pairs who want matching seats. The set outfits two people with 440 lb rated chairs, each with a removable footrest and adjustable back.",
+    "catch": "Costs the most here because it includes two chairs, and it still needs flat, firm ground.",
   },
   {
     "id": "best-hammock-camping-chairs-2",
@@ -71,7 +73,9 @@ export const products: GuideProduct[] = [
       "Strap adjustment takes a minute to dial in",
       "Single chair only, no pair option"
     ],
-    "bestFor": "Nap and reading breaks"
+    "bestFor": "Nap and reading breaks",
+    "take": "Best for nap and reading breaks. The detachable footrest lets you stretch out, and the 6061 aluminum frame keeps it portable.",
+    "catch": "Strap adjustment takes a minute to dial in, and there is no pair option.",
   },
   {
     "id": "best-hammock-camping-chairs-3",
@@ -99,7 +103,9 @@ export const products: GuideProduct[] = [
       "No footrest, so legs stay on the ground",
       "Check the lock every time before sitting"
     ],
-    "bestFor": "Larger campers who want stability"
+    "bestFor": "Larger campers who want stability",
+    "take": "Best for larger campers who want a planted feel. The triangular cross-frame and 31.5 inch seat make it stable, rated 400 lb.",
+    "catch": "No footrest, so your legs stay on the ground, and the lock needs a check each time.",
   },
   {
     "id": "best-hammock-camping-chairs-4",
@@ -127,7 +133,9 @@ export const products: GuideProduct[] = [
       "Wide frame takes up more trunk space",
       "No removable footrest listed"
     ],
-    "bestFor": "Lounge comfort with storage"
+    "bestFor": "Lounge comfort with storage",
+    "take": "Best for campers who want lounge comfort with storage. It adds a cup holder, side pocket and non-slip pads, with an auto-locking frame that clicks when secure.",
+    "catch": "The wide frame takes trunk space, and there is no removable footrest.",
   },
   {
     "id": "best-hammock-camping-chairs-5",
@@ -155,7 +163,9 @@ export const products: GuideProduct[] = [
       "350 lb rating is the lowest of the five",
       "Heavier than the aluminum Romswi chairs per seat"
     ],
-    "bestFor": "Budget weekend camping"
+    "bestFor": "Budget weekend camping",
+    "take": "Best for budget weekend camping. It includes a pillow and carry bag and unfolds in seconds, at the lowest price of the five.",
+    "catch": "Lowest rating here at 350 lb, and heavier per seat than the aluminum Romswi.",
   }
 ];
 

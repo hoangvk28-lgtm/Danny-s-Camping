@@ -14,7 +14,7 @@ export const heroImageAlt = "Jeep camp with a tent, solar panels and a portable 
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -32,7 +32,9 @@ export const products: GuideProduct[] = [
     specs: ["At only 7.5 lbs", "Versatile power for 6 devices", "Built to last"],
     pros: ["At only 7.5 lbs", "Versatile power for 6 devices", "Built to last", "Fast solar charging"],
     cons: ["Capacity above 100Wh needs airline approval or can't fly at all", "Real-world output is usually lower than the advertised mAh figure"],
-    bestFor: "buyers who want the strongest all-around pick in this comparison and would rather not keep shopping around",
+    bestFor: "campers wanting one battery for phones, laptops and fans",
+    take: "Best for campers who want one battery for phones, laptops and a small fan. 292Wh, 6 outputs and 100W USB-C PD at 7.5 lb.",
+    catch: "Above 100Wh it cannot go on a flight, and it is bigger than a typical power bank.",
   },
   {
     id: "best-power-banks-for-camping-2",
@@ -48,7 +50,9 @@ export const products: GuideProduct[] = [
     specs: ["Brand-oriented and outdoor charger pro", "Leading USB c input output tech and wireless", "Blavor uses the safer lithium-cobalt battery"],
     pros: ["Brand-oriented and outdoor charger pro", "Leading USB c input output tech and wireless", "Blavor uses the safer lithium-cobalt battery", "Safe material and comfortable design"],
     cons: ["Real-world output is usually lower than the advertised mAh figure", "Capacity above 100Wh needs airline approval or can't fly at all"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "hikers wanting a pocketable solar bank with wireless charging",
+    take: "Best for hikers who want a pocketable bank with wireless charging and a solar trickle. The 10,000mAh pack has 20W USB-C output.",
+    catch: "Real output is lower than the advertised mAh, and solar recharge is slow.",
   },
   {
     id: "best-power-banks-for-camping-3",
@@ -64,7 +68,9 @@ export const products: GuideProduct[] = [
     specs: ["Built for extended use", "Triple device charging with USB-a & USB-C", "Fast charging & 10+ device charges: this portable charger delivers fast"],
     pros: ["Built for extended use", "Triple device charging with USB-a & USB-C", "Fast charging & 10+ device charges: this portable charger delivers fast", "LED display & multi-layer safety protection"],
     cons: ["Capacity above 100Wh needs airline approval or can't fly at all", "Real-world output is usually lower than the advertised mAh figure"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "groups needing many phone charges per trip",
+    take: "Best for campers who want lots of phone charges. 56,800mAh with 2 USB-A and a two-way USB-C port charges 3 devices at once.",
+    catch: "Real-world output is lower than the mAh figure, and a pack this big is heavy.",
   },
   {
     id: "best-power-banks-for-camping-4",
@@ -80,7 +86,9 @@ export const products: GuideProduct[] = [
     specs: ["Slim & pocketable", "Dual input/output (ac + dc)", "Unique fast charging technology, the portable generator can be charged from 0-80% just in 1.5hrs"],
     pros: ["Slim & pocketable", "Dual input/output (ac + dc)", "Unique fast charging technology, the portable generator can be charged from 0-80% just in 1.5hrs", "Experience silent, fanless operation perfect for sleeping, working, or camping"],
     cons: ["Real-world output is usually lower than the advertised mAh figure", "Capacity above 100Wh needs airline approval or can't fly at all"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "campers wanting silent AC output in a slim pack",
+    take: "Best for campers who want AC and DC output in a slim pack. 89.6Wh LiFePO4 at 2.54 lb, fanless and rated for 3,500+ cycles.",
+    catch: "89.6Wh will not run a fridge or CPAP all night.",
   },
   {
     id: "best-power-banks-for-camping-5",
@@ -96,7 +104,9 @@ export const products: GuideProduct[] = [
     specs: ["Huge capacity 60000mAh power bank: zzi portable charger", "Charge 5 devices simultaneously", "22.5W super fast charging & battery protection: the battery"],
     pros: ["Huge capacity 60000mAh power bank: zzi portable charger", "Charge 5 devices simultaneously", "22.5W super fast charging & battery protection: the battery", "Massive 60,000mAh capacity, zzi battery bank provides long-lasting power without feeling bulky"],
     cons: ["Capacity above 100Wh needs airline approval or can't fly at all", "Real-world output is usually lower than the advertised mAh figure"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "long trips without recharge access",
+    take: "Best for long trips without a recharge. 60,000mAh claims about 10 iPhone 15 charges and has 22.5W fast charging for 5 devices.",
+    catch: "Real output trails the printed mAh, and the weight adds up in a daypack.",
   },
   {
     id: "best-power-banks-for-camping-6",
@@ -112,7 +122,9 @@ export const products: GuideProduct[] = [
     specs: ["Enginstar portable power station with ETL certification", "Built with two 110v pure sine wave ac outlets", "Enginstar camping power station with a advanced battery management system of voltage control and temperature control"],
     pros: ["Enginstar portable power station with ETL certification", "Built with two 110v pure sine wave ac outlets", "Enginstar camping power station with a advanced battery management system of voltage control and temperature control", "3 Charging ways power supply"],
     cons: ["Real-world output is usually lower than the advertised mAh figure", "Capacity above 100Wh needs airline approval or can't fly at all"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "campers wanting AC outlets for small appliances",
+    take: "Best for campers who want two pure sine wave AC outlets at a mid price. 296Wh, ETL certification and 3 charging options.",
+    catch: "The solar panel is not included, and above 100Wh it cannot fly.",
   },
   {
     id: "best-power-banks-for-camping-7",
@@ -128,7 +140,9 @@ export const products: GuideProduct[] = [
     specs: ["Up to 35-hour fridge backup", "10,000-Cycle lfp battery: powered by 314ah lfp cells, s2000 has a 15-year lifespan", "Smallest and lightest 2kwh power station"],
     pros: ["Up to 35-hour fridge backup", "10,000-Cycle lfp battery: powered by 314ah lfp cells, s2000 has a 15-year lifespan", "Smallest and lightest 2kwh power station", "Powers 99% of home essentials"],
     cons: ["Capacity above 100Wh needs airline approval or can't fly at all", "Real-world output is usually lower than the advertised mAh figure"],
-    bestFor: "buyers who are willing to spend the most in this comparison for the fuller feature set that comes with it",
+    bestFor: "RV and van campers wanting multi-day fridge backup",
+    take: "Best for campers who want fridge backup for days. Anker's 2kWh LFP S2000 claims up to 35 hours on a fridge and 10,000 cycles.",
+    catch: "The highest price here by far, and far more capacity than most trips need.",
   },
   {
     id: "best-power-banks-for-camping-8",
@@ -144,7 +158,9 @@ export const products: GuideProduct[] = [
     specs: ["Simultaneously charge 6 devices", "High battery capacity and fast charging", "7 Ingenious accessory functions"],
     pros: ["Simultaneously charge 6 devices", "High battery capacity and fast charging", "7 Ingenious accessory functions", "Durable and adventure-ready"],
     cons: ["Real-world output is usually lower than the advertised mAh figure", "Capacity above 100Wh needs airline approval or can't fly at all"],
-    bestFor: "buyers who want a genuine alternative to the top pick with a different tradeoff worth comparing directly",
+    bestFor: "weekend campers charging several phones at once",
+    take: "Best for campers who want a mid-size solar power bank that charges 6 devices at once. The 20,000mAh pack covers phones for a weekend.",
+    catch: "Real output is below the advertised mAh, and solar recharge is slow.",
   }
 ];
 

@@ -13,7 +13,7 @@ export const heroImageAlt = "Two folding camping chairs beside a tent in a redwo
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -43,7 +43,9 @@ export const products: GuideProduct[] = [
       "At 33 inches wide it needs a roomy storage bay",
       "Priced above the narrower 29 inch chairs here"
     ],
-    "bestFor": "Larger campers wanting maximum width"
+    "bestFor": "Larger campers wanting maximum width",
+    "take": "Best for larger campers who want maximum width. The 33 inch XXL seat, 500 lb rating and 4 inch cushion give the most room in this group.",
+    "catch": "At 33 inches wide it needs a roomy storage bay, and costs more than the 29 inch chairs.",
   },
   {
     "id": "best-extra-wide-zero-gravity-chair-2",
@@ -71,7 +73,9 @@ export const products: GuideProduct[] = [
       "No tray or cup holder is listed with the chair",
       "Thick padding adds bulk to the folded size"
     ],
-    "bestFor": "Long reclined sessions with a thick pad"
+    "bestFor": "Long reclined sessions with a thick pad",
+    "take": "Best for campers who spend long stretches reclined and want a thick pad. It matches the Suteck width and rating with a plusher cotton cushion.",
+    "catch": "No tray or cup holder is listed, and the thick pad adds bulk when folded.",
   },
   {
     "id": "best-extra-wide-zero-gravity-chair-3",
@@ -99,7 +103,9 @@ export const products: GuideProduct[] = [
       "Rated 100 pounds lower than the 33 inch chairs",
       "Mesh pad is thinner than the 4 inch cushions"
     ],
-    "bestFor": "Tall campers in hot weather"
+    "bestFor": "Tall campers in hot weather",
+    "take": "Best for tall campers in hot climates. The 30 inch seat has a 3D spacer mesh pad that lets air move through, plus fade-resistant fabric.",
+    "catch": "Rated 400 lb, 100 lb under the 33 inch chairs, and the mesh pad is thinner.",
   },
   {
     "id": "best-extra-wide-zero-gravity-chair-4",
@@ -127,7 +133,9 @@ export const products: GuideProduct[] = [
       "29 inch width is tight for very broad hips",
       "Cushion is narrower than the XXL version"
     ],
-    "bestFor": "Heavy campers needing capacity with less width"
+    "bestFor": "Heavy campers needing capacity with less width",
+    "take": "Best for heavier campers who want the 500 lb rating in a chair that fits a packed car. It trades four inches of width for a lower price.",
+    "catch": "The 29 inch width is tight for very broad hips.",
   },
   {
     "id": "best-extra-wide-zero-gravity-chair-5",
@@ -155,7 +163,9 @@ export const products: GuideProduct[] = [
       "Lowest weight rating of the five picks",
       "Seat is the narrowest on this list"
     ],
-    "bestFor": "Average-build campers wanting a built-in tray"
+    "bestFor": "Average-build campers wanting a built-in tray",
+    "take": "Best for average-build campers who want a tray included. The detachable side tray has two cup holders and a phone mount, with an adjustable headrest.",
+    "catch": "Rated 300 lb and the narrowest seat here, at 24 inches.",
   }
 ];
 

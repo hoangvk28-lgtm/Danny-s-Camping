@@ -13,7 +13,7 @@ export const heroImageAlt = "Two folding camping chairs beside a tent in a redwo
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -43,7 +43,9 @@ export const products: GuideProduct[] = [
       "No canopy, so shade must come from elsewhere",
       "Metal frame adds noticeable carry weight"
     ],
-    "bestFor": "Heavier campers"
+    "bestFor": "Heavier campers",
+    "take": "Best for heavier campers on a budget. 440 lb capacity, a 90 to 170 degree recline, and removable cushion and trays.",
+    "catch": "No canopy, and the metal frame is noticeably heavy to carry.",
   },
   {
     "id": "best-zero-gravity-chair-for-camping-2",
@@ -71,7 +73,9 @@ export const products: GuideProduct[] = [
       "Canopy makes it bulkier to carry and pack",
       "Canopy can catch wind on exposed sites"
     ],
-    "bestFor": "Open, sunny campsites"
+    "bestFor": "Open, sunny campsites",
+    "take": "Best for open, sunny campsites. The built-in canopy and 40mm steel tubing give shade and a sturdy frame.",
+    "catch": "The canopy adds bulk and can catch wind on exposed sites.",
   },
   {
     "id": "best-zero-gravity-chair-for-camping-3",
@@ -99,7 +103,9 @@ export const products: GuideProduct[] = [
       "No canopy or pillow included",
       "Listed carry weight of 15.43 lbs is not light"
     ],
-    "bestFor": "Couples and pairs"
+    "bestFor": "Couples and pairs",
+    "take": "Best for couples. Two chairs rated 330 lb each with a 0 to 160 degree recline for less than most single chairs.",
+    "catch": "No canopy or pillow, and 15.43 lb is not light.",
   },
   {
     "id": "best-zero-gravity-chair-for-camping-4",
@@ -127,7 +133,9 @@ export const products: GuideProduct[] = [
       "Fewer built-in extras than tray-equipped rivals",
       "Single chair, not sold as a pair"
     ],
-    "bestFor": "Comfort-first campers"
+    "bestFor": "Comfort-first campers",
+    "take": "Best for comfort-first campers. The padded headrest pillow and double-bungee support suit long sits, rated 300 lb.",
+    "catch": "Fewer built-in extras than tray chairs, and sold as a single chair.",
   },
   {
     "id": "best-zero-gravity-chair-for-camping-5",
@@ -155,7 +163,9 @@ export const products: GuideProduct[] = [
       "250 lb rating is the lowest of the group",
       "Single chair with no canopy or pillow"
     ],
-    "bestFor": "Light budget camping"
+    "bestFor": "Light budget camping",
+    "take": "Best for light budget camping. The tray has phone and tablet slots, on a Textilene seat rated 250 lb.",
+    "catch": "Lowest rating here at 250 lb, with no canopy or pillow.",
   }
 ];
 

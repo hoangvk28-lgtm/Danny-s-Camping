@@ -43,3 +43,9 @@ Some picks carry `prior: {guide, text}`: the description that product already ha
 
 ## "d" renders as "Why it made the shortlist" (positive case only, from Round 3 batch 3)
 The 3 "d" paragraphs are shown on the page under "Why it made the shortlist". Write them as the case FOR the pick: (1) what it is and its key real specs, (2) where it beats or differs from named neighbouring picks, (3) who it is best for. Do NOT put caveats, missing specs, "costs more", "confirm/verify", "however/but/though" or other limitations in "d"; those belong only in "cons" (and FAQ/criteria where relevant). The page also filters such sentences out, so any limitation written in "d" is wasted tokens.
+
+## Product "take" and "catch" (Danny's Camping product blocks)
+Each product also gets:
+- "take": Danny's Take, 1-2 short sentences (max ~35 words): who this pick is for and why, for this guide's angle. Concrete, no template phrasing ("makes the shortlist because"), no hype.
+- "catch": one short sentence (max ~30 words) with the most meaningful real trade-off (weight, packed size, setup, power limits, capacity, missing spec). Use "" if there is no meaningful trade-off.
+The page shows: award, name, Danny's Take, Best for, early CTA, then the "d" paragraphs, specs, pros/cons, The Catch, final CTA.

@@ -13,7 +13,7 @@ export const heroImageAlt = "Two folding camping chairs beside a tent in a redwo
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -43,7 +43,9 @@ export const products: GuideProduct[] = [
       "Capacity is not stated in the listing text",
       "Oversized chairs take up more trunk room"
     ],
-    "bestFor": "Couples and families"
+    "bestFor": "couples and families wanting a mesh-back pair",
+    "take": "Best for couples and families who want a breathable mesh back in a pair. The oversized frame is described as stable, with cup holder and side pocket.",
+    "catch": "No capacity is stated, and oversized chairs take more trunk room.",
   },
   {
     "id": "best-mesh-camping-chairs-2",
@@ -71,7 +73,9 @@ export const products: GuideProduct[] = [
       "Weight rating tops out at 350 lbs",
       "Single chair, not sold as a pair"
     ],
-    "bestFor": "Campers who like to recline"
+    "bestFor": "Campers who like to recline",
+    "take": "Best for campers who like to lean back. The back adjusts from 90 to 120 degrees in four positions and the firm armrests help you stand.",
+    "catch": "Rated to 350 lb and sold as a single chair.",
   },
   {
     "id": "best-mesh-camping-chairs-3",
@@ -99,7 +103,9 @@ export const products: GuideProduct[] = [
       "No reclining backrest",
       "Director layout sits more upright"
     ],
-    "bestFor": "Eating and card games"
+    "bestFor": "Eating and card games",
+    "take": "Best for eating and card games at camp. The attached side table holds cups and a phone, and it has the highest rating in this group at 400 lb.",
+    "catch": "No reclining backrest, so the director layout sits more upright.",
   },
   {
     "id": "best-mesh-camping-chairs-4",
@@ -127,7 +133,9 @@ export const products: GuideProduct[] = [
       "The listing does not state a weight rating",
       "No recline adjustment listed"
     ],
-    "bestFor": "Beach and lawn use"
+    "bestFor": "Beach and lawn use",
+    "take": "Best for beach and lawn sitters who want a tall all-weather mesh back at a modest price.",
+    "catch": "The listing does not state a weight rating, and there is no recline.",
   },
   {
     "id": "best-mesh-camping-chairs-5",
@@ -155,7 +163,9 @@ export const products: GuideProduct[] = [
       "300 lb rating is the lowest in this list",
       "Fewer extras than the side-table Director"
     ],
-    "bestFor": "Tailgating and lighter loads"
+    "bestFor": "Tailgating and lighter loads",
+    "take": "Best for lighter campers and tailgaters who want a chair that locks open. The ripstop and mesh seat resists sag on a steel frame.",
+    "catch": "Lowest rating in the group at 300 lb, with fewer extras.",
   }
 ];
 

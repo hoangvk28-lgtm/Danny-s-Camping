@@ -13,7 +13,7 @@ export const heroImageAlt = "Two people in folding chairs around a campfire in a
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -43,7 +43,9 @@ export const products: GuideProduct[] = [
       "Weight rating is not as clearly stated as others",
       "Padded footrest adds some folded bulk"
     ],
-    "bestFor": "Campers who prioritize lock strength"
+    "bestFor": "Campers who prioritize lock strength",
+    "take": "Best for campers who care most about lock strength. The aluminum alloy lock, triangular steel frame and removable 3.1 lb cushion.",
+    "catch": "The weight rating is not clearly stated, and the padded footrest adds folded bulk.",
   },
   {
     "id": "best-zero-gravity-chair-with-locking-mechanism-2",
@@ -71,7 +73,9 @@ export const products: GuideProduct[] = [
       "Padding is lighter than the removable cushion models",
       "Tray can sit awkwardly when the chair is reclined"
     ],
-    "bestFor": "Frequent angle changers"
+    "bestFor": "Frequent angle changers",
+    "take": "Best for campers who change angles often. The upgraded lock catch releases easily, and the chair is rated 400 lb with a detachable dual cup tray.",
+    "catch": "Padding is lighter than cushioned models, and the tray can sit awkwardly when reclined.",
   },
   {
     "id": "best-zero-gravity-chair-with-locking-mechanism-3",
@@ -99,7 +103,9 @@ export const products: GuideProduct[] = [
       "Listing gives few frame or lock details",
       "Weight rating is not highlighted in the listing"
     ],
-    "bestFor": "Full-body support seekers"
+    "bestFor": "Full-body support seekers",
+    "take": "Best for campers who want full-body support. An adjustable locking system with a full back, headrest and removable cushion.",
+    "catch": "The listing gives few frame or lock details and no highlighted weight rating.",
   },
   {
     "id": "best-zero-gravity-chair-with-locking-mechanism-4",
@@ -127,7 +133,9 @@ export const products: GuideProduct[] = [
       "Lock material is not named as aluminum",
       "Oxford fabric is thinner than padded rivals"
     ],
-    "bestFor": "Budget buyers wanting detailed specs"
+    "bestFor": "Budget buyers wanting detailed specs",
+    "take": "Best for budget buyers who want a detailed spec sheet. 400 lb capacity, 0 to 170 degree recline and it folds flat to 4.9 inches.",
+    "catch": "The lock material is not named as aluminum, and the Oxford fabric is thinner.",
   },
   {
     "id": "best-zero-gravity-chair-with-locking-mechanism-5",
@@ -155,7 +163,9 @@ export const products: GuideProduct[] = [
       "Rated 330 pounds, lower than other picks",
       "Lock details are lighter than single-chair rivals"
     ],
-    "bestFor": "Couples buying a matching pair"
+    "bestFor": "Couples buying a matching pair",
+    "take": "Best for couples who want a matching pair. Two chairs rated 330 lb each with a 0 to 160 degree angle.",
+    "catch": "Rated lower than other picks, and lock details are lighter than single-chair rivals.",
   }
 ];
 

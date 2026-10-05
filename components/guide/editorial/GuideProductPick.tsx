@@ -168,16 +168,31 @@ const toList = (v?: string | string[]) => (Array.isArray(v) ? v : v ? [v] : []);
 // shortlist" only makes the case for the product; limitations are shown in Cons and "Skip if".
 const LIMITATION = /\b(caveat|catch|downside|drawback|limitation|trade-?off|weak(er|ness)?|lacks?|lacking|missing|omit(s|ted)?|not (listed|stated|named|given|included|specified|published|clear|mentioned|confirmed)|does ?n[o']t|doesn't|is ?n[o']t|isn't|cannot|can't|no (stated|listed|published|named|warranty|gauge|app|remote|display)|leaves? out|thin(ner)? (spec|listing|detail)|costs? (more|extra)|pricier|more expensive|heavier|bulkier|louder|shorter|smaller|fewer|less (detail|info|document)|confirm|verify|check (the|with|before)|ask the seller|skip (it|this)|however|unfortunately|though|although|but|only|twice|double|premium|treat (it|the|this)|listing claim|cut off|before (buying|ordering|you buy)|read the|be aware|keep in mind|watch (for|out))\b/i;
 
-function shortlistParagraphs(description?: string): string[] {
-  if (!description) return [];
-  return description
-    .split(/\n\s*\n/)
-    .map((para) => para.split(/(?<=[.!?]["')\]]?)\s+(?=[A-Z0-9"'(])/)
-      .map((sentence) => sentence.trim())
-      .filter((sentence) => sentence && !LIMITATION.test(sentence))
-      .join(" "))
-    .filter((para) => para.split(/\s+/).length >= 8);
+const SPLIT_SENTENCES = /(?<=[.!?]["')\]]?)\s+(?=[A-Z0-9"'(])/;
+
+/** Splits a written description into the positive case (kept) and its limitation sentences (dropped). */
+function splitDescription(description?: string): { paragraphs: string[][]; limitations: string[] } {
+  const paragraphs: string[][] = [];
+  const limitations: string[] = [];
+  if (!description) return { paragraphs, limitations };
+  for (const para of description.split(/\n\s*\n/)) {
+    const kept: string[] = [];
+    for (const raw of para.split(SPLIT_SENTENCES)) {
+      const sentence = raw.trim();
+      if (!sentence) continue;
+      if (LIMITATION.test(sentence)) limitations.push(sentence);
+      else kept.push(sentence);
+    }
+    paragraphs.push(kept);
+  }
+  return { paragraphs, limitations };
 }
+
+// A real trade-off for this product (not a sentence praising it against a rival).
+const CATCH = /\b(trade-?off|catch|downside|drawback|heav(y|ier)|bulk(y|ier)|loud(er)?|costs? (more|extra)|pricier|more expensive|not (ideal|built|meant|designed|the best)|lacks?|no (stated|listed|warranty)|does ?n[o']t (lock|fold|include|come|state|list)|only (one|a|for|works|suits)|limited|shorter|smaller|fewer|takes (longer|up))\b/i;
+const COMPARATIVE_PRAISE = /\b(unlike|than the|does not offer|doesn't offer|that the [A-Z]|which the [A-Z])\b/;
+
+const wordCount = (t: string) => t.split(/\s+/).filter(Boolean).length;
 
 function Label({ children }: { children: React.ReactNode }) {
   return <h4 className="font-[family-name:var(--font-body)] text-[0.8125rem] font-semibold uppercase tracking-[0.1em] text-ink">{children}</h4>;
@@ -188,20 +203,79 @@ function Label({ children }: { children: React.ReactNode }) {
  * verdict and reasoning (~62%). Stacks image → info → pros/cons → CTA on
  * phones. Exactly one commerce CTA per product.
  */
+const AMAZON_REL = "nofollow sponsored noopener noreferrer";
+
 export function GuideProductPick({ product: p, products, total }: { product: GuideProduct; products: GuideProduct[]; total: number }) {
   const { verdict, rest: templateRest } = buildEditorialReview(p, products);
-  const written = shortlistParagraphs(p.description);
-  const rest = written.length > 0 ? written : templateRest;
+  const { paragraphs, limitations } = splitDescription(p.description);
+  const written = paragraphs.map((sentences) => sentences.join(" ")).filter((para) => wordCount(para) >= 8);
+
+  // Danny's Take: the opening sentence of the "who it suits" paragraph (last one), removed from the body so it isn't repeated.
+  const takeSource = paragraphs.length >= 2 ? paragraphs[paragraphs.length - 1] : paragraphs[0] ?? [];
+  const take = p.take ?? (takeSource[0] && wordCount(takeSource[0]) >= 6 ? takeSource[0] : verdict);
+  const body = written.length > 0
+    ? paragraphs
+        .map((sentences, i) => (i === paragraphs.length - 1 && take === takeSource[0] ? sentences.slice(1) : sentences).join(" "))
+        .filter((para) => wordCount(para) >= 8)
+    : templateRest;
+  // The Catch: an explicit trade-off, or the first substantive limitation sentence from the review.
+  const theCatch = p.catch ?? limitations.find((t) => wordCount(t) >= 8 && wordCount(t) <= 40 && CATCH.test(t) && !COMPARATIVE_PRAISE.test(t));
   const skipIf = toList(p.skipIf);
+  const amazonHref = withAmazonTag(p.amazonUrl);
 
   return (
     <article id={p.id} aria-labelledby={`${p.id}-name`} className="scroll-mt-32 border-t border-border py-10 first:border-t-0 first:pt-2 lg:scroll-mt-24">
-      <div className="grid gap-6 md:grid-cols-[38fr_62fr] md:gap-10">
-        <div>
+      <div className="grid gap-6 md:grid-cols-[38fr_62fr] md:gap-x-10 md:gap-y-0">
+        {/* Quick decision: award, name, take, best for, early CTA. First on mobile, right column on desktop. */}
+        <div className="min-w-0 md:col-start-2 md:row-start-1">
+          <p className="eyebrow">
+            {p.badge}
+            <span className="ml-2 font-medium tracking-normal normal-case text-ink-secondary">
+              · {p.rank} of {total}
+            </span>
+          </p>
+          <h3 id={`${p.id}-name`} className="mt-2 text-[1.625rem] leading-tight sm:text-[1.875rem]">{p.name}</h3>
+
+          {take && (
+            <div className="mt-3 border-l-2 border-ink pl-4">
+              <Label>Danny’s Take</Label>
+              <p className="mt-1 font-[family-name:var(--font-display)] text-[1.125rem] leading-snug !text-ink">{take}</p>
+            </div>
+          )}
+
+          <dl className={`mt-4 grid gap-4 border-t border-border pt-4 ${skipIf.length > 0 ? "sm:grid-cols-2 sm:gap-6" : ""}`}>
+            {p.bestFor && (
+              <div>
+                <dt><Label>Best for</Label></dt>
+                <dd className="mt-1 text-base leading-relaxed text-ink-secondary">{p.bestFor.charAt(0).toUpperCase() + p.bestFor.slice(1)}</dd>
+              </div>
+            )}
+            {skipIf.length > 0 && (
+              <div>
+                <dt><Label>Skip if</Label></dt>
+                <dd className="mt-1 text-base leading-relaxed text-ink-secondary">{skipIf.join(" ")}</dd>
+              </div>
+            )}
+          </dl>
+
           <a
-            href={withAmazonTag(p.amazonUrl)}
+            href={amazonHref}
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel={AMAZON_REL}
+            className="mt-4 inline-flex min-h-11 items-center gap-2 border border-brand bg-transparent px-5 text-[0.9375rem] font-semibold !text-brand transition-colors hover:bg-brand-light focus-ring"
+          >
+            Check price on Amazon
+            <span className="sr-only"> for {p.name} (opens in a new tab)</span>
+            <span aria-hidden>→</span>
+          </a>
+        </div>
+
+        {/* Product image: after the decision block on mobile, left column on desktop. */}
+        <div className="md:col-start-1 md:row-span-2 md:row-start-1">
+          <a
+            href={amazonHref}
+            target="_blank"
+            rel={AMAZON_REL}
             aria-label={`${p.name} on Amazon (opens in a new tab)`}
             className="group relative block aspect-square overflow-hidden bg-surface focus-ring md:sticky md:top-28"
           >
@@ -211,51 +285,13 @@ export function GuideProductPick({ product: p, products, total }: { product: Gui
           </a>
         </div>
 
-        <div className="min-w-0">
-          <p className="eyebrow">
-            {p.badge}
-            <span className="ml-2 font-medium tracking-normal normal-case text-ink-secondary">
-              {p.rank} of {total}
-            </span>
-          </p>
-          <h3 id={`${p.id}-name`} className="mt-2 text-[1.625rem] leading-tight sm:text-[1.875rem]">
-            <a
-              href={withAmazonTag(p.amazonUrl)}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              className="!text-ink transition-colors hover:!text-brand focus-ring"
-            >
-              {p.name}
-              <span className="sr-only"> on Amazon (opens in a new tab)</span>
-            </a>
-          </h3>
-
-          {verdict && (
-            <p className="mt-4 border-l-2 border-ink pl-4 font-[family-name:var(--font-display)] text-[1.1875rem] leading-snug !text-ink">
-              {verdict}
-            </p>
-          )}
-
-          <dl className={`mt-6 grid gap-4 border-y border-border py-5 ${skipIf.length > 0 ? "sm:grid-cols-2 sm:gap-6" : ""}`}>
-            {p.bestFor && (
-              <div>
-                <dt><Label>Best for</Label></dt>
-                <dd className="mt-1.5 text-base leading-relaxed text-ink-secondary">{p.bestFor}</dd>
-              </div>
-            )}
-            {skipIf.length > 0 && (
-              <div>
-                <dt><Label>Skip if</Label></dt>
-                <dd className="mt-1.5 text-base leading-relaxed text-ink-secondary">{skipIf.join(" ")}</dd>
-              </div>
-            )}
-          </dl>
-
-          {rest.length > 0 && (
-            <section className="mt-6">
+        {/* Detailed research */}
+        <div className="min-w-0 md:col-start-2 md:row-start-2">
+          {body.length > 0 && (
+            <section className="mt-4 border-t border-border pt-8 md:mt-10">
               <Label>Why it made the shortlist</Label>
               <div className="mt-2 space-y-4">
-                {rest.map((para, i) => (
+                {body.map((para, i) => (
                   <p key={i} className="text-base leading-relaxed">{para}</p>
                 ))}
               </div>
@@ -302,11 +338,18 @@ export function GuideProductPick({ product: p, products, total }: { product: Gui
             )}
           </div>
 
+          {theCatch && (
+            <section className="mt-6 border-l-2 border-accent pl-4">
+              <Label>The Catch</Label>
+              <p className="mt-1 text-base leading-relaxed text-ink">{theCatch}</p>
+            </section>
+          )}
+
           <div className="mt-8">
             <a
-              href={withAmazonTag(p.amazonUrl)}
+              href={amazonHref}
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel={AMAZON_REL}
               className="inline-flex min-h-12 items-center gap-2 bg-brand px-6 text-[0.9375rem] font-semibold !text-white transition-colors hover:bg-brand-dark focus-ring"
             >
               Check price on Amazon

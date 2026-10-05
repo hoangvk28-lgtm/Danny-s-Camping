@@ -13,7 +13,7 @@ export const heroImageAlt = "Two folding camping chairs beside a tent in a redwo
 
 export interface GuideProduct {
   id: string; rank: number; badge: string; name: string; price: string; rating: number | null; reviews: number | null;
-  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string;
+  imageUrl: string; amazonUrl: string; description: string; specs: string[]; pros: string[]; cons: string[]; bestFor: string; take: string; catch: string;
 }
 
 export const products: GuideProduct[] = [
@@ -42,7 +42,9 @@ export const products: GuideProduct[] = [
       "Bulky when folded",
       "No side table"
     ],
-    "bestFor": "Heaviest campers"
+    "bestFor": "Heaviest campers",
+    "take": "Best for the heaviest campers who want the highest stated rating here, 800 lb, at a mid price. It is padded with two cup holders.",
+    "catch": "Bulky when folded and has no side table.",
   },
   {
     "id": "best-camping-chairs-600-lb-capacity-2",
@@ -69,7 +71,9 @@ export const products: GuideProduct[] = [
       "Price is higher than the single chairs",
       "Large when unfolded"
     ],
-    "bestFor": "Directors chair fans"
+    "bestFor": "Directors chair fans",
+    "take": "Best for campers who want a director chair with a headrest and side table, rated 600 lb. The detachable side pocket adds storage the other picks skip.",
+    "catch": "Costs more than the single chairs and takes real space when unfolded.",
   },
   {
     "id": "best-camping-chairs-600-lb-capacity-3",
@@ -96,7 +100,9 @@ export const products: GuideProduct[] = [
       "Two chairs take more storage space",
       "Higher cost than a single chair"
     ],
-    "bestFor": "Two big and tall sitters"
+    "bestFor": "Two big and tall sitters",
+    "take": "Best for two big and tall sitters. The set doubles the seating for less than double the price, with 28 inch seats, side tables and carry handles.",
+    "catch": "Two chairs take more storage space and cost more than one.",
   },
   {
     "id": "best-camping-chairs-600-lb-capacity-4",
@@ -123,7 +129,9 @@ export const products: GuideProduct[] = [
       "Single chair only",
       "Fewer padding details on the listing"
     ],
-    "bestFor": "Solo big sitter"
+    "bestFor": "Solo big sitter",
+    "take": "Best for one big sitter who wants a director chair with a side table. It matches the pair on features at about half the price.",
+    "catch": "Single chair only, and the listing gives few padding details.",
   },
   {
     "id": "best-camping-chairs-600-lb-capacity-5",
@@ -150,7 +158,9 @@ export const products: GuideProduct[] = [
       "No side table",
       "Folded size is not stated here"
     ],
-    "bestFor": "Warm weather campers"
+    "bestFor": "Warm weather campers",
+    "take": "Best for warm-weather campers who want mesh airflow and adjustable armrests. It is the only pick here with arm height you can change for different body sizes.",
+    "catch": "No side table, and the folded size is not stated.",
   }
 ];
 
