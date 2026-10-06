@@ -1,4 +1,6 @@
 
+import { generatedInformationalGuides } from "@/data/informational-guides.generated";
+
 export type InformationalSilo = "tents-shelter" | "sleep-gear" | "camp-kitchen" | "camp-power" | "camp-furniture" | "campsite-gear" | "packs-hiking" | "clothing-footwear";
 
 export interface InformationalSection {
@@ -30,6 +32,7 @@ export interface InformationalGuide {
 
 
 export const informationalGuides: InformationalGuide[] = [
+  ...generatedInformationalGuides,
 ];
 
 export function getInformationalGuide(slug: string) {

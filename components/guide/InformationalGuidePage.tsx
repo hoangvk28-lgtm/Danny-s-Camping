@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { readFileSync } from "node:fs";
 import path from "node:path";
+import { marked } from "marked";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 import { formatDate } from "@/lib/utils";
-import { markdownToHtml } from "@/lib/markdown";
 import { getSiloBySlug } from "@/data/silos";
-import type { InformationalGuide } from "@/data/informational-guides";
+import { getInformationalGuide, type InformationalGuide } from "@/data/informational-guides";
+import { guides } from "@/data/guides";
+import { canonicalGuideHref } from "@/lib/migrated-silos";
 import { RichContent } from "@/components/ui/RichContent";
 
 function headingId(value: string) {
@@ -26,11 +28,23 @@ function plainText(value: string) {
 }
 
 function extractFaq(markdown: string) {
-  const block = markdown.match(/## Frequently asked questions\s*\n([\s\S]*?)(?=\n## |$)/i)?.[1] ?? "";
+  const block = markdown.match(/## (?:Frequently asked questions|FAQ)\s*\n([\s\S]*?)(?=\n## |$)/i)?.[1] ?? "";
   return [...block.matchAll(/^### (.+)\n([\s\S]*?)(?=\n### |$)/gm)].map((match) => ({
     question: plainText(match[1]),
     answer: plainText(match[2]),
   }));
+}
+
+function canonicalizeInternalLinks(html: string) {
+  return html.replace(/href="\/([^"#?]+)\/?"/g, (match, rawSlug: string) => {
+    const slug = rawSlug.replace(/^\/+|\/+$/g, "");
+    if (slug.includes("/")) return match;
+    const informational = getInformationalGuide(slug);
+    if (informational) return `href="/${informational.silo}/${informational.slug}"`;
+    const buyingGuide = guides.find((guide) => guide.slug === slug);
+    if (buyingGuide) return `href="${canonicalGuideHref(buyingGuide)}"`;
+    return match;
+  });
 }
 
 function prepareImportedContent(contentFile: string) {
@@ -40,8 +54,9 @@ function prepareImportedContent(contentFile: string) {
     label: plainText(match[1]),
     id: headingId(plainText(match[1])),
   }));
-  let html = markdownToHtml(markdown);
+  let html = marked.parse(markdown, { async: false }) as string;
   html = html.replace(/<h2>([\s\S]*?)<\/h2>/g, (_match, label: string) => `<h2 id="${headingId(label)}">${label}</h2>`);
+  html = canonicalizeInternalLinks(html);
   return { html, toc, faq: extractFaq(markdown) };
 }
 
