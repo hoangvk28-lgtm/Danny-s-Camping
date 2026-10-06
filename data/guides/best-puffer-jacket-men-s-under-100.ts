@@ -418,7 +418,7 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-winter-jackets-under-100"
   },
   {
-    "title": "Best Cycling Sunglasses Under 100",
-    "href": "/clothing-footwear/best-cycling-sunglasses-under-100"
+    "title": "Best Insulated Jacket Under 100",
+    "href": "/clothing-footwear/best-insulated-jacket-under-100"
   }
 ];

@@ -388,15 +388,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Hiking Shorts For Women With Thick Thighs",
+    "href": "/clothing-footwear/best-hiking-shorts-for-women-with-thick-thighs"
+  },
+  {
     "title": "Best Hiking Pants For Women Hot Weather",
     "href": "/clothing-footwear/best-hiking-pants-for-women-hot-weather"
   },
   {
     "title": "Best Hiking Sandals For Women With Arch Support",
     "href": "/clothing-footwear/best-hiking-sandals-for-women-with-arch-support"
-  },
-  {
-    "title": "Best Base Layer For Women Hiking",
-    "href": "/clothing-footwear/best-base-layer-for-women-hiking"
   }
 ];

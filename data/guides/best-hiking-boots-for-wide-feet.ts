@@ -422,7 +422,7 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-hiking-shoes-for-womens-wide-feet"
   },
   {
-    "title": "Best Hiking Boots For Men Under 100",
-    "href": "/clothing-footwear/best-hiking-boots-for-men-under-100"
+    "title": "Best Hiking Shoes For Men Wide Feet",
+    "href": "/clothing-footwear/best-hiking-shoes-for-men-wide-feet"
   }
 ];

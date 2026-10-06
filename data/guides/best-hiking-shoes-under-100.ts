@@ -418,15 +418,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Hiking Shoes For Men Under 100",
+    "href": "/clothing-footwear/best-hiking-shoes-for-men-under-100"
+  },
+  {
     "title": "Best Trail Running Shoes For Hiking And Running",
     "href": "/clothing-footwear/best-trail-running-shoes-for-hiking-and-running"
   },
   {
     "title": "Best Trail Running Shoes For Hiking And Walking",
     "href": "/clothing-footwear/best-trail-running-shoes-for-hiking-and-walking"
-  },
-  {
-    "title": "Best Hiking Boots For Men Under 100",
-    "href": "/clothing-footwear/best-hiking-boots-for-men-under-100"
   }
 ];

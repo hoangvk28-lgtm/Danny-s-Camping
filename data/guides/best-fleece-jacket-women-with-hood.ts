@@ -392,11 +392,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-fleece-jacket-men-with-hood"
   },
   {
-    "title": "Best Fleece Jacket Under 100",
-    "href": "/clothing-footwear/best-fleece-jacket-under-100"
+    "title": "Best Insulated Rain Jacket Women S With Hood",
+    "href": "/clothing-footwear/best-insulated-rain-jacket-women-s-with-hood"
   },
   {
-    "title": "Best Fleece Jackets For Kids",
-    "href": "/clothing-footwear/best-fleece-jackets-for-kids"
+    "title": "Best Fleece Jacket Under 100",
+    "href": "/clothing-footwear/best-fleece-jacket-under-100"
   }
 ];

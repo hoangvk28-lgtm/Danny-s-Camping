@@ -414,15 +414,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Hiking Shoes For Men Wide Feet",
+    "href": "/clothing-footwear/best-hiking-shoes-for-men-wide-feet"
+  },
+  {
+    "title": "Best Hiking Shoes For Wide Feet",
+    "href": "/clothing-footwear/best-hiking-shoes-for-wide-feet"
+  },
+  {
     "title": "Best Hiking Boots For Wide Feet",
     "href": "/clothing-footwear/best-hiking-boots-for-wide-feet"
-  },
-  {
-    "title": "Best Hiking Sandals For Wide Feet",
-    "href": "/clothing-footwear/best-hiking-sandals-for-wide-feet"
-  },
-  {
-    "title": "Best Trail Running Shoes For Hiking And Running",
-    "href": "/clothing-footwear/best-trail-running-shoes-for-hiking-and-running"
   }
 ];

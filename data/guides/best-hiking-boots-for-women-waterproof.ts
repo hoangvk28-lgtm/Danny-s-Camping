@@ -392,11 +392,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-hiking-boots-for-men-waterproof"
   },
   {
-    "title": "Best Base Layer For Women Hiking",
-    "href": "/clothing-footwear/best-base-layer-for-women-hiking"
+    "title": "Best Hiking Shoes For Women Waterproof",
+    "href": "/clothing-footwear/best-hiking-shoes-for-women-waterproof"
   },
   {
-    "title": "Best Hiking Leggings For Women",
-    "href": "/clothing-footwear/best-hiking-leggings-for-women"
+    "title": "Best Lightweight Hiking Boots For Women With Ankle Support",
+    "href": "/clothing-footwear/best-lightweight-hiking-boots-for-women-with-ankle-support"
   }
 ];

@@ -388,15 +388,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Lightweight Hiking Boots For Women With Ankle Support",
+    "href": "/clothing-footwear/best-lightweight-hiking-boots-for-women-with-ankle-support"
+  },
+  {
     "title": "Best Hiking Pants For Women With Big Thighs",
     "href": "/clothing-footwear/best-hiking-pants-for-women-with-big-thighs"
   },
   {
-    "title": "Best Base Layer For Women Hiking",
-    "href": "/clothing-footwear/best-base-layer-for-women-hiking"
-  },
-  {
-    "title": "Best Hiking Leggings For Women",
-    "href": "/clothing-footwear/best-hiking-leggings-for-women"
+    "title": "Best Hiking Shorts For Women With Thick Thighs",
+    "href": "/clothing-footwear/best-hiking-shorts-for-women-with-thick-thighs"
   }
 ];

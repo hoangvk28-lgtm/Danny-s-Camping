@@ -349,11 +349,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-hiking-sandals-for-plantar-fasciitis"
   },
   {
-    "title": "Best Hiking Boots For Men Under 100",
-    "href": "/clothing-footwear/best-hiking-boots-for-men-under-100"
+    "title": "Best Hiking Shoes For Plantar Fasciitis",
+    "href": "/clothing-footwear/best-hiking-shoes-for-plantar-fasciitis"
   },
   {
-    "title": "Best Hiking Boots For Men Waterproof",
-    "href": "/clothing-footwear/best-hiking-boots-for-men-waterproof"
+    "title": "Best Hiking Boots For Men Under 100",
+    "href": "/clothing-footwear/best-hiking-boots-for-men-under-100"
   }
 ];
