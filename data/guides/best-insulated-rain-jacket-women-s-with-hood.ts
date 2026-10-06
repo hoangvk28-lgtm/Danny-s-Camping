@@ -422,7 +422,7 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-fleece-jacket-men-with-hood"
   },
   {
-    "title": "Best Hiking Pants For Women With Big Thighs",
-    "href": "/clothing-footwear/best-hiking-pants-for-women-with-big-thighs"
+    "title": "Best Rain Jacket For Women Hiking",
+    "href": "/clothing-footwear/best-rain-jacket-for-women-hiking"
   }
 ];

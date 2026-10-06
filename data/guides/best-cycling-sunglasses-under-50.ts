@@ -388,7 +388,7 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-cycling-sunglasses-for-heavy-sweaters"
   },
   {
-    "title": "Best Cheap Sunglasses For Big Heads",
-    "href": "/clothing-footwear/best-cheap-sunglasses-for-big-heads"
+    "title": "Best Running Sunglasses Under 100",
+    "href": "/clothing-footwear/best-running-sunglasses-under-100"
   }
 ];

@@ -388,11 +388,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-lightweight-waterproof-jacket-under-100"
   },
   {
-    "title": "Best Fleece Jacket Under 100",
-    "href": "/clothing-footwear/best-fleece-jacket-under-100"
+    "title": "Best Rain Jacket For Men Under 100",
+    "href": "/clothing-footwear/best-rain-jacket-for-men-under-100"
   },
   {
-    "title": "Best Puffer Jacket Men S Under 100",
-    "href": "/clothing-footwear/best-puffer-jacket-men-s-under-100"
+    "title": "Best Rain Jacket Under 100",
+    "href": "/clothing-footwear/best-rain-jacket-under-100"
   }
 ];

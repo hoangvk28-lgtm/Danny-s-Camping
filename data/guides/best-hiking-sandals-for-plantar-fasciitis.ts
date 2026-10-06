@@ -396,7 +396,7 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-hiking-shoes-for-plantar-fasciitis"
   },
   {
-    "title": "Best Hiking Sandals For Wide Feet",
-    "href": "/clothing-footwear/best-hiking-sandals-for-wide-feet"
+    "title": "Best Sandals For Plantar Fasciitis",
+    "href": "/clothing-footwear/best-sandals-for-plantar-fasciitis"
   }
 ];

@@ -384,11 +384,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-hiking-pants-for-cold-weather"
   },
   {
-    "title": "Best Base Layer For Men Cold Weather",
-    "href": "/clothing-footwear/best-base-layer-for-men-cold-weather"
+    "title": "Best Men S Hiking Pants For Cold Weather",
+    "href": "/clothing-footwear/best-men-s-hiking-pants-for-cold-weather"
   },
   {
-    "title": "Best Base Layer For Women Cold Weather",
-    "href": "/clothing-footwear/best-base-layer-for-women-cold-weather"
+    "title": "Best Base Layer For Men Cold Weather",
+    "href": "/clothing-footwear/best-base-layer-for-men-cold-weather"
   }
 ];
