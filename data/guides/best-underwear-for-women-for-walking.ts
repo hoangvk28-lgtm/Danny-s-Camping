@@ -380,15 +380,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Walking Shoes For Women Under 100",
+    "href": "/clothing-footwear/best-walking-shoes-for-women-under-100"
+  },
+  {
+    "title": "Best Walking Shoes For Women Under 50",
+    "href": "/clothing-footwear/best-walking-shoes-for-women-under-50"
+  },
+  {
     "title": "Best Base Layer For Women Cold Weather",
     "href": "/clothing-footwear/best-base-layer-for-women-cold-weather"
-  },
-  {
-    "title": "Best Base Layer For Women Hiking",
-    "href": "/clothing-footwear/best-base-layer-for-women-hiking"
-  },
-  {
-    "title": "Best Base Layer For Women Skiing",
-    "href": "/clothing-footwear/best-base-layer-for-women-skiing"
   }
 ];

@@ -380,15 +380,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Fleece Jackets For Winter",
+    "href": "/clothing-footwear/best-fleece-jackets-for-winter"
+  },
+  {
     "title": "Best Cycling Sunglasses Under 100",
     "href": "/clothing-footwear/best-cycling-sunglasses-under-100"
   },
   {
     "title": "Best Cycling Sunglasses Under 50",
     "href": "/clothing-footwear/best-cycling-sunglasses-under-50"
-  },
-  {
-    "title": "Best Down Jackets For Mountaineering",
-    "href": "/clothing-footwear/best-down-jackets-for-mountaineering"
   }
 ];
