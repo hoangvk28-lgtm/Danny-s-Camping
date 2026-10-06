@@ -97,7 +97,7 @@ for (const m of mods) {
     const rs = r.href.split("/").pop();
     if (!existing.has(rs) && !batchSlugs.has(rs)) err(s, `related slug missing: ${rs}`);
   });
-  if (m.related.length < (Number(process.env.MINREL) || 3)) err(s, "related < 3");
+  if (m.related.length < Number(process.env.MINREL ?? 3)) err(s, "related < 3");
 
   const heroImage = products[0]?.imageUrl;
   const ts = `export const guideSlug = ${JSON.stringify(s)};
