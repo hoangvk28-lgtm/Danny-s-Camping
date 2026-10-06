@@ -1,3 +1,4 @@
+import { readFileSync } from "fs";
 /**
  * Reusable IndexNow submitter. Notifies Bing + Yandex about new/changed URLs.
  *
@@ -11,7 +12,7 @@
 import { execSync } from "child_process";
 
 const HOST = "www.dannycamping.com";
-const KEY = "e9ad631f48505cb770a91437aa4c3034";
+const KEY = "3ab9628a5cf24654a12eca699958db28";
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
 function slugsFromGitDiff(sinceRef) {
@@ -52,7 +53,11 @@ if (guideSlugs.length === 0) {
   process.exit(0);
 }
 
-const urlList = guideSlugs.map((s) => `https://${HOST}/guide/${s}`);
+// Submit canonical silo URLs (/<silo>/<slug>); /guide/<slug> only redirects there.
+const siloOf = Object.fromEntries(
+  [...readFileSync("data/guides.ts", "utf8").matchAll(/slug: "([^"]+)",\s*categorySlug: "[^"]+",\s*subcategorySlug: "([^"]+)"/g)].map((m) => [m[1], m[2]])
+);
+const urlList = guideSlugs.map((s) => `https://${HOST}/${siloOf[s] ?? "guide"}/${s}`);
 
 console.log(`Pinging IndexNow with ${urlList.length} URL(s):`);
 for (const u of urlList) console.log(`  ${u}`);

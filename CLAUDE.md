@@ -20,7 +20,7 @@
 - **Audience:** US campers: car camping, family camping, backpacking, overlanding. NOT RVs.
 - **Silos (URL = `/<silo>/<slug>`):** `tents-shelter`, `sleep-gear`, `camp-kitchen`, `camp-power`, `camp-furniture`, `campsite-gear` (see `data/silos.ts`, `data/categories.ts`, `data/nav.ts`).
 - **Byline / author:** "Danny's Camping Editors" (slug `dannycamping-editors`, an Organization, `data/authors.ts`).
-- **IndexNow:** key file `public/e9ad631f48505cb770a91437aa4c3034.txt`; the `KEY` in `scripts/indexnow.mjs` must match. Do not delete the file. Ping with `node scripts/indexnow.mjs <slug...>`; `.github/workflows/indexnow.yml` auto-pings on pushes touching `data/guides/**`.
+- **IndexNow:** key file `public/3ab9628a5cf24654a12eca699958db28.txt`; the `KEY` in `scripts/indexnow.mjs` must match. Do not delete the file. Ping with `node scripts/indexnow.mjs <slug...>`; `.github/workflows/indexnow.yml` auto-pings on pushes touching `data/guides/**`.
 
 ### Content types
 1. **"Best X" roundup guides:** 33 published, all inherited from the old site's camping section (camping chairs, portable power stations/generators, solar generators, power banks, projectors, coffee warmers). Files: `data/guides/<slug>.ts` + registry entry in `data/guides.ts` (`categorySlug`, `subcategorySlug` = one of the six silos), rendered by `components/guide/RichGuidePage.tsx` via `data/guides-index.generated.ts`. Reference shape: any existing `data/guides/best-*.ts`.
