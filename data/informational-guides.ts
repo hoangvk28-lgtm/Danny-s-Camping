@@ -1,5 +1,5 @@
 
-export type InformationalSilo = "tents-shelter" | "sleep-gear" | "camp-kitchen" | "camp-power" | "camp-furniture" | "campsite-gear";
+export type InformationalSilo = "tents-shelter" | "sleep-gear" | "camp-kitchen" | "camp-power" | "camp-furniture" | "campsite-gear" | "packs-hiking" | "clothing-footwear";
 
 export interface InformationalSection {
   heading: string;

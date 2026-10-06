@@ -13,7 +13,7 @@ const titleCase = (s) => s.replace(/\b(rv|ac|dc|ems|ups|psi|tpms|mppt|pwm|cpap|b
 const wc = (s) => s.trim().split(/\s+/).length;
 // slug -> silo for guides already in the registry (subcategorySlug is the silo for RV guides)
 const REG_SILO = {};
-for (const m of readFileSync("data/guides.ts", "utf8").matchAll(/slug: "([^"]+)",\s*categorySlug: "rv",\s*subcategorySlug: "([^"]+)"/g)) REG_SILO[m[1]] = m[2];
+for (const m of readFileSync("data/guides.ts", "utf8").matchAll(/slug: "([^"]+)",\s*categorySlug: "(?:rv|camping)",\s*subcategorySlug: "([^"]+)"/g)) REG_SILO[m[1]] = m[2];
 
 function specsFor(p) {
   const out = [];
@@ -41,7 +41,7 @@ for (const slug of slugs) {
   const products = prose.products.map((pp) => {
     const f = byAsin[pp.asin];
     if (!f) throw new Error(`${slug}: asin ${pp.asin} not in facts`);
-    const name = f.title.split(/[,|(]| [–—-] /)[0].trim().slice(0, 110);
+    const name = f.title.replace(/\s*[—–]\s*/g, " - ").split(/[,|(]| [–—-] /)[0].trim().slice(0, 110);
     return { asin: pp.asin, short: pp.short, name, badge: pp.badge, d: Array.isArray(pp.d) ? pp.d : String(pp.d).split(/\n\s*\n/).map((x) => x.trim()).filter(Boolean), specs: pp.specs && pp.specs.length ? pp.specs : specsFor(f), pros: pp.pros, cons: pp.cons, bestFor: pp.bestFor, take: pp.take, catch: pp.catch, price: f.price };
   });
   const n = products.length;
@@ -61,11 +61,13 @@ for (const slug of slugs) {
   const extra = [...guides].filter((g) => g !== slug && g.startsWith("best-") && [cluster.toLowerCase().replace(/ — .*$/, "").split(" ").filter((w) => w.length > 2 && w !== "rv").pop()].filter(Boolean).some((w) => g.includes(w.replace(/s$/, ""))));
   const relSlugs = [...new Set([...sib, ...extra])].slice(0, 4);
   const SILO = { "RV Water Pressure Regulators": "water-plumbing", "RV Water Filters": "water-plumbing", "Weight Distribution Hitches": "towing-leveling", "Sway Control Hitches": "towing-leveling", "Trailer Brake Controllers": "towing-leveling", "RV TPMS": "towing-leveling", "Weight Distribution Hitches": "towing-leveling", "Heated RV Water Hoses": "water-plumbing", "RV Fresh Water Hoses": "water-plumbing", "RV Sewer Hose Fittings": "water-plumbing", "RV Sewer Hose Supports": "water-plumbing", "RV Sewer Hoses": "water-plumbing", "RV Water Heaters": "water-plumbing", "RV Water Pump Accumulators": "water-plumbing", "RV Water Pumps": "water-plumbing", "RV Water Filters — Incremental": "water-plumbing", "RV Water Pressure Regulators — Incremental": "water-plumbing", "RV Air Conditioners": "interior-comfort", "RV Space Heaters": "interior-comfort", "RV Cleaners": "rv-care", "RV Wash & Wax": "rv-care", "RV Roof Coatings": "rv-care", "RV Roof Sealants": "rv-care", "RV Roof Repair Tapes": "rv-care", "RV GPS & Navigation": "camping-travel", "RV WiFi Boosters": "camping-travel", "RV Mattresses": "interior-comfort", "RV Mattress Toppers": "interior-comfort", "RV Vent Fans": "interior-comfort", "RV Vent Covers": "interior-comfort", "RV Catalytic Heaters": "interior-comfort", "Camping Chairs": "camping-travel", "Zero Gravity Camping Chairs": "camping-travel", "RV Outdoor Rugs": "camping-travel", "RV Routers": "camping-travel", "RV Cell Signal Boosters": "camping-travel", "Electronic RV Levelers": "towing-leveling", "RV Leveling Blocks": "towing-leveling", "RV Wheel Chocks": "towing-leveling", "RV Covers": "rv-care", "Travel Trailer Covers": "rv-care" };
-  const silo = SILO[cluster] || "power-electrical";
+  // Danny's Camping passes the silo slug itself as the cluster name.
+  const siloOfCluster = (c) => SILO[c] || (/^[a-z]+(-[a-z]+)*$/.test(c) ? c : "power-electrical");
+  const silo = siloOfCluster(cluster);
   if (relSlugs.length < 4) {
     // Fallback for first-in-cluster hubs: link other guides in the same silo from the slug list.
     const lines = readFileSync(process.env.SLUGS || process.env.TEMP + "/claude/rv/p3all.txt", "utf8").split("\n").map((l) => l.trim().split("|"));
-    for (const [c, s2] of lines) if (relSlugs.length < 4 && s2 && s2 !== slug && !relSlugs.includes(s2) && (SILO[c] || "power-electrical") === silo && (guides.has(s2) || content.has(s2))) relSlugs.push(s2);
+    for (const [c, s2] of lines) if (relSlugs.length < 4 && s2 && s2 !== slug && !relSlugs.includes(s2) && siloOfCluster(c) === silo && (guides.has(s2) || content.has(s2))) relSlugs.push(s2);
   }
   if (relSlugs.length < 3) {
     const words = slug.replace(/^best-/, "").split("-").filter((w) => w.length > 3 && w !== "rv");
@@ -73,8 +75,11 @@ for (const slug of slugs) {
     same.sort((a, b) => words.filter((w) => b.includes(w)).length - words.filter((w) => a.includes(w)).length);
     for (const g of same) if (relSlugs.length < 3) relSlugs.push(g);
   }
+  // Niche guides link up to their hub first (HUBS = json {slug: hubSlug}).
+  const hubOf = process.env.HUBS ? JSON.parse(readFileSync(process.env.HUBS, "utf8"))[slug] : undefined;
+  if (hubOf && guides.has(hubOf) && !relSlugs.includes(hubOf)) { relSlugs.unshift(hubOf); if (relSlugs.length > 4) relSlugs.pop(); }
   const slugCluster = Object.fromEntries(readFileSync(process.env.SLUGS || process.env.TEMP + "/claude/rv/p3all.txt", "utf8").split("\n").map((l) => l.trim().split("|")).filter(([c, x]) => x).map(([c, x]) => [x, c]));
-  const siloOf = (x) => REG_SILO[x] || (slugCluster[x] && SILO[slugCluster[x]]) || silo;
+  const siloOf = (x) => REG_SILO[x] || (slugCluster[x] && siloOfCluster(slugCluster[x])) || silo;
   const related = relSlugs.map((s) => ({ title: titleCase(s.replace(/^best-/, "best ").replace(/-/g, " ")), href: `/${siloOf(s)}/${s}` }));
 
   const h = prose.howToChoose;

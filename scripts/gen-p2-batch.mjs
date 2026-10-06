@@ -97,7 +97,7 @@ for (const m of mods) {
     const rs = r.href.split("/").pop();
     if (!existing.has(rs) && !batchSlugs.has(rs)) err(s, `related slug missing: ${rs}`);
   });
-  if (m.related.length < 3) err(s, "related < 3");
+  if (m.related.length < (Number(process.env.MINREL) || 3)) err(s, "related < 3");
 
   const heroImage = products[0]?.imageUrl;
   const ts = `export const guideSlug = ${JSON.stringify(s)};
@@ -141,14 +141,14 @@ export const relatedGuides: { href: string; title: string }[] = ${JSON.stringify
     registry.push(`  {
     title: ${JSON.stringify(m.title)},
     slug: ${JSON.stringify(s)},
-    categorySlug: "rv",
-    subcategorySlug: ${JSON.stringify(m.silo ?? "power-electrical")},
+    categorySlug: "camping",
+    subcategorySlug: ${JSON.stringify(m.silo ?? "campsite-gear")},
     description: ${JSON.stringify(m.metaDescription)},
     mainKeyword: ${JSON.stringify(m.keyword)},
     subKeywords: [${JSON.stringify(m.keyword)}],
     heroImage: ${JSON.stringify(heroImage)},
     lastUpdated: "2026-10-02",
-    author: "Hardcastle's RV Editors",
+    author: "Danny Walker",
     readTime: ${JSON.stringify(m.readTime ?? "11 min")},
     recommendedProductIds: [],
     sections: [],

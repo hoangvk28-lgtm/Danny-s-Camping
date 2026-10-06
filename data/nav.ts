@@ -15,6 +15,8 @@ export const mainNav: NavItem[] = [
       { label: "Camp Power", href: "/camp-power", description: "Power stations, generators and solar" },
       { label: "Camp Furniture", href: "/camp-furniture", description: "Chairs, tables and campsite comfort" },
       { label: "Campsite Gear", href: "/campsite-gear", description: "Lighting, navigation and campsite essentials" },
+      { label: "Packs & Hiking", href: "/packs-hiking", description: "Backpacks, navigation and trail gear" },
+      { label: "Clothing & Footwear", href: "/clothing-footwear", description: "Jackets, layers, boots and socks" },
     ],
   },
   { label: "How We Review", href: "/how-we-review" },
@@ -29,6 +31,8 @@ export const footerNav = {
     { label: "Camp Power", href: "/camp-power" },
     { label: "Camp Furniture", href: "/camp-furniture" },
     { label: "Campsite Gear", href: "/campsite-gear" },
+    { label: "Packs & Hiking", href: "/packs-hiking" },
+    { label: "Clothing & Footwear", href: "/clothing-footwear" },
   ],
   company: [
     { label: "About Us", href: "/about" },

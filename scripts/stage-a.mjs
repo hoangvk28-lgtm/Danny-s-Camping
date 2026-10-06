@@ -130,11 +130,41 @@ function clusterNote(cluster) {
 
 CL["RV Water Filters — Incremental"] = CL["RV Water Filters"];
 CL["RV Water Pressure Regulators — Incremental"] = CL["RV Water Pressure Regulators"];
+// Generic config for clusters without a hand-written entry (Danny's Camping plan): the head noun of the
+// keyword must appear in the title; gender words in the slug become hard requirements.
+const STOP = new Set(["best", "for", "the", "and", "with", "of", "a", "to", "in", "camping", "backpacking", "hiking", "ultralight", "outdoor", "mens", "womens", "women", "men", "kids", "budget", "cheap", "lightweight", "waterproof", "cold", "weather", "winter", "summer", "travel", "car", "family", "dog", "baby", "portable", "rain", "trail"]);
+const GENERIC_MUST = {
+  "best-backpacking-cookpots": /cook ?(pot|set|ware)|pot set|camping pot|titanium pot/i,
+  "best-camping-coffeemakers": /coffee|percolator|french press|pour.?over|espresso/i,
+  "best-powered-cooler": /(12v|electric|portable|car) (fridge|refrigerator|cooler)|fridge|refrigerator/i,
+  "best-camping-mattresses": /mattress|air bed|airbed|sleeping pad/i,
+  "best-thru-hiking-shorts": /short/i,
+  "best-hiking-skirts-dresses": /skirt|skort|dress/i,
+  "best-sleeping-pad-womens": /sleeping pad|camping pad|sleep mat/i,
+  "best-recovery-shoes-sandals-for-runners": /recovery|slide|sandal/i,
+  "best-hiking-watches": /watch/i,
+  "best-down-jacket-womens": /down|puffer|insulated/i,
+};
+function genericCfg(slug) {
+  const words = slug.replace(/^best-/, "").split(/-(?:for|with|under)-/)[0].split("-");
+  const core = words.filter((w) => !STOP.has(w));
+  const head = (core.length ? core : words).slice(-2).filter((w) => !/^\d+$/.test(w));
+  const stem = (w) => w.endsWith("ies") ? w.slice(0, -3) + "(y|ies)" : w.endsWith("ves") ? w.slice(0, -3) + "(f|fe|ves)" : w.endsWith("s") && !w.endsWith("ss") ? w.slice(0, -1) + "s?" : w + "(s|es)?";
+  // Every head word must appear somewhere in the title (not necessarily adjacent).
+  const must = new RegExp(head.map((w) => `(?=.*${stem(w.replace(/[^a-z0-9]/g, ""))})`).join(""), "i");
+  const req = [];
+  if (/(^|-)womens?(-|$)/.test(slug)) req.push([/./, /women|woman|ladies|female/i]);
+  else if (/(^|-)mens?(-|$)/.test(slug)) req.push([/./, /\bmen|\bman\b|male/i]);
+  if (/(^|-)kids?(-|$)/.test(slug)) req.push([/./, /kid|child|youth|boy|girl|toddler/i]);
+  if (/(^|-)dog(-|$)/.test(slug)) req.push([/./, /dog|pet/i]);
+  return { q: (k) => [k, k.replace(/^best /, ""), k.replace(/^best /, "") + " outdoor"], must: GENERIC_MUST[slug] ?? must, ban: /replacement (part|cover|strap|buckle)|repair kit|sticker|decal|keychain|ornament|poster|t-shirt graphic|costume/i, req };
+}
+
 const lines = readFileSync(slugsFile, "utf8").split("\n").map((l) => l.trim()).filter(Boolean);
 const taken = new Set();
 for (const line of lines) {
   const [cluster, slug] = line.split("|");
-  const cfg = CL[cluster];
+  const cfg = CL[cluster] ?? genericCfg(slug);
   const kw = slug.replace(/^best-/, "").replace(/-/g, " ");
   const bestKw = "best " + kw;
   const raw = [];
@@ -143,6 +173,9 @@ for (const line of lines) {
   let cands = raw.filter((i) => i.asin && !seen.has(i.asin) && seen.add(i.asin) && i.price != null && i.title);
   cands = cands.filter((i) => cfg.must.test(i.title) && (cfg.banSkip?.test(slug) || !cfg.ban.test(i.title)));
   for (const [sp, tp] of cfg.req || []) if (sp.test(slug)) cands = cands.filter((i) => tp.test(process.env.LOOSE ? i.title + " " + i.features.join(" ") : i.title));
+  // "under-<N>" slugs: keep only products priced at or below N (the spread-by-price picker below then covers the range).
+  const under = slug.match(/-under-(\d+)(?:-|$)/);
+  if (under) cands = cands.filter((i) => i.price != null && i.price <= Number(under[1]) && i.price >= Number(under[1]) * 0.15);
   const toks = cfg.noNum && cfg.noNum.test(slug) ? [] : numTokens(slug);
   let numOk = cands;
   if (toks.length) numOk = cands.filter((i) => toks.every((tk) => matchesNum(process.env.LOOSE ? i.title + ' ' + i.features.join(' ') : i.title, tk)));

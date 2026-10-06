@@ -76,6 +76,26 @@ export const categories: Category[] = [
     subcategories: ["campsite-gear"],
     matchSlugs: ["campsite-gear"],
   },
+  {
+    slug: "packs-hiking",
+    name: "Packs & Hiking",
+    description: "Backpacks, trekking poles, GPS units and trail gear.",
+    shortDescription: "Backpacks, trekking poles, GPS units and trail gear.",
+    icon: "Tent",
+    color: "brand",
+    subcategories: ["packs-hiking"],
+    matchSlugs: ["packs-hiking"],
+  },
+  {
+    slug: "clothing-footwear",
+    name: "Clothing & Footwear",
+    description: "Rain jackets, insulated layers, base layers, boots and socks.",
+    shortDescription: "Rain jackets, insulated layers, base layers, boots and socks.",
+    icon: "Tent",
+    color: "brand",
+    subcategories: ["clothing-footwear"],
+    matchSlugs: ["clothing-footwear"],
+  },
 ];
 
 export function getCategoryBySlug(slug: string): Category | undefined {

@@ -43,5 +43,30 @@
   "alt": "Tent lit from inside in the middle of a forest at night",
   "source": "https://unsplash.com/photos/13Ql0hIq0kc",
   "license": "Unsplash License"
+ },
+ "hiking-backpacker-mountain": {
+  "alt": "Hiker with a loaded backpack climbing a mountain trail",
+  "source": "https://unsplash.com/photos/QTrSmMrmeAs",
+  "license": "Unsplash License"
+ },
+ "clothing-rain-jacket-mountain": {
+  "alt": "Hiker in a yellow insulated jacket with mountains behind",
+  "source": "https://unsplash.com/photos/XQ2kfYqbl8U",
+  "license": "Unsplash License"
+ },
+ "footwear-boots-rocky-trail": {
+  "alt": "Hiking boots on a rocky mountain trail",
+  "source": "https://unsplash.com/photos/NhD9ngc1XT0",
+  "license": "Unsplash License"
+ },
+ "lighting-headlamp-tent": {
+  "alt": "Camper wearing a headlamp in front of a tent at night",
+  "source": "https://unsplash.com/photos/vyJhbmYbZ-4",
+  "license": "Unsplash License"
+ },
+ "tents-camper-by-tent": {
+  "alt": "Camper standing next to a tent at a campsite",
+  "source": "https://unsplash.com/photos/oG028S5d8Rk",
+  "license": "Unsplash License"
  }
 }

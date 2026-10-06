@@ -21,6 +21,10 @@ export const silos: Silo[] = [
     description: "Guides to camping chairs, zero gravity loungers, stools, tables and hammocks chosen for weight capacity, packed size and comfort." },
   { slug: "campsite-gear", name: "Campsite Gear", tagline: "Lighting, navigation and campsite essentials",
     description: "Guides to lanterns, headlamps, GPS units, projectors and the campsite essentials that make a weekend outdoors easier." },
+  { slug: "packs-hiking", name: "Packs & Hiking", tagline: "Backpacks, navigation and trail gear",
+    description: "Guides to backpacking and day packs, trekking poles, GPS units, hiking watches and the trail gear that gets you to camp and back." },
+  { slug: "clothing-footwear", name: "Clothing & Footwear", tagline: "Jackets, layers, boots and socks",
+    description: "Guides to rain jackets, insulated layers, base layers, hiking boots, trail shoes and socks, compared on warmth, weather protection, fit and weight." },
 ];
 
 // Kept for compatibility with components that expect aggregate hubs.

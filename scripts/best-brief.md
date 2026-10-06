@@ -49,3 +49,8 @@ Each product also gets:
 - "take": Danny's Take, 1-2 short sentences (max ~35 words): who this pick is for and why, for this guide's angle. Concrete, no template phrasing ("makes the shortlist because"), no hype.
 - "catch": one short sentence (max ~30 words) with the most meaningful real trade-off (weight, packed size, setup, power limits, capacity, missing spec). Use "" if there is no meaningful trade-off.
 The page shows: award, name, Danny's Take, Best for, early CTA, then the "d" paragraphs, specs, pros/cons, The Catch, final CTA.
+
+## Niche guides (Danny's Camping, from the niche plan)
+- Budget slugs ("...-under-100"): every pick is priced at or under the ceiling. Frame the guide around what that budget realistically buys, where corners get cut at that price, and which picks stretch it furthest. Never state exact prices in prose (prices change); say "under $100" or "near the top of the budget". Budget table rows use the real price tiers within the ceiling.
+- Use-case slugs ("...-for-side-sleepers", "...-with-heater", "...-for-rainy-weather"): the use case is the whole angle. Criteria, howToChoose primary table and FAQ must be about that need (e.g. side sleeping: shoulder/hip pressure, pad width and thickness, mummy vs rectangular). If a pick only partly fits the use case, say so in cons.
+- These guides sit under a broader hub guide on the site; do not re-explain the whole category, go deep on the niche.

@@ -20,6 +20,8 @@ export const MIGRATED_GUIDE_SLUGS_TO_SILO: Record<string, string> = {
   "camp-power": "camp-power",
   "camp-furniture": "camp-furniture",
   "campsite-gear": "campsite-gear",
+  "packs-hiking": "packs-hiking",
+  "clothing-footwear": "clothing-footwear",
 };
 
 // No legacy /categories/<slug> hubs are migrated on this site.
