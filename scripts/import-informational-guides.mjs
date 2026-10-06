@@ -60,7 +60,7 @@ const guides = articleFiles.map((file) => {
 
   return {
     slug,
-    silo: number >= 21 ? "tents-shelter" : "campsite-gear",
+    silo: fields.silo || (number >= 21 ? "tents-shelter" : "campsite-gear"),
     title: fields.title,
     metaTitle: fields.title,
     description: fields.meta_description,

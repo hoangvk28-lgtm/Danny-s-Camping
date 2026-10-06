@@ -2,13 +2,16 @@ import Link from "next/link";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
-import { SITE_NAME, SITE_URL } from "@/lib/seo";
+import { SITE_URL } from "@/lib/seo";
 import { formatDate } from "@/lib/utils";
 import { getSiloBySlug } from "@/data/silos";
 import { getInformationalGuide, type InformationalGuide } from "@/data/informational-guides";
 import { guides } from "@/data/guides";
 import { canonicalGuideHref } from "@/lib/migrated-silos";
 import { RichContent } from "@/components/ui/RichContent";
+
+const INFORMATIONAL_AUTHOR = "Danny Walker";
+const INFORMATIONAL_AUTHOR_PATH = "/author/danny-walker";
 
 function headingId(value: string) {
   return value
@@ -73,7 +76,11 @@ export function InformationalGuidePage({ guide }: { guide: InformationalGuide })
     description: guide.description,
     datePublished: guide.lastUpdated,
     dateModified: guide.lastUpdated,
-    author: { "@type": "Organization", name: `${SITE_NAME} Editors`, url: `${SITE_URL}/about` },
+    author: {
+      "@type": "Person",
+      name: INFORMATIONAL_AUTHOR,
+      url: `${SITE_URL}${INFORMATIONAL_AUTHOR_PATH}`,
+    },
     publisher: { "@id": `${SITE_URL}/#organization` },
     mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
   };
@@ -117,7 +124,13 @@ export function InformationalGuidePage({ guide }: { guide: InformationalGuide })
           <h1 className="mt-3 text-[2.25rem] leading-[1.08] sm:text-[3rem]">{guide.title}</h1>
           <p className="mt-4 max-w-[68ch] text-[1.125rem] leading-relaxed sm:text-[1.25rem]">{guide.dek}</p>
           <p className="mt-5 text-sm text-ink-secondary">
-            By <span className="font-medium text-ink">{SITE_NAME} Editors</span>
+            By{" "}
+            <Link
+              href={INFORMATIONAL_AUTHOR_PATH}
+              className="font-medium !text-ink underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
+            >
+              {INFORMATIONAL_AUTHOR}
+            </Link>
             <span aria-hidden> · </span>
             Updated <time dateTime={guide.lastUpdated}>{formatDate(guide.lastUpdated)}</time>
             <span aria-hidden> · </span>{guide.readTime} read
