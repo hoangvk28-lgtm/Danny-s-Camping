@@ -418,11 +418,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-men-s-winter-boots-under-100"
   },
   {
-    "title": "Best Winter Jackets Under 100",
-    "href": "/clothing-footwear/best-winter-jackets-under-100"
+    "title": "Best Winter Boots For Women Under 100",
+    "href": "/clothing-footwear/best-winter-boots-for-women-under-100"
   },
   {
-    "title": "Best Hiking Boots For Men Under 100",
-    "href": "/clothing-footwear/best-hiking-boots-for-men-under-100"
+    "title": "Best Winter Boots Under 100",
+    "href": "/clothing-footwear/best-winter-boots-under-100"
   }
 ];

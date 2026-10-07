@@ -388,11 +388,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-kids-ski-gloves-for-warmth"
   },
   {
-    "title": "Best Fleece Jackets For Kids",
-    "href": "/clothing-footwear/best-fleece-jackets-for-kids"
+    "title": "Best Winter Boots For Kids",
+    "href": "/clothing-footwear/best-winter-boots-for-kids"
   },
   {
-    "title": "Best Winter Jackets Under 100",
-    "href": "/clothing-footwear/best-winter-jackets-under-100"
+    "title": "Best Winter Gloves For Men",
+    "href": "/clothing-footwear/best-winter-gloves-for-men"
   }
 ];
