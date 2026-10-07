@@ -353,7 +353,7 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-insulated-rain-jacket-women-s-with-hood"
   },
   {
-    "title": "Best Fleece Jacket Under 100",
-    "href": "/clothing-footwear/best-fleece-jacket-under-100"
+    "title": "Best Men S Softshell Jacket With Hood",
+    "href": "/clothing-footwear/best-men-s-softshell-jacket-with-hood"
   }
 ];

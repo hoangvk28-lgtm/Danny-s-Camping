@@ -422,11 +422,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-sandals-for-walking"
   },
   {
-    "title": "Best Trail Running Shoes For Hiking And Walking",
-    "href": "/clothing-footwear/best-trail-running-shoes-for-hiking-and-walking"
+    "title": "Best Sandals Women For Walking",
+    "href": "/clothing-footwear/best-sandals-women-for-walking"
   },
   {
-    "title": "Best Underwear For Women For Walking",
-    "href": "/clothing-footwear/best-underwear-for-women-for-walking"
+    "title": "Best Women S Sandals For Walking Long Distances",
+    "href": "/clothing-footwear/best-women-s-sandals-for-walking-long-distances"
   }
 ];
