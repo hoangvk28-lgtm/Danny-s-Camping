@@ -430,7 +430,7 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-winter-gloves-under-50"
   },
   {
-    "title": "Best Winter Jackets Under 100",
-    "href": "/clothing-footwear/best-winter-jackets-under-100"
+    "title": "Best Winter Gloves For Extreme Cold",
+    "href": "/clothing-footwear/best-winter-gloves-for-extreme-cold"
   }
 ];

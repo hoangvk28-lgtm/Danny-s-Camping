@@ -430,7 +430,7 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-water-shoes-for-women-beach"
   },
   {
-    "title": "Best Hiking Shoes For Men Waterproof",
-    "href": "/clothing-footwear/best-hiking-shoes-for-men-waterproof"
+    "title": "Best Women S Water Shoes For Rocky Beaches",
+    "href": "/clothing-footwear/best-women-s-water-shoes-for-rocky-beaches"
   }
 ];

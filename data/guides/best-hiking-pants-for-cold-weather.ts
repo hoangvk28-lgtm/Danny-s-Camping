@@ -422,11 +422,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-men-s-hiking-pants-for-cold-weather"
   },
   {
-    "title": "Best Hiking Leggings For Cold Weather",
-    "href": "/clothing-footwear/best-hiking-leggings-for-cold-weather"
+    "title": "Best Women S Hiking Pants For Cold Weather",
+    "href": "/clothing-footwear/best-women-s-hiking-pants-for-cold-weather"
   },
   {
-    "title": "Best Hiking Pants For Hot Weather",
-    "href": "/clothing-footwear/best-hiking-pants-for-hot-weather"
+    "title": "Best Hiking Leggings For Cold Weather",
+    "href": "/clothing-footwear/best-hiking-leggings-for-cold-weather"
   }
 ];

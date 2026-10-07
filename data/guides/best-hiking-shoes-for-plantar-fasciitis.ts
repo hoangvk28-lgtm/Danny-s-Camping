@@ -384,15 +384,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Womens Hiking Shoes For Plantar Fasciitis",
+    "href": "/clothing-footwear/best-womens-hiking-shoes-for-plantar-fasciitis"
+  },
+  {
     "title": "Best Hiking Boots For Plantar Fasciitis",
     "href": "/clothing-footwear/best-hiking-boots-for-plantar-fasciitis"
   },
   {
     "title": "Best Hiking Sandals For Plantar Fasciitis",
     "href": "/clothing-footwear/best-hiking-sandals-for-plantar-fasciitis"
-  },
-  {
-    "title": "Best Trail Running Shoes For Hiking And Running",
-    "href": "/clothing-footwear/best-trail-running-shoes-for-hiking-and-running"
   }
 ];

@@ -388,11 +388,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-hiking-pants-for-women-with-big-thighs"
   },
   {
-    "title": "Best Hiking Sandals For Women With Arch Support",
-    "href": "/clothing-footwear/best-hiking-sandals-for-women-with-arch-support"
+    "title": "Best Women S Hiking Shorts With Pockets",
+    "href": "/clothing-footwear/best-women-s-hiking-shorts-with-pockets"
   },
   {
-    "title": "Best Hiking Shorts For Women Over 50",
-    "href": "/clothing-footwear/best-hiking-shorts-for-women-over-50"
+    "title": "Best Hiking Sandals For Women With Arch Support",
+    "href": "/clothing-footwear/best-hiking-sandals-for-women-with-arch-support"
   }
 ];

@@ -418,15 +418,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Womens Winter Boots For Walking",
+    "href": "/clothing-footwear/best-womens-winter-boots-for-walking"
+  },
+  {
     "title": "Best Men S Winter Boots For Extreme Cold",
     "href": "/clothing-footwear/best-men-s-winter-boots-for-extreme-cold"
   },
   {
     "title": "Best Men S Winter Boots For Wide Feet",
     "href": "/clothing-footwear/best-men-s-winter-boots-for-wide-feet"
-  },
-  {
-    "title": "Best Men S Winter Boots Under 100",
-    "href": "/clothing-footwear/best-men-s-winter-boots-under-100"
   }
 ];

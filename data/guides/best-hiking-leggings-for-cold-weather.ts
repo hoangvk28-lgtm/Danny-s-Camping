@@ -388,7 +388,7 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-men-s-hiking-pants-for-cold-weather"
   },
   {
-    "title": "Best Base Layer For Men Cold Weather",
-    "href": "/clothing-footwear/best-base-layer-for-men-cold-weather"
+    "title": "Best Women S Hiking Pants For Cold Weather",
+    "href": "/clothing-footwear/best-women-s-hiking-pants-for-cold-weather"
   }
 ];

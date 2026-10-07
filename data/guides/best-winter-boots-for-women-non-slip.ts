@@ -430,7 +430,7 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-winter-boots-for-women-waterproof"
   },
   {
-    "title": "Best Hiking Boots For Women Waterproof",
-    "href": "/clothing-footwear/best-hiking-boots-for-women-waterproof"
+    "title": "Best Women S Winter Boots For Extreme Cold",
+    "href": "/clothing-footwear/best-women-s-winter-boots-for-extreme-cold"
   }
 ];

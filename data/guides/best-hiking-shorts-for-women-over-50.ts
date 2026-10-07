@@ -388,11 +388,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-hiking-shorts-for-women-with-thick-thighs"
   },
   {
-    "title": "Best Base Layer For Women Hiking",
-    "href": "/clothing-footwear/best-base-layer-for-women-hiking"
+    "title": "Best Women S Hiking Shorts For Hot Weather",
+    "href": "/clothing-footwear/best-women-s-hiking-shorts-for-hot-weather"
   },
   {
-    "title": "Best Hiking Leggings For Women",
-    "href": "/clothing-footwear/best-hiking-leggings-for-women"
+    "title": "Best Women S Hiking Shorts With Pockets",
+    "href": "/clothing-footwear/best-women-s-hiking-shorts-with-pockets"
   }
 ];

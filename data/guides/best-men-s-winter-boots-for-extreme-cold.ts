@@ -422,11 +422,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/clothing-footwear/best-winter-boots-for-extreme-cold"
   },
   {
-    "title": "Best Men S Winter Boots For Walking",
-    "href": "/clothing-footwear/best-men-s-winter-boots-for-walking"
+    "title": "Best Women S Winter Boots For Extreme Cold",
+    "href": "/clothing-footwear/best-women-s-winter-boots-for-extreme-cold"
   },
   {
-    "title": "Best Men S Winter Boots For Wide Feet",
-    "href": "/clothing-footwear/best-men-s-winter-boots-for-wide-feet"
+    "title": "Best Winter Gloves For Extreme Cold",
+    "href": "/clothing-footwear/best-winter-gloves-for-extreme-cold"
   }
 ];

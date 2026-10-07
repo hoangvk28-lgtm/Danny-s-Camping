@@ -388,15 +388,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Women S Water Shoes For Rocky Beaches",
+    "href": "/clothing-footwear/best-women-s-water-shoes-for-rocky-beaches"
+  },
+  {
     "title": "Best Hiking Shoes For Women Waterproof",
     "href": "/clothing-footwear/best-hiking-shoes-for-women-waterproof"
   },
   {
     "title": "Best Mens Water Shoes For Beach",
     "href": "/clothing-footwear/best-mens-water-shoes-for-beach"
-  },
-  {
-    "title": "Best Water Shoes For Beach",
-    "href": "/clothing-footwear/best-water-shoes-for-beach"
   }
 ];

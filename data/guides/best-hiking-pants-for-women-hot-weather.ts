@@ -418,15 +418,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Women S Hiking Pants For Cold Weather",
+    "href": "/clothing-footwear/best-women-s-hiking-pants-for-cold-weather"
+  },
+  {
     "title": "Best Women S Hiking Shirts For Hot Weather",
     "href": "/clothing-footwear/best-women-s-hiking-shirts-for-hot-weather"
   },
   {
     "title": "Best Hiking Pants For Cold Weather",
     "href": "/clothing-footwear/best-hiking-pants-for-cold-weather"
-  },
-  {
-    "title": "Best Hiking Pants For Hot Weather",
-    "href": "/clothing-footwear/best-hiking-pants-for-hot-weather"
   }
 ];

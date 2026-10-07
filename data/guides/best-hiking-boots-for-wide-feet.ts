@@ -414,15 +414,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Winter Hiking Boots For Wide Feet",
+    "href": "/clothing-footwear/best-winter-hiking-boots-for-wide-feet"
+  },
+  {
     "title": "Best Hiking Sandals For Wide Feet",
     "href": "/clothing-footwear/best-hiking-sandals-for-wide-feet"
   },
   {
     "title": "Best Hiking Shoes For Womens Wide Feet",
     "href": "/clothing-footwear/best-hiking-shoes-for-womens-wide-feet"
-  },
-  {
-    "title": "Best Hiking Shoes For Men Wide Feet",
-    "href": "/clothing-footwear/best-hiking-shoes-for-men-wide-feet"
   }
 ];
