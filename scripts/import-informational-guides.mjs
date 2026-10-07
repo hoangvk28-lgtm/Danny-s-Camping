@@ -41,16 +41,16 @@ const articleFiles = readdirSync(sourceRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .flatMap((directory) =>
     readdirSync(join(sourceRoot, directory.name))
-      .filter((filename) => /^\d{2}-.+\.md$/.test(filename))
+      .filter((filename) => /^\d{2,3}-.+\.md$/.test(filename))
       .map((filename) => join(sourceRoot, directory.name, filename))
   )
-  .sort((a, b) => Number(basename(a).slice(0, 2)) - Number(basename(b).slice(0, 2)));
+  .sort((a, b) => Number(basename(a).match(/^\d+/)?.[0]) - Number(basename(b).match(/^\d+/)?.[0]));
 
 mkdirSync(contentRoot, { recursive: true });
 
 const guides = articleFiles.map((file) => {
   const filename = basename(file);
-  const number = Number(filename.slice(0, 2));
+  const number = Number(filename.match(/^\d+/)?.[0]);
   const { fields, markdown } = parseFrontmatter(readFileSync(file, "utf8"), filename);
   const slug = fields.slug.replace(/^\/+|\/+$/g, "");
   const contentFile = `${slug}.md`;
