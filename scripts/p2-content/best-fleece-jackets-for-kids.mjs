@@ -355,16 +355,16 @@ export default {
   ],
   "related": [
     {
+      "title": "Best Fleece Jackets For Winter",
+      "href": "/clothing-footwear/best-fleece-jackets-for-winter"
+    },
+    {
       "title": "Best Down Jackets For Mountaineering",
       "href": "/clothing-footwear/best-down-jackets-for-mountaineering"
     },
     {
       "title": "Best Fleece Jacket Under 100",
       "href": "/clothing-footwear/best-fleece-jacket-under-100"
-    },
-    {
-      "title": "Best Winter Jackets Under 100",
-      "href": "/clothing-footwear/best-winter-jackets-under-100"
     }
   ]
 };

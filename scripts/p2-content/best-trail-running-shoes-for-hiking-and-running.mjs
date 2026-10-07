@@ -359,12 +359,12 @@ export default {
       "href": "/clothing-footwear/best-trail-running-shoes-for-hiking-and-walking"
     },
     {
-      "title": "Best Base Layer For Men Hiking",
-      "href": "/clothing-footwear/best-base-layer-for-men-hiking"
+      "title": "Best Hiking Shoes For Womens Wide Feet",
+      "href": "/clothing-footwear/best-hiking-shoes-for-womens-wide-feet"
     },
     {
-      "title": "Best Base Layer For Women Hiking",
-      "href": "/clothing-footwear/best-base-layer-for-women-hiking"
+      "title": "Best Hiking Shoes Under 100",
+      "href": "/clothing-footwear/best-hiking-shoes-under-100"
     }
   ]
 };

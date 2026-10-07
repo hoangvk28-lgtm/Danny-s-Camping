@@ -355,16 +355,16 @@ export default {
   ],
   "related": [
     {
-      "title": "Best Cycling Sunglasses Under 100",
-      "href": "/clothing-footwear/best-cycling-sunglasses-under-100"
+      "title": "Best Fleece Jackets For Winter",
+      "href": "/clothing-footwear/best-fleece-jackets-for-winter"
     },
     {
-      "title": "Best Cycling Sunglasses Under 50",
-      "href": "/clothing-footwear/best-cycling-sunglasses-under-50"
+      "title": "Best Men S Winter Boots Under 100",
+      "href": "/clothing-footwear/best-men-s-winter-boots-under-100"
     },
     {
-      "title": "Best Down Jackets For Mountaineering",
-      "href": "/clothing-footwear/best-down-jackets-for-mountaineering"
+      "title": "Best Men S Winter Boots Under 150",
+      "href": "/clothing-footwear/best-men-s-winter-boots-under-150"
     }
   ]
 };

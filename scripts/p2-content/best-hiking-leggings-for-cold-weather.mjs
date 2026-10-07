@@ -355,16 +355,16 @@ export default {
   ],
   "related": [
     {
-      "title": "Best Base Layer For Men Cold Weather",
-      "href": "/clothing-footwear/best-base-layer-for-men-cold-weather"
+      "title": "Best Hiking Pants For Cold Weather",
+      "href": "/clothing-footwear/best-hiking-pants-for-cold-weather"
     },
     {
-      "title": "Best Base Layer For Women Cold Weather",
-      "href": "/clothing-footwear/best-base-layer-for-women-cold-weather"
+      "title": "Best Men S Hiking Pants For Cold Weather",
+      "href": "/clothing-footwear/best-men-s-hiking-pants-for-cold-weather"
     },
     {
-      "title": "Best Base Layers For Cold Weather",
-      "href": "/clothing-footwear/best-base-layers-for-cold-weather"
+      "title": "Best Women S Hiking Pants For Cold Weather",
+      "href": "/clothing-footwear/best-women-s-hiking-pants-for-cold-weather"
     }
   ]
 };

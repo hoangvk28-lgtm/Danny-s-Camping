@@ -392,8 +392,8 @@ export default {
       "href": "/clothing-footwear/best-hiking-leggings-for-cold-weather"
     },
     {
-      "title": "Best Base Layer For Men Cold Weather",
-      "href": "/clothing-footwear/best-base-layer-for-men-cold-weather"
+      "title": "Best Hiking Pants For Cold Weather",
+      "href": "/clothing-footwear/best-hiking-pants-for-cold-weather"
     }
   ]
 };

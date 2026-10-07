@@ -388,12 +388,12 @@ export default {
       "href": "/clothing-footwear/best-men-s-hiking-shirts-for-hot-weather"
     },
     {
-      "title": "Best Base Layer For Women Cold Weather",
-      "href": "/clothing-footwear/best-base-layer-for-women-cold-weather"
+      "title": "Best Hiking Pants For Women Hot Weather",
+      "href": "/clothing-footwear/best-hiking-pants-for-women-hot-weather"
     },
     {
-      "title": "Best Base Layer For Women Hiking",
-      "href": "/clothing-footwear/best-base-layer-for-women-hiking"
+      "title": "Best Sun Shirts For Women Hiking",
+      "href": "/clothing-footwear/best-sun-shirts-for-women-hiking"
     }
   ]
 };
