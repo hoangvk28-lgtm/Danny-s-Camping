@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
@@ -123,7 +124,8 @@ export function InformationalGuidePage({ guide }: { guide: InformationalGuide })
           <p className="eyebrow mt-6">Practical Camping Guide</p>
           <h1 className="mt-3 text-[2.25rem] leading-[1.08] sm:text-[3rem]">{guide.title}</h1>
           <p className="mt-4 max-w-[68ch] text-[1.125rem] leading-relaxed sm:text-[1.25rem]">{guide.dek}</p>
-          <p className="mt-5 text-sm text-ink-secondary">
+          <p className="mt-5 flex flex-wrap items-center gap-x-1 text-sm text-ink-secondary">
+            <Image src="/images/authors/danny-walker.webp" alt={INFORMATIONAL_AUTHOR} width={40} height={40} className="mr-2 h-10 w-10 rounded-full object-cover" />
             By{" "}
             <Link
               href={INFORMATIONAL_AUTHOR_PATH}

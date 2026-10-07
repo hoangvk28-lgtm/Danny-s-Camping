@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 import { AMAZON_TAG } from "@/lib/affiliate";
 import { formatDate } from "@/lib/utils";
@@ -262,16 +263,23 @@ export function RichGuidePage(props: RichGuidePageProps) {
           <p className="eyebrow mt-5">Buying Guide</p>
           <h1 className="mt-3 text-[2.125rem] leading-[1.1] sm:text-[2.75rem] lg:text-[3rem]">{editorialHeadline}</h1>
           <p className="mt-3 text-[1.125rem] leading-relaxed sm:text-[1.25rem]">{dek}</p>
-          <div className="mt-4 text-sm leading-relaxed text-ink-secondary">
-            <p>By <Link prefetch={false} href={authorHref} className="font-medium !text-ink hover:!text-brand">{author.name}</Link></p>
-            <p>{author.role}</p>
-            <p>
-              <time dateTime={lastUpdated}>Updated {formatDate(lastUpdated)}</time>
-              <span aria-hidden> · </span>
-              {readTime} read
-              <span aria-hidden> · </span>
-              {products.length} products compared
-            </p>
+          <div className="mt-4 flex items-center gap-3 text-sm leading-relaxed text-ink-secondary">
+            {author.avatarUrl && (
+              <Link prefetch={false} href={authorHref} className="shrink-0">
+                <Image src={author.avatarUrl} alt={author.name} width={56} height={56} className="h-14 w-14 rounded-full object-cover" />
+              </Link>
+            )}
+            <div>
+              <p>By <Link prefetch={false} href={authorHref} className="font-medium !text-ink hover:!text-brand">{author.name}</Link></p>
+              <p>{author.role}</p>
+              <p>
+                <time dateTime={lastUpdated}>Updated {formatDate(lastUpdated)}</time>
+                <span aria-hidden> · </span>
+                {readTime} read
+                <span aria-hidden> · </span>
+                {products.length} products compared
+              </p>
+            </div>
           </div>
         </header>
 
