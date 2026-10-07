@@ -349,15 +349,15 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/tents-shelter/best-camping-tents"
   },
   {
+    "title": "Best Tent Stakes",
+    "href": "/tents-shelter/best-tent-stakes"
+  },
+  {
     "title": "Best 4 Season Tent Under 200",
     "href": "/tents-shelter/best-4-season-tent-under-200"
   },
   {
     "title": "Best 4 Season Tent Under 300",
     "href": "/tents-shelter/best-4-season-tent-under-300"
-  },
-  {
-    "title": "Best 4 Season Tent For Family",
-    "href": "/tents-shelter/best-4-season-tent-for-family"
   }
 ];

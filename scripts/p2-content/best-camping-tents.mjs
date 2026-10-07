@@ -359,6 +359,10 @@ export default {
   ],
   "related": [
     {
+      "title": "Best Tent Stakes",
+      "href": "/tents-shelter/best-tent-stakes"
+    },
+    {
       "title": "Best 4 Season Tent Under 200",
       "href": "/tents-shelter/best-4-season-tent-under-200"
     },
@@ -369,10 +373,6 @@ export default {
     {
       "title": "Best 4 Season Tent For Family",
       "href": "/tents-shelter/best-4-season-tent-for-family"
-    },
-    {
-      "title": "Best Backpacking Tents Under 100",
-      "href": "/tents-shelter/best-backpacking-tents-under-100"
     }
   ]
 };
