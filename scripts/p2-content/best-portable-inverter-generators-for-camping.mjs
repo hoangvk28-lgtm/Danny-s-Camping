@@ -1,0 +1,332 @@
+export default {
+  "short": false,
+  "silo": "camp-power",
+  "slug": "best-portable-inverter-generators-for-camping",
+  "title": "4 Best Portable Inverter Generators For Camping in 2026",
+  "metaTitle": "Best Portable Inverter Generators For Camping",
+  "metaDescription": "Best portable inverter generators for camping compared on weight, noise, running watts, CO protection and parallel options for tent and RV sites.",
+  "keyword": "best portable inverter generators for camping",
+  "readTime": "10 min",
+  "intro": [
+    "For camping, the inverter generator wins on noise, weight and clean power for phones and laptops. The real choice is how many running watts you need: a 1350 watt unit runs lights and chargers, while a 3500 watt unit handles an air conditioner.",
+    "Four inverter generators made the list, ranging from 26.5 to 40 pounds. They were compared on running watts, stated noise, weight, CO protection and parallel capability, with a different best use for each. All are small units, so none of them runs an RV air conditioner."
+  ],
+  "products": [
+    {
+      "asin": "B0GXXZT82D",
+      "short": "AIVOLT 1750W",
+      "name": "AIVOLT 1750W Inverter Generator Portable Gas Generator for Camping Home",
+      "badge": "Best Ultralight",
+      "d": [
+        "The AIVOLT 1750W delivers 1350 running and 1750 peak watts at under 3 percent THD in a 26.5 pound body. It runs at 52 dBA, has CO detection with auto shutoff and a 0.66 gallon tank that gives up to 7 hours at 25 percent load with ECO mode.",
+        "It is the lightest and quietest of the four, at 26.5 pounds and 52 dBA. Compared with the AIVOLT 1600W, it adds a stated CO sensor and a lower noise figure.",
+        "It suits backpack-to-trunk campers who need phone, light and laptop power with minimal weight. The one-hand lift makes loading easy."
+      ],
+      "specs": [
+        "1350 running, 1750 peak watts",
+        "26.5 lb, 52 dBA, CO shutoff",
+        "7 hours at 25% load, ECO mode"
+      ],
+      "pros": [
+        "Lightest of the four at 26.5 pounds",
+        "Quiet at 52 dBA",
+        "CO detection with auto shutoff",
+        "Clean power under 3% THD"
+      ],
+      "cons": [
+        "1350 running watts limits large loads",
+        "Small tank means short full-load runs"
+      ],
+      "bestFor": "Tent camping with small loads",
+      "take": "The lightest, quietest option here. Perfect when you only need lights, chargers and a fan.",
+      "catch": "It cannot run an air conditioner or a microwave."
+    },
+    {
+      "asin": "B0B6NPLQH7",
+      "short": "AIVOLT 1600W",
+      "name": "AIVOLT 1600W Super Quiet Inverter Generator 28lbs Portable for Camping",
+      "badge": "Best Parallel Starter",
+      "d": [
+        "The AIVOLT 1600W uses a 60cc 4-stroke OHV engine with copper windings, under 3 percent THD and a 28 pound body at 57 dBA from 23 feet. It runs 8 hours at 25 percent load or 2 hours at full load, with two 120V outlets, two USB ports (Type-A and C), parallel capability and CO protection.",
+        "It is the lowest priced of the four and states a full-load runtime, which the AIVOLT 1750W does not give. The parallel capability lets two units add up for bigger loads.",
+        "It suits budget campers who may add a second unit later. USB-C charging suits modern phones."
+      ],
+      "specs": [
+        "1600W, 28 lb, 57 dBA",
+        "8 hours at 25% load",
+        "Parallel capable, USB-A and C"
+      ],
+      "pros": [
+        "Lowest price of the four",
+        "Full-load runtime is stated",
+        "Parallel capability",
+        "CO protection and two USB ports"
+      ],
+      "cons": [
+        "Only 2 hours at full load",
+        "Louder than the AIVOLT 1750W"
+      ],
+      "bestFor": "Budget camping with an upgrade path",
+      "take": "A cheap, light starter unit with room to grow. Good for small camps.",
+      "catch": "Full load lasts only about 2 hours."
+    },
+    {
+      "asin": "B085828BQ6",
+      "short": "WEN 2350W",
+      "name": "WEN Super Quiet 2350-Watt Portable Inverter Generator with Fuel Shut Off",
+      "badge": "Best Fuel Shutoff",
+      "d": [
+        "The WEN 56235i produces 2350 surge and 1900 rated watts at 39 pounds, with a fuel shutoff that burns the carburetor dry before stopping. The listing stresses super quiet operation and clean power for electronics.",
+        "It states 1900 rated watts, 550 above the AIVOLT 1750W, and a fuel shutoff for storage. It weighs about 12 pounds more than the lightest unit here.",
+        "It suits car campers who need chargers, lights and a small appliance, and store the unit between trips. The shutoff reduces carburetor gumming."
+      ],
+      "specs": [
+        "2350 surge, 1900 rated watts",
+        "39 lb, fuel shutoff",
+        "Clean power for electronics"
+      ],
+      "pros": [
+        "1900 rated watts at 39 pounds",
+        "Fuel shutoff helps storage",
+        "Clean power for phones and TVs",
+        "Reasonable price"
+      ],
+      "cons": [
+        "No decibel figure is listed",
+        "No CO sensor is named"
+      ],
+      "bestFor": "Car camping with storage between trips",
+      "take": "A simple mid-size inverter with storage-friendly features. Good value.",
+      "catch": "Output is modest, so a fridge plus microwave is out of reach."
+    },
+    {
+      "asin": "B0GQXF2RKM",
+      "short": "Oxseryn 2800W",
+      "name": "Oxseryn 2800-Watts Portable Inverter Generator",
+      "badge": "Best Mid Output",
+      "d": [
+        "The Oxseryn 2800W lists 2000 running and 2800 peak watts with under 58 dBA at 23 feet, a 40 pound body and 9 hours at 25 percent load. It includes a USB-C port with USB and two 120V outlets, Eco mode and a parallel option.",
+        "It states 100 running watts more than the WEN 2350W and a decibel figure the WEN lacks. The 1.1 gallon tank runs 9 hours at light load.",
+        "It suits campers with moderate loads, such as a fridge and a fan, who still want a lightweight unit. USB-C is handy for laptops."
+      ],
+      "specs": [
+        "2000 running, 2800 peak watts",
+        "Under 58 dBA, 40 lb",
+        "9 hours at 25% load"
+      ],
+      "pros": [
+        "Under 58 dBA noise rating",
+        "USB-C and USB plus two 120V outlets",
+        "Eco mode and parallel option",
+        "Lightweight at 40 pounds"
+      ],
+      "cons": [
+        "No CO sensor is listed",
+        "Fuel tank is small"
+      ],
+      "bestFor": "Moderate loads with low noise",
+      "take": "A quiet, light step up from the small units. Use a battery CO alarm nearby.",
+      "catch": "No CO sensor is named, so use a separate alarm."
+    }
+  ],
+  "howWeEvaluated": [
+    {
+      "title": "Running watts",
+      "description": "Compared rated output and the propane derate."
+    },
+    {
+      "title": "Weight and noise",
+      "description": "Noted pounds and stated decibels."
+    },
+    {
+      "title": "Safety",
+      "description": "Checked for CO sensors and shutoffs."
+    },
+    {
+      "title": "Expansion",
+      "description": "Looked at parallel capability and ports."
+    }
+  ],
+  "howToChoose": [
+    {
+      "subheading": "By Campsite Load",
+      "table": {
+        "headers": [
+          "Your situation",
+          "Recommended pick",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Phone, lights and fan",
+            "AIVOLT 1750W",
+            "26.5 pounds, 1350 running watts"
+          ],
+          [
+            "Light loads, budget",
+            "AIVOLT 1600W",
+            "Lowest price, parallel capable"
+          ],
+          [
+            "Fridge, laptop, small appliance",
+            "WEN 2350W",
+            "1900 rated watts"
+          ],
+          [
+            "Moderate loads, quiet",
+            "Oxseryn 2800W",
+            "2000 running, under 58 dBA"
+          ]
+        ]
+      }
+    },
+    {
+      "subheading": "By Budget",
+      "table": {
+        "headers": [
+          "Budget",
+          "Recommended pick"
+        ],
+        "rows": [
+          [
+            "$250 to $280",
+            "AIVOLT 1600W or AIVOLT 1750W"
+          ],
+          [
+            "$290 to $430",
+            "Oxseryn 2800W or WEN 2350W"
+          ]
+        ]
+      }
+    },
+    {
+      "subheading": "Ultralight vs mid output",
+      "cards": [
+        {
+          "label": "Ultralight",
+          "text": "The AIVOLT 1750W and AIVOLT 1600W weigh 26.5 and 28 pounds and suit chargers, lights and fans."
+        },
+        {
+          "label": "Mid output",
+          "text": "The WEN 2350W and Oxseryn 2800W give 1900 to 2000 running watts at 39 to 40 pounds for a fridge or small appliance."
+        }
+      ],
+      "note": "Most tent campers should default to the AIVOLT 1750W unless they need a fridge or a small appliance."
+    },
+    {
+      "subheading": "By Safety and Expansion",
+      "table": {
+        "headers": [
+          "Best fit",
+          "Recommended pick"
+        ],
+        "rows": [
+          [
+            "CO sensor named",
+            "AIVOLT 1750W"
+          ],
+          [
+            "Parallel upgrade",
+            "AIVOLT 1600W"
+          ],
+          [
+            "Fuel shutoff",
+            "WEN 2350W"
+          ],
+          [
+            "Parallel and USB-C",
+            "Oxseryn 2800W"
+          ]
+        ]
+      }
+    },
+    {
+      "subheading": "For Quiet Campgrounds Specifically",
+      "cards": [
+        {
+          "label": "Look for",
+          "text": "A listed dBA at a given load and a small body"
+        },
+        {
+          "label": "In this comparison",
+          "text": "The AIVOLT 1750W lists 52 dBA and the Oxseryn 2800W lists under 58 dBA at 23 feet."
+        }
+      ]
+    },
+    {
+      "subheading": "When to Spend More",
+      "cards": [
+        {
+          "label": "Spend more if",
+          "text": "Spend more on the Oxseryn 2800W or WEN 2350W if you need to run a small fridge or appliance with USB-C or fuel shutoff features."
+        },
+        {
+          "label": "Save if",
+          "text": "Save with the AIVOLT 1600W or AIVOLT 1750W if you only charge devices and run lights."
+        }
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "criterion": "Running watts by campsite",
+      "explanation": "A phone, lights and a fan need 200 to 400 watts, while a fridge and a laptop add 200 more, and an air conditioner can need over 2000. Add up your gear and add 20 percent. Choose between the 1350 and 2000 watt classes based on that total."
+    },
+    {
+      "criterion": "Noise ratings and load",
+      "explanation": "A decibel number is measured at 23 feet and a stated load such as 25 percent. Many campgrounds enforce quiet hours, and some cap noise near 60 dBA. Look for the load and distance with the rating."
+    },
+    {
+      "criterion": "Parallel kits",
+      "explanation": "Two inverter generators can join with a parallel kit to add their output. The kit is usually sold separately and adds cost. Check that the listing states parallel capability and the kit's availability."
+    },
+    {
+      "criterion": "CO sensors and placement",
+      "explanation": "A CO sensor stops the engine if carbon monoxide builds up, and it is a backup. Keep the unit 20 feet from tents and doors with the exhaust pointed away. Check the listing for a CO feature."
+    },
+    {
+      "criterion": "Fuel and tank size",
+      "explanation": "A small tank means short runs at full load, such as 2 hours for the AIVOLT 1600W. Propane stores longer but gives lower output. Look for hours at 25 percent and at full load."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What size inverter generator do I need for camping?",
+      "a": "For phones, lights and a fan, 1350 to 1900 watts is enough. A rooftop air conditioner needs a much larger unit, around 3500 watts."
+    },
+    {
+      "q": "Is an inverter generator worth it over a conventional one?",
+      "a": "It is quieter and lighter and produces cleaner power. A conventional unit offers more watts per dollar but is louder."
+    },
+    {
+      "q": "Where do I place it?",
+      "a": "Outdoors, level, 20 feet from tents, with the exhaust pointed away. Never run it inside a tent or vehicle."
+    },
+    {
+      "q": "How do I run two together?",
+      "a": "Use a parallel kit rated for both units and follow the manual. Check that both models support parallel."
+    },
+    {
+      "q": "How do I store it?",
+      "a": "Use the fuel shutoff if the unit has one and add stabilizer to the tank. Run it every few months."
+    }
+  ],
+  "related": [
+    {
+      "title": "Best Portable Solar Panels",
+      "href": "/camp-power/best-portable-solar-panels"
+    },
+    {
+      "title": "Best Power Station",
+      "href": "/camp-power/best-power-station"
+    },
+    {
+      "title": "Best Solar Power Bank",
+      "href": "/camp-power/best-solar-power-bank"
+    },
+    {
+      "title": "Best Portable Solar Panels For Home",
+      "href": "/camp-power/best-portable-solar-panels-for-home"
+    }
+  ]
+};
