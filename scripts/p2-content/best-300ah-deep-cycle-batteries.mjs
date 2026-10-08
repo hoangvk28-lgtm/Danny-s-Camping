@@ -150,7 +150,8 @@ export default {
         "Low-temp protection is listed"
       ],
       "cons": [
-        "Cycle figure is at full depth"
+        "Cycle figure is at full depth",
+        "Listing gives fewer monitoring details than the TEMGO"
       ],
       "bestFor": "A first large lithium bank",
       "take": "The most affordable 12V 300Ah in the group. A solid pick if you size your usage to the stated depth-of-discharge figures.",

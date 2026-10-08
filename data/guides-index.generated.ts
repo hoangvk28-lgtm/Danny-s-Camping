@@ -72,6 +72,7 @@ export const guideDataLoaders: Record<string, () => Promise<GuideDataModule>> = 
   "best-3-person-pop-up-tents": () => import("./guides/best-3-person-pop-up-tents"),
   "best-3-room-camping-tents": () => import("./guides/best-3-room-camping-tents"),
   "best-3-season-tents": () => import("./guides/best-3-season-tents"),
+  "best-300ah-deep-cycle-batteries": () => import("./guides/best-300ah-deep-cycle-batteries"),
   "best-300w-car-power-inverters": () => import("./guides/best-300w-car-power-inverters"),
   "best-4-person-backpacking-tents": () => import("./guides/best-4-person-backpacking-tents"),
   "best-4-person-beach-tents": () => import("./guides/best-4-person-beach-tents"),
