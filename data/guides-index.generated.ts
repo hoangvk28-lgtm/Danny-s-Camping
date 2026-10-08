@@ -124,7 +124,6 @@ export const guideDataLoaders: Record<string, () => Promise<GuideDataModule>> = 
   "best-8-person-tents-for-car-camping": () => import("./guides/best-8-person-tents-for-car-camping"),
   "best-800w-car-power-inverters": () => import("./guides/best-800w-car-power-inverters"),
   "best-9-person-instant-tents": () => import("./guides/best-9-person-instant-tents"),
-  "best-9-person-suv-tents": () => import("./guides/best-9-person-suv-tents"),
   "best-adjustable-tent-poles": () => import("./guides/best-adjustable-tent-poles"),
   "best-agm-deep-cycle-batteries": () => import("./guides/best-agm-deep-cycle-batteries"),
   "best-air-tent-pumps": () => import("./guides/best-air-tent-pumps"),
