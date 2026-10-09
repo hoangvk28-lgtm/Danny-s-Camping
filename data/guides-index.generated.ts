@@ -251,6 +251,7 @@ export const guideDataLoaders: Record<string, () => Promise<GuideDataModule>> = 
   "best-6-person-pop-up-tents": () => import("./guides/best-6-person-pop-up-tents"),
   "best-6-person-suv-tents": () => import("./guides/best-6-person-suv-tents"),
   "best-6-person-truck-tents": () => import("./guides/best-6-person-truck-tents"),
+  "best-6000-watt-portable-generators": () => import("./guides/best-6000-watt-portable-generators"),
   "best-60000mah-power-banks": () => import("./guides/best-60000mah-power-banks"),
   "best-600w-foldable-solar-panels": () => import("./guides/best-600w-foldable-solar-panels"),
   "best-600w-portable-power-stations": () => import("./guides/best-600w-portable-power-stations"),

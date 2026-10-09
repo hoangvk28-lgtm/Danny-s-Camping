@@ -49,7 +49,7 @@ export default {
       "d": [
         "The GENMAX GM6000iED is a dual fuel unit with a 224cc OHV engine, 6000 peak and 5250 rated watts, and a 3.6 gallon tank. It lists 62 dBA at 23 feet at 25 percent load, THD under 3 percent, a CO detect auto shutoff and a 5-in-1 digital data center. Remote start with a key fob, a telescopic handle and wheels are included, at 117.9 pounds.",
         "It lists the lowest noise figure and the only second fuel, propane, on the list. Compared with the GM6000XiE, it adds dual fuel, a quieter rating and a key fob at more than twice the price.",
-        "It suits campers who want quiet running and a fuel fallback for storms. The data center shows hours, voltage, load, fuel and frequency."
+        "It suits campers who want quiet running and a fuel fallback for storms. The digital data center shows hours, voltage, load, fuel and frequency."
       ],
       "specs": [
         "6000 peak, 5250 rated, dual fuel",
