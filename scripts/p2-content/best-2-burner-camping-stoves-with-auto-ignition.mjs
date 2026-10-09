@@ -1,6 +1,6 @@
 export default {
   "short": false,
-  "silo": "x",
+  "silo": "camp-kitchen",
   "slug": "best-2-burner-camping-stoves-with-auto-ignition",
   "title": "5 Best 2 Burner Camping Stoves With Auto Ignition in 2026",
   "metaTitle": "Best 2 Burner Camping Stoves With Auto Ignition",
@@ -350,16 +350,20 @@ export default {
   ],
   "related": [
     {
-      "title": "Best 2 Burner Camping Stoves",
-      "href": "/x/best-2-burner-camping-stoves"
+      "title": "Best Backpacking Cookpots",
+      "href": "/camp-kitchen/best-backpacking-cookpots"
     },
     {
-      "title": "Best 3 Burner Camping Stoves",
-      "href": "/x/best-3-burner-camping-stoves"
+      "title": "Best Backpacking Stoves",
+      "href": "/camp-kitchen/best-backpacking-stoves"
     },
     {
-      "title": "Best Compact 2 Burner Camping Stoves",
-      "href": "/x/best-compact-2-burner-camping-stoves"
+      "title": "Best Camping Coffee",
+      "href": "/camp-kitchen/best-camping-coffee"
+    },
+    {
+      "title": "Best Camping Coffeemakers",
+      "href": "/camp-kitchen/best-camping-coffeemakers"
     }
   ]
 };

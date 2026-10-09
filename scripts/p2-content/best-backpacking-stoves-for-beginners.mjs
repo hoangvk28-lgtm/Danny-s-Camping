@@ -1,6 +1,6 @@
 export default {
   "short": false,
-  "silo": "x",
+  "silo": "camp-kitchen",
   "slug": "best-backpacking-stoves-for-beginners",
   "title": "4 Best Backpacking Stoves For Beginners in 2026",
   "metaTitle": "Best Backpacking Stoves For Beginners in 2026",
@@ -317,20 +317,20 @@ export default {
   ],
   "related": [
     {
+      "title": "Best Backpacking Cookpots",
+      "href": "/camp-kitchen/best-backpacking-cookpots"
+    },
+    {
       "title": "Best Backpacking Stoves",
       "href": "/camp-kitchen/best-backpacking-stoves"
     },
     {
-      "title": "Best 4 Season Backpacking Stoves",
-      "href": "/x/best-4-season-backpacking-stoves"
+      "title": "Best Camping Coffee",
+      "href": "/camp-kitchen/best-camping-coffee"
     },
     {
-      "title": "Best Alcohol Stoves For Backpacking",
-      "href": "/x/best-alcohol-stoves-for-backpacking"
-    },
-    {
-      "title": "Best Backpacking Stoves For 2 People",
-      "href": "/x/best-backpacking-stoves-for-2-people"
+      "title": "Best Camping Coffeemakers",
+      "href": "/camp-kitchen/best-camping-coffeemakers"
     }
   ]
 };

@@ -1,6 +1,6 @@
 export default {
   "short": false,
-  "silo": "x",
+  "silo": "camp-kitchen",
   "slug": "best-alcohol-stoves",
   "title": "5 Best Alcohol Stoves in 2026",
   "metaTitle": "Best Alcohol Stoves in 2026",
@@ -350,16 +350,20 @@ export default {
   ],
   "related": [
     {
-      "title": "Best Alcohol Stoves For Backpacking",
-      "href": "/x/best-alcohol-stoves-for-backpacking"
+      "title": "Best Backpacking Cookpots",
+      "href": "/camp-kitchen/best-backpacking-cookpots"
     },
     {
-      "title": "Best Titanium Alcohol Stoves",
-      "href": "/x/best-titanium-alcohol-stoves"
+      "title": "Best Backpacking Stoves",
+      "href": "/camp-kitchen/best-backpacking-stoves"
     },
     {
-      "title": "Best 2 Burner Camping Stoves With Auto Ignition",
-      "href": "/x/best-2-burner-camping-stoves-with-auto-ignition"
+      "title": "Best Camping Coffee",
+      "href": "/camp-kitchen/best-camping-coffee"
+    },
+    {
+      "title": "Best Camping Coffeemakers",
+      "href": "/camp-kitchen/best-camping-coffeemakers"
     }
   ]
 };

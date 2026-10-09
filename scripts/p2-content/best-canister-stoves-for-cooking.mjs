@@ -1,6 +1,6 @@
 export default {
   "short": false,
-  "silo": "x",
+  "silo": "camp-kitchen",
   "slug": "best-canister-stoves-for-cooking",
   "title": "4 Best Canister Stoves For Cooking in 2026",
   "metaTitle": "Best Canister Stoves For Cooking in 2026",
@@ -317,16 +317,20 @@ export default {
   ],
   "related": [
     {
-      "title": "Best Canister Stoves For Cold Weather",
-      "href": "/x/best-canister-stoves-for-cold-weather"
+      "title": "Best Backpacking Cookpots",
+      "href": "/camp-kitchen/best-backpacking-cookpots"
     },
     {
-      "title": "Best Canister Top Stoves",
-      "href": "/x/best-canister-top-stoves"
+      "title": "Best Backpacking Stoves",
+      "href": "/camp-kitchen/best-backpacking-stoves"
     },
     {
-      "title": "Best Remote Canister Stoves",
-      "href": "/x/best-remote-canister-stoves"
+      "title": "Best Camping Coffee",
+      "href": "/camp-kitchen/best-camping-coffee"
+    },
+    {
+      "title": "Best Camping Coffeemakers",
+      "href": "/camp-kitchen/best-camping-coffeemakers"
     }
   ]
 };

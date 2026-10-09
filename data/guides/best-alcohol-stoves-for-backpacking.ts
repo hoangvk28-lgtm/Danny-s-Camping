@@ -375,15 +375,19 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
-    "title": "Best 4 Season Backpacking Stoves",
-    "href": "/x/best-4-season-backpacking-stoves"
+    "title": "Best Backpacking Cookpots",
+    "href": "/camp-kitchen/best-backpacking-cookpots"
   },
   {
-    "title": "Best Alcohol Stoves",
-    "href": "/x/best-alcohol-stoves"
+    "title": "Best Backpacking Stoves",
+    "href": "/camp-kitchen/best-backpacking-stoves"
   },
   {
-    "title": "Best Backpacking Stoves For 2 People",
-    "href": "/x/best-backpacking-stoves-for-2-people"
+    "title": "Best Camping Coffee",
+    "href": "/camp-kitchen/best-camping-coffee"
+  },
+  {
+    "title": "Best Camping Coffeemakers",
+    "href": "/camp-kitchen/best-camping-coffeemakers"
   }
 ];

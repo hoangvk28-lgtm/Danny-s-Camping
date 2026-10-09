@@ -306,15 +306,19 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
-    "title": "Best Canister Stoves For Cooking",
-    "href": "/x/best-canister-stoves-for-cooking"
+    "title": "Best Backpacking Cookpots",
+    "href": "/camp-kitchen/best-backpacking-cookpots"
   },
   {
-    "title": "Best Canister Top Stoves",
-    "href": "/x/best-canister-top-stoves"
+    "title": "Best Backpacking Stoves",
+    "href": "/camp-kitchen/best-backpacking-stoves"
   },
   {
-    "title": "Best Remote Canister Stoves",
-    "href": "/x/best-remote-canister-stoves"
+    "title": "Best Camping Coffee",
+    "href": "/camp-kitchen/best-camping-coffee"
+  },
+  {
+    "title": "Best Camping Coffeemakers",
+    "href": "/camp-kitchen/best-camping-coffeemakers"
   }
 ];

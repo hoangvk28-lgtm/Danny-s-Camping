@@ -1,6 +1,6 @@
 export default {
   "short": false,
-  "silo": "x",
+  "silo": "camp-kitchen",
   "slug": "best-propane-camping-stoves",
   "title": "5 Best Propane Camping Stoves in 2026",
   "metaTitle": "Best Propane Camping Stoves in 2026",
@@ -354,16 +354,16 @@ export default {
       "href": "/camp-kitchen/best-camping-stoves"
     },
     {
-      "title": "Best 2 Burner Camping Stoves With Auto Ignition",
-      "href": "/x/best-2-burner-camping-stoves-with-auto-ignition"
+      "title": "Best Backpacking Cookpots",
+      "href": "/camp-kitchen/best-backpacking-cookpots"
     },
     {
-      "title": "Best 2 Burner Camping Stoves",
-      "href": "/x/best-2-burner-camping-stoves"
+      "title": "Best Backpacking Stoves",
+      "href": "/camp-kitchen/best-backpacking-stoves"
     },
     {
-      "title": "Best 3 Burner Camping Stoves",
-      "href": "/x/best-3-burner-camping-stoves"
+      "title": "Best Camping Coffee",
+      "href": "/camp-kitchen/best-camping-coffee"
     }
   ]
 };
