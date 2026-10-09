@@ -322,6 +322,10 @@ export default {
   ],
   "related": [
     {
+      "title": "Best Backpacking Sleeping Bags",
+      "href": "/sleep-gear/best-backpacking-sleeping-bags"
+    },
+    {
       "title": "Best Camping Sleeping Bags",
       "href": "/sleep-gear/best-camping-sleeping-bags"
     },
@@ -332,10 +336,6 @@ export default {
     {
       "title": "Best Backpacking Pillow For Stomach Sleepers",
       "href": "/sleep-gear/best-backpacking-pillow-for-stomach-sleepers"
-    },
-    {
-      "title": "Best Backpacking Pillow For Back Sleepers",
-      "href": "/sleep-gear/best-backpacking-pillow-for-back-sleepers"
     }
   ]
 };

@@ -359,6 +359,10 @@ export default {
   ],
   "related": [
     {
+      "title": "Best Backpacking Sleeping Bags",
+      "href": "/sleep-gear/best-backpacking-sleeping-bags"
+    },
+    {
       "title": "Best Backpacking Pillows For Side Sleepers",
       "href": "/sleep-gear/best-backpacking-pillows-for-side-sleepers"
     },
@@ -369,10 +373,6 @@ export default {
     {
       "title": "Best Backpacking Pillow For Back Sleepers",
       "href": "/sleep-gear/best-backpacking-pillow-for-back-sleepers"
-    },
-    {
-      "title": "Best Backpacking Sleeping Bags Under 100",
-      "href": "/sleep-gear/best-backpacking-sleeping-bags-under-100"
     }
   ]
 };
