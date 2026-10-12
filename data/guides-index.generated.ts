@@ -162,6 +162,7 @@ export const guideDataLoaders: Record<string, () => Promise<GuideDataModule>> = 
   "best-3-season-backpacking-sleeping-bags": () => import("./guides/best-3-season-backpacking-sleeping-bags"),
   "best-3-season-camping-sleeping-bags": () => import("./guides/best-3-season-camping-sleeping-bags"),
   "best-3-season-double-sleeping-bags": () => import("./guides/best-3-season-double-sleeping-bags"),
+  "best-3-season-down-sleeping-bags": () => import("./guides/best-3-season-down-sleeping-bags"),
   "best-3-season-rectangular-sleeping-bags": () => import("./guides/best-3-season-rectangular-sleeping-bags"),
   "best-3-season-synthetic-sleeping-bags": () => import("./guides/best-3-season-synthetic-sleeping-bags"),
   "best-3-season-tents": () => import("./guides/best-3-season-tents"),

@@ -9,7 +9,7 @@ export default {
   "readTime": "10 min",
   "intro": [
     "Down is the usual choice when three-season warmth has to fit a pack, and four mid-priced mummy and semi-rectangular bags qualify here. A synthetic bag that appeared in the raw search results was dropped, since it is not a down bag.",
-    "Fill power, printed weight and any temperature figures are the facts that separate these four, and each listing varies in what it prints. Read the verdicts for what each states, then match the low end to your coldest night."
+    "Fill power, printed weight and any temperature figures are what separates these four, and each listing varies in what it prints. Read the verdicts for what each states, then match the low end to your coldest night."
   ],
   "products": [
     {
