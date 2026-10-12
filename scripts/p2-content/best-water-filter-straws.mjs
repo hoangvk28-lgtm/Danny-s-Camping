@@ -392,8 +392,8 @@ export default {
       "href": "/packs-hiking/best-water-filter-straws-for-emergencies"
     },
     {
-      "title": "Best Backpacking Water Filter For Groups",
-      "href": "/packs-hiking/best-backpacking-water-filter-for-groups"
+      "title": "Best Water Filter Straws For Survival",
+      "href": "/packs-hiking/best-water-filter-straws-for-survival"
     }
   ]
 };

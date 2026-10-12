@@ -288,16 +288,16 @@ export default {
   ],
   "related": [
     {
+      "title": "Best Filter Bottles Water Filters For Backpacking",
+      "href": "/packs-hiking/best-filter-bottles-water-filters-for-backpacking"
+    },
+    {
       "title": "Best Affordable Backpacking Water Filters",
       "href": "/packs-hiking/best-affordable-backpacking-water-filters"
     },
     {
       "title": "Best Backpacking Water Filters For Viruses",
       "href": "/packs-hiking/best-backpacking-water-filters-for-viruses"
-    },
-    {
-      "title": "Best Backpacking Water Filters",
-      "href": "/packs-hiking/best-backpacking-water-filters"
     }
   ]
 };

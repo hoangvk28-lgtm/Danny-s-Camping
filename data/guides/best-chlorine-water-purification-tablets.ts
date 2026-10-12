@@ -310,11 +310,11 @@ export const relatedGuides: { href: string; title: string }[] = [
     "href": "/packs-hiking/best-water-purification-tablets"
   },
   {
-    "title": "Best Backpacking Water Filter For Groups",
-    "href": "/packs-hiking/best-backpacking-water-filter-for-groups"
+    "title": "Best Water Purification Tablets For Drinking Water",
+    "href": "/packs-hiking/best-water-purification-tablets-for-drinking-water"
   },
   {
-    "title": "Best Hiking Backpack For Women With Water Bladder",
-    "href": "/packs-hiking/best-hiking-backpack-for-women-with-water-bladder"
+    "title": "Best Water Purification Tablets For Hiking",
+    "href": "/packs-hiking/best-water-purification-tablets-for-hiking"
   }
 ];
