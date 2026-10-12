@@ -341,15 +341,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Water Purifiers For Backpacking",
+    "href": "/packs-hiking/best-water-purifiers-for-backpacking"
+  },
+  {
     "title": "Best Backpacking Water Filter For Groups",
     "href": "/packs-hiking/best-backpacking-water-filter-for-groups"
   },
   {
     "title": "Best Hiking Backpack For Women With Water Bladder",
     "href": "/packs-hiking/best-hiking-backpack-for-women-with-water-bladder"
-  },
-  {
-    "title": "Best Lightweight Hiking Backpack With Water Bladder",
-    "href": "/packs-hiking/best-lightweight-hiking-backpack-with-water-bladder"
   }
 ];
