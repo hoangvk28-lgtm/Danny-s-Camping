@@ -367,12 +367,12 @@ export default {
       "href": "/packs-hiking/best-trekking-poles-under-100"
     },
     {
-      "title": "Best Backpacking Backpacks Under 100",
-      "href": "/packs-hiking/best-backpacking-backpacks-under-100"
+      "title": "Best Trekking Poles Under 75",
+      "href": "/packs-hiking/best-trekking-poles-under-75"
     },
     {
-      "title": "Best Backpacking Backpacks Under 150",
-      "href": "/packs-hiking/best-backpacking-backpacks-under-150"
+      "title": "Best Backpacking Backpacks Under 100",
+      "href": "/packs-hiking/best-backpacking-backpacks-under-100"
     }
   ]
 };

@@ -388,15 +388,15 @@ export const faq = [
 
 export const relatedGuides: { href: string; title: string }[] = [
   {
+    "title": "Best Hiking Backpacks Under 100",
+    "href": "/packs-hiking/best-hiking-backpacks-under-100"
+  },
+  {
+    "title": "Best Hiking Backpacks Under 75",
+    "href": "/packs-hiking/best-hiking-backpacks-under-75"
+  },
+  {
     "title": "Best Backpacking Backpacks Under 100",
     "href": "/packs-hiking/best-backpacking-backpacks-under-100"
-  },
-  {
-    "title": "Best Backpacking Backpacks Under 150",
-    "href": "/packs-hiking/best-backpacking-backpacks-under-150"
-  },
-  {
-    "title": "Best Hiking Daypack Under 100",
-    "href": "/packs-hiking/best-hiking-daypack-under-100"
   }
 ];

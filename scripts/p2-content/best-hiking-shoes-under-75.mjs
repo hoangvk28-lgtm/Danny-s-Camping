@@ -371,8 +371,8 @@ export default {
       "href": "/clothing-footwear/best-hiking-shoes-for-men-under-100"
     },
     {
-      "title": "Best Trail Running Shoes For Hiking And Running",
-      "href": "/clothing-footwear/best-trail-running-shoes-for-hiking-and-running"
+      "title": "Best Hiking Shoes Under 50",
+      "href": "/clothing-footwear/best-hiking-shoes-under-50"
     }
   ]
 };
