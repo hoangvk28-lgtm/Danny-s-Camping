@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const informational = getInformationalGuide(slug);
   if (informational?.silo === SILO) {
-    return buildMetadata({ title: informational.metaTitle, description: informational.description, path: `/${SILO}/${slug}`, image: informational.heroImage, type: "article" });
+    return buildMetadata({ noIndex: true, title: informational.metaTitle, description: informational.description, path: `/${SILO}/${slug}`, image: informational.heroImage, type: "article" });
   }
   const guide = await getPublicGuideBySlug(slug);
   if (!guide) return {};
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : undefined;
 
   const rich = guideDataLoaders[slug] ? await guideDataLoaders[slug]() : undefined;
-  const base = buildMetadata({
+  const base = buildMetadata({ noIndex: true,
     title: rich?.metaTitle ?? guide.metaTitle ?? guide.title,
     description: guide.metaDescription ?? guide.description,
     path: `/camp-kitchen/${slug}`,

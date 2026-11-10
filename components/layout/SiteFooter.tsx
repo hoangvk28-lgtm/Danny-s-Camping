@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { departmentNav, companyNav, secondaryNav } from "@/data/nav";
 import { Wordmark } from "./Wordmark";
+import { PartnerNetworkFooter } from "./PartnerNetwork";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -45,6 +46,8 @@ export function SiteFooter() {
             </ul>
           </nav>
         </div>
+
+        <PartnerNetworkFooter />
 
         <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 text-sm text-ink-secondary sm:flex-row sm:items-start sm:justify-between">
           <p className="max-w-2xl !text-sm">

@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const loadRichGuide = guideDataLoaders[slug];
   if (loadRichGuide) {
     const richData = await loadRichGuide();
-    return buildMetadata({
+    return buildMetadata({ noIndex: true,
       title: richData.metaTitle,
       description: richData.metaDescription,
       path: `/guide/${slug}`,
@@ -91,7 +91,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : undefined;
 
   const rich = guideDataLoaders[slug] ? await guideDataLoaders[slug]() : undefined;
-  const base = buildMetadata({
+  const base = buildMetadata({ noIndex: true,
     title: rich?.metaTitle ?? guide.metaTitle ?? guide.title,
     description: guide.metaDescription ?? guide.description,
     path: `/guide/${slug}`,

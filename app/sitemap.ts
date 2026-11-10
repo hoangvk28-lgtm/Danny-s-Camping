@@ -144,11 +144,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const vsComparePages: MetadataRoute.Sitemap = [
   ];
 
+  // Every guide article is noindex now (see lib/seo.ts / the silo [slug] routes):
+  // the content was moved to other properties and this site is kept only as a
+  // link asset. Submitting noindex URLs in the sitemap just sends Google
+  // conflicting signals, so guide + informational pages are deliberately left
+  // out. `guidePages` / `informationalPages` stay computed above so restoring
+  // them is a one-line change if the site is ever re-activated.
+  void guidePages;
+  void informationalPages;
+
   return [
     ...staticPages,
     ...siloPages,
-    ...guidePages,
-    ...informationalPages,
     ...vsComparePages,
   ];
 }

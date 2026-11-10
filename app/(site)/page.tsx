@@ -15,6 +15,7 @@ import { getPublicFeaturedDeals } from "@/lib/public-deals";
 import { createResolver, guideHref, publicAsset, toPickView } from "@/lib/homepage";
 import { homepageEditorial as cfg } from "@/data/homepage-editorial";
 import { buildMetadata } from "@/lib/seo";
+import { PartnerNetworkSection } from "@/components/layout/PartnerNetwork";
 
 export const revalidate = 86400;
 
@@ -156,6 +157,11 @@ export default async function HomePage() {
             </section>
           )}
         </div>
+      </Wrap>
+
+      {/* 9.5 — Network: sister publications covering gear outside camping */}
+      <Wrap>
+        <PartnerNetworkSection seed="home" count={6} heading="More from our network" className="py-12 lg:py-14 border-t border-border" />
       </Wrap>
 
       {/* 10 — How we review */}

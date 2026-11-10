@@ -49,11 +49,10 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     site: TWITTER_HANDLE,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, "max-snippet": -1 },
-  },
+  // No site-wide robots default here: every page sets its own via
+  // buildMetadata() in lib/seo.ts, and a hard-coded "index, follow" at the
+  // layout level emitted a second, conflicting robots meta tag on the
+  // noindexed guide pages.
   // Set NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION to this site's own Search Console token.
   ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
     ? { verification: { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION } }

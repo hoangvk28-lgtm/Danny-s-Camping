@@ -65,8 +65,15 @@ export function buildMetadata({
       images: [ogImage],
       site: TWITTER_HANDLE,
     },
+    // noindex, follow: these pages are kept out of the index (duplicate content
+    // lives on the sister sites now) but their outbound links must still be
+    // crawled and followed, since the site is retained as a link asset.
     robots: noIndex
-      ? { index: false, follow: false }
+      ? {
+          index: false,
+          follow: true,
+          googleBot: { index: false, follow: true },
+        }
       : {
           index: true,
           follow: true,

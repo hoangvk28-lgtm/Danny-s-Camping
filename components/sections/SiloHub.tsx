@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PartnerNetworkSection } from "@/components/layout/PartnerNetwork";
 import { Container } from "@/components/layout/Container";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { silos, type Silo } from "@/data/silos";
@@ -84,6 +85,8 @@ export function SiloHub({ silo, guides }: { silo: Silo; guides?: SiloHubGuide[] 
           ))}
         </div>
       </section>
+
+      <PartnerNetworkSection seed={silo.slug} className="mt-12" />
     </Container>
   );
 }
