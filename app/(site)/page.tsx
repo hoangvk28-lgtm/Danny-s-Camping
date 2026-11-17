@@ -17,7 +17,6 @@ import { homepageEditorial as cfg } from "@/data/homepage-editorial";
 import { buildMetadata } from "@/lib/seo";
 import { PartnerNetworkSection } from "@/components/layout/PartnerNetwork";
 
-export const revalidate = 86400;
 
 const OG_IMAGE = publicAsset("images/brand/og.jpg");
 

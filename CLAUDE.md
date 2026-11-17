@@ -4,6 +4,40 @@
 
 ---
 
+## 0.0 Deployment: Cloudflare static export, articles moved to RV Gear Lab (changed 2026-11-17, per explicit user instruction)
+
+This site no longer deploys to Vercel and no longer serves its own articles.
+
+- **`next.config.ts` sets `output: "export"`.** Cloudflare serves the prerendered
+  `./out` directory from static asset hosting, configured by `wrangler.jsonc`.
+  There is no server at request time, so route handlers (`app/api/**`),
+  `middleware.ts`, server actions, ISR and `next/image` optimization are all
+  unavailable and have been removed. Do not add any of them back. `app/sitemap.ts`
+  and `app/robots.ts` must keep `export const dynamic = "force-static"`.
+- **`headers()` and `redirects()` in `next.config.ts` do nothing in an export.**
+  They now live in `public/_headers` and `public/_redirects`. The 23 singular-slug
+  aliases that `next.config.ts` used to redirect were extracted to
+  `scripts/.slug-aliases.json`, which the generator reads. Adding a redirect means
+  editing the generator, not `next.config.ts`.
+- **Every buying guide and informational article 301s to `rvgearlab.com`.** The
+  1,661 article routes (`app/(site)/guide/[slug]` and the eight
+  `app/(site)/<silo>/[slug]`) were deleted. What remains is the homepage, the eight
+  silo hub pages, the two author pages and the editorial/legal pages.
+- **`public/_redirects` is generated.** Regenerate with
+  `node scripts/gen-cloudflare-redirects.mjs [path-to-rvgearlab-checkout]`, never
+  by hand. It resolves each slug against RV Gear Lab's own registry, so it catches
+  the 18 articles RV Gear Lab files under `power-electrical` instead of
+  `camp-power`, and fails loudly on any slug it cannot map. `README.md` explains
+  the rule ordering and the Cloudflare rule limits.
+- **`data/guides/*.ts` and `data/guides.ts` are still in the repo** and still feed
+  the hub pages' listings, but no page renders a full guide any more. Writing a new
+  guide for this site is not a thing: new camping content goes to the RV Gear Lab
+  repo.
+- `wrangler` runs with `--env-file .env.cloudflare` (empty on purpose) so it does
+  not upload `.env.local`'s secrets as Worker secrets.
+
+---
+
 ## 0. Communication Rules
 
 - **Always address the user as "cậu"** in every response, without exception.

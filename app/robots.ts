@@ -1,20 +1,18 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/seo";
 
+// Prerendered at build time. Required by output: "export", which has no
+// server to generate this file per request.
+export const dynamic = "force-static";
+
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: "*",
         allow: ["/", "/_next/static/", "/_next/image"],
-        disallow: [
-          "/admin",
-          "/admin/",
-          "/api/admin",
-          "/api/admin/",
-          "/api/",
-          "/_next/",
-        ],
+        disallow: ["/_next/"],
       },
       // AI crawlers: allow full indexing so content surfaces in AI search results
       { userAgent: "GPTBot", allow: "/" },
