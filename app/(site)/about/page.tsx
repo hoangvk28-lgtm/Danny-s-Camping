@@ -64,6 +64,16 @@ export default function AboutPage() {
         ))}
       </ul>
 
+      <h2 className="mt-12 border-b border-ink pb-3 text-[1.75rem]">Beyond the campsite</h2>
+      <p className="mt-4 text-base leading-relaxed">
+        A lot of camping gear questions follow you home. For the indoor side of the same problems, we read
+        <a href="https://www.sweetlivingroom.com/guide/indoor-outdoor-rugs-explained" target="_blank" rel="noopener noreferrer" className="underline">SweetLivingRoom on indoor outdoor rugs</a>, which covers the
+        material and drainage trade-offs that also decide how an awning mat wears, and
+        <a href="https://www.sweetlivingroom.com/guide/best-storage-ottomans" target="_blank" rel="noopener noreferrer" className="underline">its roundup of storage ottomans</a> for the gear that has to live in the
+        house between trips. For everyday tools and appliances outside our own niche, <a href="https://www.senseireview.com/guide/best-coolers" target="_blank" rel="noopener noreferrer" className="underline">SenseiReview on coolers</a>
+        is a useful second opinion.
+      </p>
+
       <h2 className="mt-12 border-b border-ink pb-3 text-[1.75rem]">How we make money</h2>
       <p className="mt-4 text-base leading-relaxed">
         {SITE_NAME} is reader-supported. When you buy through links on our site, we may earn an affiliate commission at no
